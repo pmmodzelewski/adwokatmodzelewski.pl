@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adwokat Piotr Modzelewski — Kancelaria Adwokacka Warszawa</title>
+  <meta name="description" content="Adwokat Piotr Modzelewski — indywidualna praktyka adwokacka w Warszawie. Prawo karne, cywilne, rodzinne, pracy. Sprawy żołnierzy i służb mundurowych.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --white: #ffffff;
+      --off-white: #fafafa;
+      --light-gray: #f2f2f0;
+      --mid-gray: #b0aea8;
+      --text: #2a2a28;
+      --text-light: #5c5c58;
+      --accent: #8b7d6b;
+      --accent-light: #c4b9a8;
+      --rule: #e0ddd8;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-weight: 600; font-size: 1.15rem;
+      color: var(--text); text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.78rem; font-weight: 400;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-light); text-decoration: none;
+      transition: color 0.25s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 100px 2rem 60px;
+    }
+    .hero-grid {
+      max-width: 1100px; width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-text { animation: fadeUp 0.8s ease-out both; }
+    .hero-label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5vw, 3.8rem);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-weight: 400; font-style: italic;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+    .hero-desc {
+      font-size: 0.95rem; color: var(--text-light);
+      max-width: 520px; margin-bottom: 2.4rem;
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text); text-decoration: none;
+      padding: 0.9rem 2rem;
+      border: 1px solid var(--text);
+      transition: all 0.3s;
+    }
+    .hero-cta:hover {
+      background: var(--text); color: var(--white);
+    }
+    .hero-cta svg { width: 14px; height: 14px; transition: transform 0.3s; }
+    .hero-cta:hover svg { transform: translateX(3px); }
+
+    .hero-photo {
+      animation: fadeUp 0.8s 0.15s ease-out both;
+      position: relative;
+    }
+    .hero-photo::before {
+      content: '';
+      position: absolute; top: -12px; left: -12px;
+      width: 100%; height: 100%;
+      border: 1px solid var(--accent-light);
+      z-index: -1;
+    }
+    .hero-photo img {
+      width: 100%; display: block;
+      filter: grayscale(20%) contrast(1.02);
+    }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 5rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 500; line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+    .divider {
+      width: 48px; height: 1px;
+      background: var(--accent-light);
+      margin-bottom: 2rem;
+    }
+
+    /* ── ABOUT ── */
+    .about { background: var(--off-white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .about-text p {
+      font-size: 0.92rem; color: var(--text-light);
+      margin-bottom: 1.2rem;
+    }
+    .about-highlights {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1.5rem; margin-top: 1rem;
+    }
+    .highlight {
+      padding: 1.6rem;
+      background: var(--white);
+      border: 1px solid var(--rule);
+    }
+    .highlight-number {
+      font-family: var(--font-display);
+      font-size: 2rem; font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .highlight-label {
+      font-size: 0.75rem; font-weight: 400;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-light);
+      margin-top: 0.4rem;
+    }
+
+    /* ── PRACTICE AREAS ── */
+    .practice { background: var(--white); }
+    .practice-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 1rem;
+    }
+    .practice-item {
+      background: var(--white);
+      padding: 2.4rem 2rem;
+      transition: background 0.3s;
+    }
+    .practice-item:hover { background: var(--off-white); }
+    .practice-icon {
+      width: 28px; height: 28px;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .practice-item h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem; font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .practice-item p {
+      font-size: 0.82rem; color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--off-white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .contact-info p {
+      font-size: 0.92rem; color: var(--text-light);
+      margin-bottom: 1.4rem;
+    }
+    .contact-detail {
+      display: flex; align-items: flex-start; gap: 1rem;
+      margin-bottom: 1.6rem;
+    }
+    .contact-detail svg {
+      width: 18px; height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .contact-detail-text .label {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--mid-gray);
+    }
+    .contact-detail-text .value {
+      font-size: 0.95rem; color: var(--text);
+      margin-top: 0.2rem;
+    }
+    .contact-detail-text a {
+      color: var(--text); text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.25s;
+    }
+    .contact-detail-text a:hover { border-color: var(--accent); }
+    .contact-map {
+      background: var(--light-gray);
+      min-height: 320px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--rule);
+      overflow: hidden;
+    }
+    .contact-map iframe {
+      width: 100%; height: 100%; min-height: 320px;
+      border: 0; filter: grayscale(100%) contrast(1.05);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2.4rem 2rem;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+      font-size: 0.75rem; color: var(--mid-gray);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── MOBILE ── */
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+    .mobile-toggle svg { width: 22px; height: 22px; color: var(--text); }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+      .hero-photo { max-width: 300px; margin: 0 auto; order: -1; }
+      .hero-desc { margin: 0 auto 2.4rem; }
+      .hero-cta { margin: 0 auto; }
+      .about-grid { grid-template-columns: 1fr; }
+      .practice-list { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .mobile-toggle { display: block; }
+      .nav-links {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 64px; left: 0; right: 0;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--rule);
+        padding: 1rem 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 0.7rem 2rem; display: block; }
+      .practice-list { grid-template-columns: 1fr; }
+      .about-highlights { grid-template-columns: 1fr 1fr; }
+      section { padding: 3.5rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Piotr <span>Modzelewski</span></a>
+    <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#specjalizacje">Specjalizacje</a></li>
+      <li style="display:none"><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-label">Kancelaria Adwokacka w Warszawie</div>
+      <h1 class="hero-name">Piotr<br>Modzelewski</h1>
+      <p class="hero-title">Adwokat — Izba Adwokacka w Warszawie</p>
+      <p class="hero-desc">Indywidualna praktyka adwokacka obejmująca prawo karne, cywilne, rodzinne oraz kompleksową obsługę prawną żołnierzy zawodowych i służb mundurowych.</p>
+      <a href="#kontakt" class="hero-cta" style="display:none">
+        Umów konsultację
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-photo">
+      <img src="photo.jpg" alt="Adwokat Piotr Modzelewski" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="o-mnie">
+  <div class="container reveal">
+    <div class="section-label">O mnie</div>
+    <div class="section-title">Doświadczenie i wykształcenie</div>
+    <div class="divider"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Ukończyłem z wyróżnieniem studia prawnicze na Wydziale Prawa i Administracji Uniwersytetu Warszawskiego, broniąc pracę magisterską z zakresu materialnego prawa karnego pod kierunkiem dr. Piotra Kładocznego.</p>
+        <p>Od lipca 2017 roku jestem adwokatem w Izbie Adwokackiej w Warszawie. Reprezentuję klientów przede wszystkim w postępowaniach procesowych — karnych, cywilnych, z zakresu prawa pracy, prawa rodzinnego (w tym postępowań rozwodowych) i spadkowego.</p>
+        <p>Szczególnym obszarem mojej specjalizacji są sprawy żołnierzy zawodowych i osób służących w służbach mundurowych (Policja, Straż Graniczna, Służba Więzienna). Wielokrotnie broniłem klientów przed Sądami Wojskowymi oraz reprezentowałem ich interesy przed organami administracji.</p>
+      </div>
+      <div>
+        <div class="about-highlights">
+          <div class="highlight">
+            <div class="highlight-number">2013</div>
+            <div class="highlight-label">Dyplom z wyróżnieniem — WPiA UW</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-number">2017</div>
+            <div class="highlight-label">Wpis na listę adwokatów</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-number">13+</div>
+            <div class="highlight-label">Lat doświadczenia</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-number">WPiA</div>
+            <div class="highlight-label">Uniwersytet Warszawski</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AREAS -->
+<section class="practice" id="specjalizacje">
+  <div class="container reveal">
+    <div class="section-label">Specjalizacje</div>
+    <div class="section-title">Obszary praktyki</div>
+    <div class="divider"></div>
+    <div class="practice-list">
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><rect x="9" y="13" width="6" height="8"/><path d="M9 9h1m4 0h1"/></svg>
+        <h3>Prawo karne</h3>
+        <p>Obrona w postępowaniach karnych, karnoskarbowych i wykroczeniowych. Reprezentacja jako pełnomocnik oskarżyciela posiłkowego i prywatnego.</p>
+      </div>
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>Prawo cywilne</h3>
+        <p>Sprawy procesowe, odszkodowania, roszczenia majątkowe. Kompleksowa reprezentacja w postępowaniach sądowych i pozasądowych.</p>
+      </div>
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3>Prawo rodzinne</h3>
+        <p>Rozwody, podział majątku, alimenty, władza rodzicielska, kontakty z dziećmi. Mediacje i ugody w sprawach rodzinnych.</p>
+      </div>
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        <h3>Prawo pracy</h3>
+        <p>Spory pracownicze, bezprawne zwolnienia, mobbing, dyskryminacja. Reprezentacja zarówno pracowników jak i pracodawców.</p>
+      </div>
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h3>Służby mundurowe</h3>
+        <p>Sprawy żołnierzy zawodowych, policjantów, funkcjonariuszy SG i SW. Sądy Wojskowe, postępowania dyscyplinarne i emerytalne.</p>
+      </div>
+      <div class="practice-item">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <h3>Prawo spadkowe</h3>
+        <p>Stwierdzenie nabycia spadku, dział spadku, zachowek, testamenty. Kompleksowa obsługa spraw spadkowych.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT (hidden for now) -->
+<section class="contact" id="kontakt" style="display:none">
+  <div class="container reveal">
+    <div class="section-label">Kontakt</div>
+    <div class="section-title">Umów spotkanie</div>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Zapraszam do kontaktu telefonicznego lub mailowego w celu umówienia konsultacji. Kancelaria mieści się w Warszawie — spotkania odbywają się po wcześniejszym uzgodnieniu terminu.</p>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">Telefon</div>
+            <div class="value"><a href="tel:+48881209300">+48 881 209 300</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:kancelaria@adwokatmodzelewski.pl">kancelaria@adwokatmodzelewski.pl</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">Adres</div>
+            <div class="value">Warszawa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438500775!2d20.92111!3d52.233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2025 Adwokat Piotr Modzelewski — Kancelaria Adwokacka w Warszawie. Wszelkie prawa zastrzeżone.
+</footer>
+
+<script>
+  // Nav scroll shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
