@@ -10,7 +10,7 @@ sitemap: false
 robots: noindex
 ---
 
-> **Stub do uzupełnienia.** Właściciel uzupełni docelową treść SEO przed launchem.
+> Kompleksowa obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
 
 ## Czym się zajmuję w sprawach karnych
 
