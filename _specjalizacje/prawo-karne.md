@@ -15,32 +15,33 @@ robots: noindex
 ## Czym się zajmuję w sprawach karnych
 
 Podejmuję się reprezentacji Klientów we wszelkich rodzajach spraw karnych, starając się jak najlepiej sprostać ich oczekiwaniom. Występowałem przed:
-•	Sądami Rejonowymi;
-•	Sądami Okręgowymi (jako Sądami I i II instancji);
-•	Sądami Apelacyjnymi;
-•	Sądami Wojskowymi (Garnizonowymi i Okręgowymi);
-•	Sądem Najwyższym (kasacja oraz postępowanie w II instancji w sprawach wojskowych).
+-	Sądami Rejonowymi;
+-	Sądami Okręgowymi (jako Sądami I i II instancji);
+-	Sądami Apelacyjnymi;
+-	Sądami Wojskowymi (Garnizonowymi i Okręgowymi);
+-	Sądem Najwyższym (kasacja oraz postępowanie w II instancji w sprawach wojskowych).
 
 Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, Oskarżyciela posiłkowego lub Oskarżyciela prywatnego.
 
 ### Zakres usług
 
-•	kradzieży;
-•	przywłaszczenia;
-•	rozboju i kradzieży rozbójniczej;
-•	oszustwa;
-•	prowadzenia pojazdów pod wpływem alkoholu lub środków odurzających;
-•	wypadku komunikacyjnego;
-•	posiadania środków odurzających;
-•	przestępstw przeciwko wolności seksualnej;
-•	naruszenia nietykalności cielesnej;
-•	wyrządzenia uszczerbku na zdrowiu;
-•	znęcania się;
-•	zniesławienia i znieważenia;
-•	przestępstw i wykroczeń skarbowych (w szczególności uszczuplenia podatku);
-•	fałszerstwa;
-•	niedopełnienia obowiązków służbowych i przekroczenia uprawnień;
-•	i innych.
+Reprezentuję klientów w sprawach dot. m. in.:
+-	kradzieży
+-	przywłaszczenia
+-	rozboju i kradzieży rozbójniczej
+-	oszustwa
+-	prowadzenia pojazdów pod wpływem alkoholu lub środków odurzających
+-	wypadku komunikacyjnego
+-	posiadania środków odurzających
+-	przestępstw przeciwko wolności seksualnej
+-	naruszenia nietykalności cielesnej
+-	wyrządzenia uszczerbku na zdrowiu
+-	znęcania się
+-	zniesławienia i znieważenia
+-	przestępstw i wykroczeń skarbowych (w szczególności uszczuplenia podatku)
+-	fałszerstwa
+-	niedopełnienia obowiązków służbowych i przekroczenia uprawnień
+-	i innych
 
 ## Doświadczenie
 
