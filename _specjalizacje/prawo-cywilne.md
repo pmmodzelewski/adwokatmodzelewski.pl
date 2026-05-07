@@ -3,7 +3,7 @@ lang: pl
 slug: prawo-cywilne
 title: "Prawo cywilne"
 title_display: "PRAWO CYWILNE"
-summary: "Sprawy o zapłatę, o odszkodowanie, naruszenie dóbr osobistych, prawo rzeczowe i kontraktowe."
+summary: "Sprawy o zapłatę, o odszkodowanie, naruszenie dóbr osobistych, prawo rzeczowe i kontraktowe. Warszawa i cała Polska."
 permalink: /specjalizacje/prawo-cywilne/
 lang_alt: /en/specjalizacje/civil-law/
 sitemap: false
@@ -12,11 +12,13 @@ robots: noindex
 
 > Kompleksowa obsługa w postępowaniach cywilnych z zakresu prawa rzeczowego,
 > ochrony dóbr osobistych oraz prawa zobowiązań.
+> Pomoc prawna na terenie Warszawy oraz całego kraju.
 
 ## Postępowania sporne
 
-Obsługuję klientów w postępowaniach z zakresu prawa cywilnego, zarówno na etapie przedsądowym (negocjacje, mediacje, wezwania),
-jak i w postępowaniach sądowych przed Sądami powszechnymi i Sądem Najwyższym.
+Obsługuję klientów jako ich pełnomocnik w postępowaniach z zakresu prawa cywilnego, zarówno na etapie przedsądowym (negocjacje, mediacje, wezwania),
+jak i w postępowaniach sądowych przed Sądami powszechnymi i Sądem Najwyższym. Z moich usług korzystają osoby fizyczne i prawne z Warszawy i terytorium całego kraju.
+
 Reprezentowałem klientów m. in. w postępowaniach dotyczących:
 
 -	zaległej zapłaty (m. in. za roboty budowlane, remont, ceny sprzedaży etc.);
