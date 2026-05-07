@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  
+  <rect width="64" height="64" fill="#fafafa"></rect>
+  <rect x="0.5" y="0.5" width="63" height="63" fill="none" stroke="#e0ddd8"></rect>
+  <g font-family="&#39;Cormorant Garamond&#39;, Georgia, &#39;Times New Roman&#39;, serif" font-weight="300" font-size="44" letter-spacing="0">
+    <text x="22" y="36" text-anchor="middle" fill="#2a2a28">P</text>
+    <text x="42" y="58" text-anchor="middle" fill="#8b7d6b">M</text>
+  </g>
+</svg>

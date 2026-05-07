@@ -1,5 +1,6 @@
 # Local instructions for AI assistants — not part of the published site
 CLAUDE.md
+.claude/
 
 # OS / editor cruft
 .DS_Store
