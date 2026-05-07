@@ -26,22 +26,22 @@ Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, 
 ### Zakres usług
 
 Reprezentuję klientów w sprawach dot. m. in.:
--	kradzieży
--	przywłaszczenia
--	rozboju i kradzieży rozbójniczej
--	oszustwa
--	prowadzenia pojazdów pod wpływem alkoholu lub środków odurzających
--	wypadku komunikacyjnego
--	posiadania środków odurzających
--	przestępstw przeciwko wolności seksualnej
--	naruszenia nietykalności cielesnej
--	wyrządzenia uszczerbku na zdrowiu
--	znęcania się
--	zniesławienia i znieważenia
--	przestępstw i wykroczeń skarbowych (w szczególności uszczuplenia podatku)
--	fałszerstwa
--	niedopełnienia obowiązków służbowych i przekroczenia uprawnień
--	i innych
+-	kradzieży;
+-	przywłaszczenia;
+-	rozboju i kradzieży rozbójniczej;
+-	oszustwa;
+-	prowadzenia pojazdów pod wpływem alkoholu lub środków odurzających;
+-	wypadku komunikacyjnego;
+-	posiadania środków odurzających;
+-	przestępstw przeciwko wolności seksualnej;
+-	naruszenia nietykalności cielesnej;
+-	wyrządzenia uszczerbku na zdrowiu;
+-	znęcania się;
+-	zniesławienia i znieważenia;
+-	przestępstw i wykroczeń skarbowych (w szczególności uszczuplenia podatku);
+-	fałszerstwa;
+-	niedopełnienia obowiązków służbowych i przekroczenia uprawnień;
+-	i innych.
 
 ## Doświadczenie
 
