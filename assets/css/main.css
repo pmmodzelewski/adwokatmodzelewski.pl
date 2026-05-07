@@ -334,6 +334,91 @@ section { padding: 5rem 2rem; }
   line-height: 1.6;
 }
 
+/* Klikalne kafelki specjalizacji (kazdy <a class="practice-item" href=".../">)
+   Wariant linkowy — dziedziczy 99% stylu, dodaje afordancje klikalnosci. */
+a.practice-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+a.practice-item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+a.practice-item:hover h3 {
+  color: var(--accent);
+  transition: color 0.25s;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Aktualnosci preview na stronie glownej -----
+   --------------------------------------------------------------------- */
+.aktualnosci-preview {
+  background: var(--white);
+}
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.preview-card {
+  display: block;
+  padding: 1.8rem;
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s, border-color 0.25s;
+}
+.preview-card:hover {
+  background: var(--white);
+  border-color: var(--accent-light);
+}
+.preview-date {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  margin-bottom: 0.6rem;
+}
+.preview-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+  transition: color 0.25s;
+}
+.preview-card:hover h3 { color: var(--accent); }
+.preview-card p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.55;
+}
+.preview-more {
+  text-align: right;
+  margin-top: 1.6rem;
+}
+.link-more {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.2rem;
+  transition: border-color 0.25s, color 0.25s;
+}
+.link-more:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 
 /* ---------------------------------------------------------------------
    ----- Sekcja: Kontakt -----
@@ -384,6 +469,90 @@ section { padding: 5rem 2rem; }
   width: 100%; height: 100%; min-height: 320px;
   border: 0; filter: grayscale(100%) contrast(1.05);
 }
+.contact-info > .contact-map {
+  margin-top: 0.5rem;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Formularz kontaktowy -----
+   --------------------------------------------------------------------- */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  background: var(--white);
+  padding: 2rem;
+  border: 1px solid var(--rule);
+}
+.contact-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.contact-form label > span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+}
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+  padding: 0.7rem 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  background: var(--white);
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+  font-family: var(--font-body);
+}
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: transparent;
+  padding: 0.95rem 2rem;
+  border: 1px solid var(--text);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 0.4rem;
+  align-self: start;
+}
+.form-submit:hover {
+  background: var(--text);
+  color: var(--white);
+}
+.form-note {
+  font-size: 0.74rem;
+  color: var(--mid-gray);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
 
 
 /* ---------------------------------------------------------------------
@@ -426,6 +595,7 @@ footer {
   .about-grid { grid-template-columns: 1fr; }
   .practice-list { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .preview-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .mobile-toggle { display: block; }
@@ -443,6 +613,8 @@ footer {
   .practice-list { grid-template-columns: 1fr; }
   .about-highlights { grid-template-columns: 1fr 1fr; }
   section { padding: 3.5rem 1.5rem; }
+  .contact-form .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 1.5rem; }
 
   /* Dropdown mobilny: rozwija sie w linii, nie absolutnie */
   .nav-links .has-dropdown { width: 100%; }

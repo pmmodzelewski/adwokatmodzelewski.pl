@@ -1,0 +1,38 @@
+{%- comment -%}
+  Blok dwoch najnowszych wpisow do strony glownej.
+  Wymaga page.lang we front-matterze strony, ktora go inkluduje.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: 'pl' -%}
+{%- assign latest = site.posts | where: "lang", lang | sort: "date" | reverse -%}
+
+<!-- ====================================================================
+     =================== Sekcja: Aktualnosci preview ====================
+     ==================================================================== -->
+<section class="aktualnosci-preview">
+  <div class="container reveal">
+    <div class="section-label">{% if lang == 'en' %}News{% else %}Aktualności{% endif %}</div>
+    <div class="section-title">{% if lang == 'en' %}Latest from the firm{% else %}Najnowsze z kancelarii{% endif %}</div>
+    <div class="divider"></div>
+
+    {% if latest.size == 0 %}
+      <p class="post-list-empty">
+        {% if lang == 'en' %}First posts coming soon.{% else %}Pierwsze wpisy pojawią się wkrótce.{% endif %}
+      </p>
+    {% else %}
+      <div class="preview-grid">
+        {% for item in latest limit: 2 %}
+          <a class="preview-card" href="{{ item.url }}">
+            <div class="preview-date">{{ item.date | date: "%-d.%m.%Y" }}</div>
+            <h3>{{ item.title }}</h3>
+            {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+          </a>
+        {% endfor %}
+      </div>
+      <div class="preview-more">
+        <a href="{% if lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}" class="link-more">
+          {% if lang == 'en' %}All news &rarr;{% else %}Wszystkie aktualności &rarr;{% endif %}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>

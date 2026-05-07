@@ -1,0 +1,116 @@
+{%- comment -%}
+  Sekcja kontaktowa ze strony glownej: dane + mapa + formularz mailto.
+  Strony specjalizacji uzywaja contact-block.html (bez formularza).
+
+  Formularz uzywa mailto: — submit otwiera klienta pocztowego wlasciciela
+  uzytkownika. Brak backendu, brak trackingu. Migracja do Formspree:
+  zamienic action= i enctype= zgodnie z dokumentacja formspree.io.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: 'pl' -%}
+
+<!-- ====================================================================
+     ======================== Sekcja: Kontakt ===========================
+     ==================================================================== -->
+<section class="contact" id="{% if lang == 'en' %}contact{% else %}kontakt{% endif %}">
+  <div class="container reveal">
+    <div class="section-label">{% if lang == 'en' %}Contact{% else %}Kontakt{% endif %}</div>
+    <div class="section-title">{% if lang == 'en' %}Get in touch{% else %}Skontaktuj się{% endif %}</div>
+    <div class="divider"></div>
+
+    <div class="contact-grid">
+
+      <!-- ----- Lewa kolumna: dane kontaktowe ----- -->
+      <div class="contact-info">
+        <p>
+          {% if lang == 'en' %}
+            The firm is based in Warsaw. Meetings are held by prior appointment. Use the form on the right or contact me directly.
+          {% else %}
+            Kancelaria mieści się w Warszawie. Spotkania odbywają się po wcześniejszym uzgodnieniu terminu. Wypełnij formularz obok lub skontaktuj się bezpośrednio.
+          {% endif %}
+        </p>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">{% if lang == 'en' %}Phone{% else %}Telefon{% endif %}</div>
+            <div class="value"><a href="tel:+48881209300">+48 881 209 300</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:kancelaria@adwokatmodzelewski.pl">kancelaria@adwokatmodzelewski.pl</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">{% if lang == 'en' %}Address{% else %}Adres{% endif %}</div>
+            <div class="value">{% if lang == 'en' %}Warsaw, Poland{% else %}Warszawa{% endif %}</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+          <div class="contact-detail-text">
+            <div class="label">NIP</div>
+            <div class="value">9522052839</div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438500775!2d20.92111!3d52.233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1s{{ lang }}!2s{{ lang }}!4v1700000000000!5m2!1s{{ lang }}!2s{{ lang }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- ----- Prawa kolumna: formularz mailto ----- -->
+      <form class="contact-form"
+            action="mailto:kancelaria@adwokatmodzelewski.pl"
+            method="POST"
+            enctype="text/plain">
+        <div class="form-row">
+          <label>
+            <span>{% if lang == 'en' %}First name{% else %}Imię{% endif %}</span>
+            <input type="text" name="{% if lang == 'en' %}First-name{% else %}Imie{% endif %}" required>
+          </label>
+          <label>
+            <span>{% if lang == 'en' %}Last name{% else %}Nazwisko{% endif %}</span>
+            <input type="text" name="{% if lang == 'en' %}Last-name{% else %}Nazwisko{% endif %}" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Email</span>
+            <input type="email" name="Email" required>
+          </label>
+          <label>
+            <span>{% if lang == 'en' %}Phone{% else %}Telefon{% endif %}</span>
+            <input type="tel" name="{% if lang == 'en' %}Phone{% else %}Telefon{% endif %}">
+          </label>
+        </div>
+        <label>
+          <span>{% if lang == 'en' %}Subject{% else %}Temat{% endif %}</span>
+          <input type="text" name="{% if lang == 'en' %}Subject{% else %}Temat{% endif %}" required>
+        </label>
+        <label>
+          <span>{% if lang == 'en' %}Message{% else %}Wiadomość{% endif %}</span>
+          <textarea name="{% if lang == 'en' %}Message{% else %}Wiadomosc{% endif %}" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="form-submit">
+          {% if lang == 'en' %}Send message{% else %}Wyślij wiadomość{% endif %}
+        </button>
+        <p class="form-note">
+          {% if lang == 'en' %}
+            Submitting opens your email client with the message pre-filled.
+          {% else %}
+            Wysłanie otworzy Twojego klienta pocztowego z gotową wiadomością.
+          {% endif %}
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
