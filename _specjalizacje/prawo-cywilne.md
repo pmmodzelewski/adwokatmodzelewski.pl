@@ -10,7 +10,8 @@ sitemap: false
 robots: noindex
 ---
 
-> Kompleksowa obsługa w postępowaniach cywilnych z zakresu prawa rzeczowego i prawa zobowiązań.
+> Kompleksowa obsługa w postępowaniach cywilnych z zakresu prawa rzeczowego,
+> ochrony dóbr osobistych oraz prawa zobowiązań.
 
 ## Postępowania sporne
 
@@ -30,7 +31,7 @@ Reprezentowałem klientów m. in. w postępowaniach dotyczących:
 -	prawa autorskiego.
 
 
-### Analiza umów
+## Analiza umów
 
 Zajmuję się także przygotowywaniem i analizą umów i innych dokumentów, w szczególności:
 
