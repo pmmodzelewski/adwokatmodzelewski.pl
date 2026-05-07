@@ -47,14 +47,17 @@ Reprezentuję klientów w sprawach dot. m. in.:
 
 ## Doświadczenie
 
-Od kilkunastu lat prowadzę sprawy karne, w tym o znacznym stopniu
-skomplikowania faktycznego i prawnego. Szczególnym przedmiotem mojego
-zainteresowania są sprawy żołnierzy zawodowych i innych funkcjonariuszy
-służb mundurowych — w tym sprawy z zakresu odpowiedzialności karnej
-i dyscyplinarnej.
+Od kilkunastu lat prowadzę sprawy karne, w tym o znacznym stopniu skomplikowania faktycznego i prawnego.
+Szczególnym przedmiotem mojego zainteresowania są sprawy żołnierzy zawodowych i innych funkcjonariuszy
+służb mundurowych — w tym sprawy z zakresu odpowiedzialności karnej i dyscyplinarnej.
 
 ## Jak zacząć współpracę
 
-Zachęcam do kontaktu telefonicznego lub mailowego w celu umówienia
-wstępnej konsultacji. Każda sprawa wymaga indywidualnej analizy stanu
-faktycznego oraz aktualnego stanu postępowania.
+W postępowaniach karnych, szczególnie dotyczących poważniejszych przestępstw, pomoc obrońcy lub pełnomocnika
+już na początkowych etapach jest kluczowa. Profesjonalna obsługa już w trakcie pierwszych czynności procesowych,
+takich jak złożenie zawiadomienia o popełnieniu przestępstwa czy przedstawienie zarzutów może pozytywnie wpłynąć
+na cały przebieg postępowania. Z tego powodu warto zwrócić się o pomoc natychmiastowo.
+
+Zachęcam do kontaktu telefonicznego lub mailowego w celu umówienia wstępnej konsultacji,
+a także w razie potrzeby pilnej interwencji (np. w razie zatrzymania czy przeszukania).
+Każda sprawa wymaga indywidualnej analizy stanu faktycznego oraz aktualnego stanu postępowania.
