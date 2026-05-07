@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'pl' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — Adwokat Piotr Modzelewski</title>
+  <meta name="description" content="{{ page.summary | default: page.title }}">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+
+  {% if page.lang == 'en' %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+    {% if page.lang_alt %}<link rel="alternate" hreflang="pl" href="{{ site.url }}{{ page.lang_alt }}">{% endif %}
+  {% else %}
+    <link rel="alternate" hreflang="pl" href="{{ site.url }}{{ page.url }}">
+    {% if page.lang_alt %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.lang_alt }}">{% endif %}
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+</head>
+<body>
+
+
+<!-- ====================================================================
+     ======================= Sekcja: Nawigacja ==========================
+     ==================================================================== -->
+{% include nav.html %}
+
+
+<!-- ====================================================================
+     ===================== Sekcja: Naglowek specjalizacji ===============
+     ==================================================================== -->
+<section class="spec-hero">
+  <div class="container">
+    <div class="section-label">{% if page.lang == 'en' %}Practice area{% else %}Specjalizacja{% endif %}</div>
+    <h1 class="section-title spec-title">{{ page.title_display | default: page.title }}</h1>
+    <div class="divider"></div>
+  </div>
+</section>
+
+
+<!-- ====================================================================
+     ===================== Sekcja: Trescia + sidebar ====================
+     ==================================================================== -->
+<section class="spec-body">
+  <div class="container spec-grid">
+
+    <!-- ----- Lewa kolumna: SEO copy (Markdown body) ----- -->
+    <div class="spec-copy post-body">
+      {{ content }}
+    </div>
+
+    <!-- ----- Prawa kolumna: aktualnosci tagged tym slugiem ----- -->
+    <aside class="spec-news">
+      <h2 class="spec-news-title">
+        {% if page.lang == 'en' %}Related news{% else %}Powiązane aktualności{% endif %}
+      </h2>
+
+      {% assign tagged = site.posts | where: "lang", page.lang | where: "tag", page.slug | sort: "date" | reverse %}
+      {% if tagged.size == 0 %}
+        <p class="post-list-empty">
+          {% if page.lang == 'en' %}No related news yet.{% else %}Brak powiązanych aktualności.{% endif %}
+        </p>
+      {% else %}
+        <ul class="spec-news-list">
+          {% for item in tagged limit: 10 %}
+            <li>
+              <a href="{{ item.url }}">
+                <span class="date">{{ item.date | date: "%-d.%m.%Y" }}</span>
+                <span class="title">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if tagged.size > 10 %}
+          <a class="spec-news-more" href="{% if page.lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}">
+            {% if page.lang == 'en' %}All news &rarr;{% else %}Wszystkie aktualności &rarr;{% endif %}
+          </a>
+        {% endif %}
+      {% endif %}
+    </aside>
+
+  </div>
+</section>
+
+
+<!-- ====================================================================
+     ======================== Sekcja: Kontakt ===========================
+     ==================================================================== -->
+{% include contact-block.html %}
+
+
+<!-- ====================================================================
+     ========================= Sekcja: Stopka ===========================
+     ==================================================================== -->
+{% include footer.html %}
+
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

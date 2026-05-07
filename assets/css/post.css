@@ -156,3 +156,117 @@
 .pagination a:hover { color: var(--accent); }
 .pagination .current { color: var(--accent); font-weight: 600; }
 .pagination .disabled { color: var(--mid-gray); }
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Strona specjalizacji (dwie kolumny) -----
+   --------------------------------------------------------------------- */
+.spec-hero {
+  padding: 7rem 2rem 0;
+}
+.spec-title {
+  letter-spacing: 0.04em;
+}
+.spec-body {
+  padding: 2rem 2rem 4rem;
+}
+.spec-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.spec-copy {
+  /* dziedziczy style prozy z .post-body (klasa dodana w layoutcie) */
+}
+.spec-news {
+  position: sticky;
+  top: 90px;
+  padding: 1.6rem;
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+}
+.spec-news-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+.spec-news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.spec-news-list li {
+  border-bottom: 1px solid var(--rule);
+}
+.spec-news-list li:last-child {
+  border-bottom: none;
+}
+.spec-news-list a {
+  display: block;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.25s;
+  border: none;
+}
+.spec-news-list a:hover {
+  color: var(--accent);
+}
+.spec-news-list .date {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  margin-bottom: 0.2rem;
+}
+.spec-news-list .title {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.spec-news-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .spec-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .spec-news {
+    position: static;
+  }
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Tag chip (na liscie aktualnosci, na wpisie) -----
+   --------------------------------------------------------------------- */
+.post-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--accent-light);
+  border-radius: 999px;
+  margin-top: 0.4rem;
+  transition: background 0.25s, color 0.25s;
+}
+.post-tag:hover {
+  background: var(--accent);
+  color: var(--white);
+}

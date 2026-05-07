@@ -29,7 +29,15 @@ exclude:
 # Wynikowy URL: /aktualnosci/2026/05/07/slug/
 permalink: /aktualnosci/:year/:month/:day/:slug/
 
-# ----- Domyslny layout / lang dla _posts -----
+# ----- Kolekcje -----
+# _specjalizacje: 6 obszarow praktyki x 2 jezyki = 12 plikow.
+# Permalink ustawiamy w front-matterze kazdego pliku (PL: /specjalizacje/SLUG/,
+# EN: /en/specjalizacje/SLUG/).
+collections:
+  specjalizacje:
+    output: true
+
+# ----- Domyslny layout / lang -----
 defaults:
   - scope:
       path: ""
@@ -37,3 +45,8 @@ defaults:
     values:
       layout: "post"
       lang: "pl"
+  - scope:
+      path: ""
+      type: "specjalizacje"
+    values:
+      layout: "specjalizacja"
