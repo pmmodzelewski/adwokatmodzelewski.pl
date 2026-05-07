@@ -8,6 +8,8 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
   <!-- Wersja angielska tej samej strony -->
   <link rel="alternate" hreflang="pl" href="https://adwokatmodzelewski.pl/">
@@ -129,7 +131,10 @@
       </a>
     </div>
     <div class="hero-photo">
-      <img src="photo.jpg" alt="Adwokat Piotr Modzelewski" loading="eager">
+      <picture>
+        <source srcset="photo.webp" type="image/webp">
+        <img src="photo.jpg" alt="Adwokat Piotr Modzelewski" loading="eager">
+      </picture>
     </div>
   </div>
 </section>

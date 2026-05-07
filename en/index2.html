@@ -17,6 +17,8 @@ robots: noindex
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
   <!-- Polish version of the same page -->
   <link rel="alternate" hreflang="pl" href="https://adwokatmodzelewski.pl/index2.html">
@@ -52,7 +54,10 @@ robots: noindex
       <p class="hero-desc">I represent Clients throughout Poland in litigation matters (criminal, civil, inheritance, family and labour law) and provide comprehensive legal services to professional soldiers and other uniformed services personnel. I also work fluently in English.</p>
     </div>
     <div class="hero-photo">
-      <img src="/photo.jpg" alt="Piotr Modzelewski, Attorney-at-Law" loading="eager">
+      <picture>
+        <source srcset="/photo.webp" type="image/webp">
+        <img src="/photo.jpg" alt="Piotr Modzelewski, Attorney-at-Law" loading="eager">
+      </picture>
     </div>
   </div>
 </section>
