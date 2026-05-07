@@ -4,6 +4,8 @@ date: 2026-05-07
 lang: pl
 summary: "Przykład krótkiego ogłoszenia. Aktualności są zwykle zwięzłe — pojedyncze informacje, daty, terminy."
 lang_alt: /en/aktualnosci/2026/05/07/sample-news/
+sitemap: false
+robots: noindex
 ---
 
 To jest **przykładowa aktualność**.

@@ -4,6 +4,8 @@ date: 2026-05-07
 lang: en
 summary: "A short example showing how a single blog post looks and is authored. Safe to delete once the first real article is added."
 lang_alt: /blog/2026/05/07/przykladowy-wpis/
+sitemap: false
+robots: noindex
 ---
 
 This is a **sample post** showing what a finished blog article looks like.

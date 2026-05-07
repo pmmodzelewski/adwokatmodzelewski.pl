@@ -1,0 +1,4 @@
+Sitemap: https://adwokatmodzelewski.pl/sitemap.xml
+
+User-agent: *
+Allow: /

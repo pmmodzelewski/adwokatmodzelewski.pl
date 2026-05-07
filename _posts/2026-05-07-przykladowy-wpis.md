@@ -4,6 +4,8 @@ date: 2026-05-07
 lang: pl
 summary: "Krótki przykład pokazujący jak wygląda i jak powstaje pojedynczy wpis blogowy. Można go bezpiecznie usunąć po dodaniu pierwszego prawdziwego artykułu."
 lang_alt: /en/blog/2026/05/07/sample-post/
+sitemap: false
+robots: noindex
 ---
 
 To jest **przykładowy wpis**, który pokazuje jak wygląda gotowy artykuł na blogu.

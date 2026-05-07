@@ -4,6 +4,8 @@ date: 2026-05-07
 lang: en
 summary: "An example of a short announcement. News items are usually concise — single pieces of information, dates, deadlines."
 lang_alt: /aktualnosci/2026/05/07/przykladowa-aktualnosc/
+sitemap: false
+robots: noindex
 ---
 
 This is a **sample news item**.

@@ -6,6 +6,8 @@
   <title>{{ page.title }} — Adwokat Piotr Modzelewski</title>
   <meta name="description" content="{{ page.summary | default: page.title }}">
 
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+
   {% if page.lang == 'en' %}
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
     {% if page.lang_alt %}<link rel="alternate" hreflang="pl" href="{{ site.url }}{{ page.lang_alt }}">{% endif %}
