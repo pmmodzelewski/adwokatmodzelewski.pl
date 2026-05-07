@@ -1,0 +1,71 @@
+---
+layout: null
+lang: en
+lang_alt: /aktualnosci/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Piotr Modzelewski, Attorney-at-Law</title>
+  <meta name="description" content="News from the law firm of Piotr Modzelewski — current information, announcements and dates.">
+
+  <link rel="alternate" hreflang="pl" href="https://adwokatmodzelewski.pl/aktualnosci/">
+  <link rel="alternate" hreflang="en" href="https://adwokatmodzelewski.pl/en/aktualnosci/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+</head>
+<body>
+
+
+<!-- ====================================================================
+     ======================= Section: Navigation ========================
+     ==================================================================== -->
+{% include nav.html %}
+
+
+<!-- ====================================================================
+     ========================= Section: News list =======================
+     ==================================================================== -->
+<section class="list-page">
+  <div class="container">
+    <div class="section-label">News</div>
+    <h1 class="section-title">Current information</h1>
+    <div class="divider"></div>
+
+    {% assign items_en = site.aktualnosci | where: "lang", "en" | sort: "date" | reverse %}
+    {% if items_en.size == 0 %}
+      <p class="post-list-empty">No news items to show.</p>
+    {% else %}
+      <ul class="post-list">
+        {% for item in items_en %}
+          <li class="post-list-item">
+            <a href="{{ item.url }}" class="post-link">
+              <div class="post-list-date">{{ item.date | date: "%-d.%m.%Y" }}</div>
+              <h2>{{ item.title }}</h2>
+              {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+
+<!-- ====================================================================
+     ========================= Section: Footer ==========================
+     ==================================================================== -->
+{% include footer.html %}
+
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

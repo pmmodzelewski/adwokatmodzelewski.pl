@@ -1,0 +1,158 @@
+/* =====================================================================
+   Style dla wpisow blogowych i list wpisow
+   (uzywane wspolnie przez Blog i Aktualnosci, PL i EN).
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Pojedynczy wpis (post-page) -----
+   --------------------------------------------------------------------- */
+.post-page {
+  padding: 7rem 2rem 4rem;
+  min-height: 60vh;
+}
+.post-back {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.25s;
+}
+.post-back:hover { color: var(--accent); }
+.post-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+.post-date {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  margin-bottom: 1.6rem;
+}
+.post-body {
+  max-width: 720px;
+}
+.post-body p {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+}
+.post-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin: 2.4rem 0 1rem;
+}
+.post-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 0.8rem;
+}
+.post-body ul, .post-body ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1.4rem;
+  color: var(--text);
+}
+.post-body li { margin-bottom: 0.5rem; }
+.post-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-light);
+  transition: border-color 0.25s;
+}
+.post-body a:hover { border-color: var(--accent); }
+.post-body blockquote {
+  border-left: 2px solid var(--accent-light);
+  padding: 0.4rem 0 0.4rem 1.2rem;
+  margin: 1.4rem 0;
+  color: var(--text-light);
+  font-style: italic;
+}
+.post-body code {
+  font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--light-gray);
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Lista wpisow (blog index, aktualnosci index) -----
+   --------------------------------------------------------------------- */
+.list-page {
+  padding: 7rem 2rem 4rem;
+  min-height: 60vh;
+}
+.post-list {
+  list-style: none;
+  margin-top: 2rem;
+}
+.post-list-item {
+  border-top: 1px solid var(--rule);
+  padding: 1.8rem 0;
+}
+.post-list-item:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.post-list-item a.post-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+}
+.post-list-item .post-list-date {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  margin-bottom: 0.4rem;
+}
+.post-list-item h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  transition: color 0.25s;
+}
+.post-list-item:hover h2 { color: var(--accent); }
+.post-list-item p {
+  font-size: 0.92rem;
+  color: var(--text-light);
+}
+.post-list-empty {
+  margin-top: 2rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Paginacja (przygotowane na przyszlosc) -----
+   --------------------------------------------------------------------- */
+.pagination {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.pagination a, .pagination span {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+}
+.pagination a:hover { color: var(--accent); }
+.pagination .current { color: var(--accent); font-weight: 600; }
+.pagination .disabled { color: var(--mid-gray); }

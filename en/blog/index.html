@@ -1,0 +1,71 @@
+---
+layout: null
+lang: en
+lang_alt: /blog/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Piotr Modzelewski, Attorney-at-Law</title>
+  <meta name="description" content="Blog by Piotr Modzelewski — commentary and analysis on criminal, civil, family, inheritance and labour law, and on matters concerning uniformed services personnel.">
+
+  <link rel="alternate" hreflang="pl" href="https://adwokatmodzelewski.pl/blog/">
+  <link rel="alternate" hreflang="en" href="https://adwokatmodzelewski.pl/en/blog/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+</head>
+<body>
+
+
+<!-- ====================================================================
+     ======================= Section: Navigation ========================
+     ==================================================================== -->
+{% include nav.html %}
+
+
+<!-- ====================================================================
+     ========================= Section: Post list =======================
+     ==================================================================== -->
+<section class="list-page">
+  <div class="container">
+    <div class="section-label">Blog</div>
+    <h1 class="section-title">Commentary and analysis</h1>
+    <div class="divider"></div>
+
+    {% assign posts_en = site.posts | where: "lang", "en" %}
+    {% if posts_en.size == 0 %}
+      <p class="post-list-empty">First posts coming soon.</p>
+    {% else %}
+      <ul class="post-list">
+        {% for post in posts_en %}
+          <li class="post-list-item">
+            <a href="{{ post.url }}" class="post-link">
+              <div class="post-list-date">{{ post.date | date: "%-d.%m.%Y" }}</div>
+              <h2>{{ post.title }}</h2>
+              {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+
+<!-- ====================================================================
+     ========================= Section: Footer ==========================
+     ==================================================================== -->
+{% include footer.html %}
+
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

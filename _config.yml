@@ -1,0 +1,46 @@
+# =====================================================================
+# Jekyll — konfiguracja minimalna
+# ---------------------------------------------------------------------
+# GitHub Pages uruchamia Jekyll automatycznie na pushu.
+# Ta konfiguracja jest celowo minimalna: index.html, /en/, /assets/
+# i pozostale pliki HTML zostaja przepuszczone bez zmian.
+# Jekyll obsluguje tylko nowe rzeczy: _posts/, _aktualnosci/, _layouts/.
+# =====================================================================
+
+title: "Adwokat Piotr Modzelewski"
+description: "Kancelaria Adwokacka w Warszawie"
+url: "https://adwokatmodzelewski.pl"
+
+# Markdown engine (domyslny dla GitHub Pages)
+markdown: kommonmark
+
+# ----- Co Jekyll ma ignorowac (nie kopiowac do output) -----
+exclude:
+  - CLAUDE.md
+  - README.md
+  - .gitignore
+
+# ----- Permalinki dla wpisow blogowych -----
+# Wynikowy URL: /blog/2026/05/07/slug/
+permalink: /blog/:year/:month/:day/:slug/
+
+# ----- Kolekcje (Aktualnosci jako osobna kolekcja obok _posts) -----
+collections:
+  aktualnosci:
+    output: true
+    permalink: /aktualnosci/:year/:month/:day/:slug/
+
+# ----- Domyslny layout dla wpisow blogowych i aktualnosci -----
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "pl"
+  - scope:
+      path: ""
+      type: "aktualnosci"
+    values:
+      layout: "post"
+      lang: "pl"

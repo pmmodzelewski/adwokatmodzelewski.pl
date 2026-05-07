@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'pl' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — Adwokat Piotr Modzelewski</title>
+  <meta name="description" content="{{ page.summary | default: page.title }}">
+
+  {% if page.lang == 'en' %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+    {% if page.lang_alt %}<link rel="alternate" hreflang="pl" href="{{ site.url }}{{ page.lang_alt }}">{% endif %}
+  {% else %}
+    <link rel="alternate" hreflang="pl" href="{{ site.url }}{{ page.url }}">
+    {% if page.lang_alt %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.lang_alt }}">{% endif %}
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+</head>
+<body>
+
+
+<!-- ====================================================================
+     ======================= Sekcja: Nawigacja ==========================
+     ==================================================================== -->
+{% include nav.html %}
+
+
+<!-- ====================================================================
+     ======================== Sekcja: Wpis ==============================
+     ==================================================================== -->
+<article class="post-page">
+  <div class="container">
+    <a href="{% if page.collection == 'aktualnosci' %}{% if page.lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}{% else %}{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}{% endif %}" class="post-back">
+      {% if page.lang == 'en' %}&larr; Back to list{% else %}&larr; Wróć do listy{% endif %}
+    </a>
+    <div class="section-label">
+      {% if page.collection == 'aktualnosci' %}
+        {% if page.lang == 'en' %}News{% else %}Aktualności{% endif %}
+      {% else %}
+        Blog
+      {% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-date">{{ page.date | date: "%-d.%m.%Y" }}</p>
+    <div class="divider"></div>
+    <div class="post-body">
+      {{ content }}
+    </div>
+  </div>
+</article>
+
+
+<!-- ====================================================================
+     ========================= Sekcja: Stopka ===========================
+     ==================================================================== -->
+{% include footer.html %}
+
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

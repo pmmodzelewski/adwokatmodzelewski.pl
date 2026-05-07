@@ -1,0 +1,43 @@
+{%- comment -%}
+  Wspolny komponent nawigacji dla podstron Jekyll (post, lista wpisow).
+  Gorny index.html / en/index.html maja swoja wlasna kopie nawigacji
+  zeby pozostac czystym HTML bez Liquid.
+  Dwa argumenty:
+    page.lang     — 'pl' lub 'en' (z front-matter strony)
+    page.lang_alt — opcjonalny URL do drugiej wersji jezykowej
+{%- endcomment -%}
+{%- assign lang = page.lang | default: 'pl' -%}
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="nav-logo">Piotr <span>Modzelewski</span></a>
+    <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      {% if lang == 'en' %}
+        <li><a href="/en/#about">About</a></li>
+        <li><a href="/en/#practice-areas">Practice areas</a></li>
+        <li><a href="/en/blog/">Blog</a></li>
+        <li><a href="/en/aktualnosci/">News</a></li>
+      {% else %}
+        <li><a href="/#o-mnie">O mnie</a></li>
+        <li><a href="/#specjalizacje">Specjalizacje</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/aktualnosci/">Aktualności</a></li>
+      {% endif %}
+      <li>
+        <span class="lang-switch">
+          {% if lang == 'en' %}
+            <a href="{{ page.lang_alt | default: '/' }}">PL</a>
+            <span class="sep">/</span>
+            <a href="{{ page.url }}" class="active" aria-current="page">EN</a>
+          {% else %}
+            <a href="{{ page.url }}" class="active" aria-current="page">PL</a>
+            <span class="sep">/</span>
+            <a href="{{ page.lang_alt | default: '/en/' }}">EN</a>
+          {% endif %}
+        </span>
+      </li>
+    </ul>
+  </div>
+</nav>
