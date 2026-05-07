@@ -1,0 +1,9 @@
+# Local instructions for AI assistants — not part of the published site
+CLAUDE.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

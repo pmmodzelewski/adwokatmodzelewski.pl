@@ -1,0 +1,372 @@
+/* =====================================================================
+   Adwokat Piotr Modzelewski — main stylesheet
+   ---------------------------------------------------------------------
+   Plik podzielony na sekcje. Każda sekcja zaczyna się od dużego
+   komentarza w stylu  /* ----- Sekcja XYZ ----- *\/  — szukaj nazwy
+   sekcji aby szybko znaleźć odpowiedni fragment.
+   ===================================================================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Zmienne (kolory, czcionki) -----
+   Zmień te wartości aby zmienić wygląd całej strony.
+   --------------------------------------------------------------------- */
+:root {
+  --white: #ffffff;
+  --off-white: #fafafa;
+  --light-gray: #f2f2f0;
+  --mid-gray: #b0aea8;
+  --text: #2a2a28;
+  --text-light: #5c5c58;
+  --accent: #8b7d6b;
+  --accent-light: #c4b9a8;
+  --rule: #e0ddd8;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Nunito Sans', Helvetica, Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Nawigacja (górne menu) -----
+   --------------------------------------------------------------------- */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2rem; height: 64px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 600; font-size: 1.15rem;
+  color: var(--text); text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 0.78rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--text-light); text-decoration: none;
+  transition: color 0.25s;
+}
+.nav-links a:hover { color: var(--text); }
+
+/* Przełącznik języka PL / EN */
+.lang-switch {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.lang-switch a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.2rem 0.1rem;
+  transition: color 0.25s;
+}
+.lang-switch a:hover { color: var(--text); }
+.lang-switch a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+.lang-switch .sep { color: var(--mid-gray); }
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Hero (ekran powitalny) -----
+   --------------------------------------------------------------------- */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 100px 2rem 60px;
+}
+.hero-grid {
+  max-width: 1100px; width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-text { animation: fadeUp 0.8s ease-out both; }
+.hero-label {
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 400; font-style: italic;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+.hero-desc {
+  font-size: 0.95rem; color: var(--text-light);
+  max-width: 520px; margin-bottom: 2.4rem;
+}
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--text); text-decoration: none;
+  padding: 0.9rem 2rem;
+  border: 1px solid var(--text);
+  transition: all 0.3s;
+}
+.hero-cta:hover {
+  background: var(--text); color: var(--white);
+}
+.hero-cta svg { width: 14px; height: 14px; transition: transform 0.3s; }
+.hero-cta:hover svg { transform: translateX(3px); }
+
+.hero-photo {
+  animation: fadeUp 0.8s 0.15s ease-out both;
+  position: relative;
+}
+.hero-photo::before {
+  content: '';
+  position: absolute; top: -12px; left: -12px;
+  width: 100%; height: 100%;
+  border: 1px solid var(--accent-light);
+  z-index: -1;
+}
+.hero-photo img {
+  width: 100%; display: block;
+  filter: grayscale(20%) contrast(1.02);
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Wspólne elementy sekcji (nagłówki, kontener) -----
+   --------------------------------------------------------------------- */
+section { padding: 5rem 2rem; }
+.container { max-width: 1100px; margin: 0 auto; }
+.section-label {
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 500; line-height: 1.25;
+  margin-bottom: 2rem;
+}
+.divider {
+  width: 48px; height: 1px;
+  background: var(--accent-light);
+  margin-bottom: 2rem;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: O mnie -----
+   --------------------------------------------------------------------- */
+.about { background: var(--off-white); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.about-text p {
+  font-size: 0.92rem; color: var(--text-light);
+  margin-bottom: 1.2rem;
+}
+.about-highlights {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.5rem; margin-top: 1rem;
+}
+.highlight {
+  padding: 1.6rem;
+  background: var(--white);
+  border: 1px solid var(--rule);
+}
+.highlight-number {
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+.highlight-label {
+  font-size: 0.75rem; font-weight: 400;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 0.4rem;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Specjalizacje (obszary praktyki) -----
+   --------------------------------------------------------------------- */
+.practice { background: var(--white); }
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-top: 1rem;
+}
+.practice-item {
+  background: var(--white);
+  padding: 2.4rem 2rem;
+  transition: background 0.3s;
+}
+.practice-item:hover { background: var(--off-white); }
+.practice-icon {
+  width: 28px; height: 28px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.practice-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.practice-item p {
+  font-size: 0.82rem; color: var(--text-light);
+  line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Kontakt -----
+   --------------------------------------------------------------------- */
+.contact { background: var(--off-white); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.contact-info p {
+  font-size: 0.92rem; color: var(--text-light);
+  margin-bottom: 1.4rem;
+}
+.contact-detail {
+  display: flex; align-items: flex-start; gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+.contact-detail svg {
+  width: 18px; height: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.contact-detail-text .label {
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--mid-gray);
+}
+.contact-detail-text .value {
+  font-size: 0.95rem; color: var(--text);
+  margin-top: 0.2rem;
+}
+.contact-detail-text a {
+  color: var(--text); text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.25s;
+}
+.contact-detail-text a:hover { border-color: var(--accent); }
+.contact-map {
+  background: var(--light-gray);
+  min-height: 320px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--rule);
+  overflow: hidden;
+}
+.contact-map iframe {
+  width: 100%; height: 100%; min-height: 320px;
+  border: 0; filter: grayscale(100%) contrast(1.05);
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Stopka -----
+   --------------------------------------------------------------------- */
+footer {
+  padding: 2.4rem 2rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 0.75rem; color: var(--mid-gray);
+  letter-spacing: 0.04em;
+}
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Animacje -----
+   --------------------------------------------------------------------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: Wersje mobilne (responsywność) -----
+   --------------------------------------------------------------------- */
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.mobile-toggle svg { width: 22px; height: 22px; color: var(--text); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+  .hero-photo { max-width: 300px; margin: 0 auto; order: -1; }
+  .hero-desc { margin: 0 auto 2.4rem; }
+  .hero-cta { margin: 0 auto; }
+  .about-grid { grid-template-columns: 1fr; }
+  .practice-list { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .mobile-toggle { display: block; }
+  .nav-links {
+    display: none; flex-direction: column; gap: 0;
+    position: absolute; top: 64px; left: 0; right: 0;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+    padding: 1rem 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 0.7rem 2rem; display: block; }
+  .nav-links .lang-switch { padding: 0.7rem 2rem; }
+  .practice-list { grid-template-columns: 1fr; }
+  .about-highlights { grid-template-columns: 1fr 1fr; }
+  section { padding: 3.5rem 1.5rem; }
+}
