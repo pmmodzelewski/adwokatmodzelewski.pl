@@ -3,7 +3,7 @@ lang: pl
 slug: prawo-karne
 title: "Prawo karne"
 title_display: "PRAWO KARNE"
-summary: "Obrona w sprawach karnych, wykroczeniowych i karnoskarbowych. Reprezentacja Pokrzywdzonych i Oskarżycieli posiłkowych oraz prywatnych."
+summary: "Obrona w sprawach karnych, wykroczeniowych i karnoskarbowych. Reprezentacja Pokrzywdzonych i Oskarżycieli posiłkowych oraz prywatnych - Warszawa i cała Polska"
 permalink: /specjalizacje/prawo-karne/
 lang_alt: /en/specjalizacje/criminal-law/
 sitemap: false
@@ -11,6 +11,7 @@ robots: noindex
 ---
 
 > Kompleksowa obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
+> Obrona oraz występowanie w charakterze pełnomocnika.
 
 ## Czym się zajmuję w sprawach karnych
 
@@ -22,6 +23,7 @@ Podejmuję się reprezentacji Klientów we wszelkich rodzajach spraw karnych, st
 -	Sądem Najwyższym (kasacja oraz postępowanie w II instancji w sprawach wojskowych).
 
 Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, Oskarżyciela posiłkowego lub Oskarżyciela prywatnego.
+Reprezentujemy kleintów przede wszystkim w Warszawie i okolicznych miejscowościach, ale przyjmujemy takżę sprawy z terytorium całej Polski.
 
 ## Zakres usług
 
