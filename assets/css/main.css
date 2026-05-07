@@ -96,6 +96,80 @@ nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
 
 
 /* ---------------------------------------------------------------------
+   ----- Sekcja: Dropdown w nawigacji (Specjalizacje) -----
+   --------------------------------------------------------------------- */
+.nav-links .has-dropdown {
+  position: relative;
+}
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0;
+  transition: color 0.25s;
+}
+.dropdown-toggle:hover,
+.has-dropdown.active .dropdown-toggle {
+  color: var(--text);
+}
+.dropdown-toggle .caret {
+  width: 10px;
+  height: 10px;
+  transition: transform 0.25s;
+}
+.has-dropdown:hover .dropdown-toggle .caret,
+.has-dropdown.open .dropdown-toggle .caret {
+  transform: rotate(180deg);
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  min-width: 220px;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  list-style: none;
+  padding: 0.4rem 0;
+  z-index: 110;
+}
+.has-dropdown:hover > .dropdown-menu,
+.has-dropdown.open > .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li {
+  list-style: none;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-menu a:hover {
+  background: var(--off-white);
+  color: var(--accent);
+}
+
+
+/* ---------------------------------------------------------------------
    ----- Sekcja: Hero (ekran powitalny) -----
    --------------------------------------------------------------------- */
 .hero {
@@ -369,4 +443,33 @@ footer {
   .practice-list { grid-template-columns: 1fr; }
   .about-highlights { grid-template-columns: 1fr 1fr; }
   section { padding: 3.5rem 1.5rem; }
+
+  /* Dropdown mobilny: rozwija sie w linii, nie absolutnie */
+  .nav-links .has-dropdown { width: 100%; }
+  .dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+    text-align: left;
+  }
+  .dropdown-menu {
+    display: none;
+    position: static;
+    transform: none;
+    margin-top: 0;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid var(--rule);
+    background: var(--off-white);
+    width: 100%;
+    padding: 0.4rem 0;
+  }
+  .has-dropdown.open > .dropdown-menu { display: block; }
+  /* na mobile rezygnujemy z otwierania na hover — tylko klik */
+  .has-dropdown:hover > .dropdown-menu { display: none; }
+  .has-dropdown.open > .dropdown-menu { display: block; }
+  .dropdown-menu a {
+    padding: 0.7rem 3rem;
+    font-size: 0.85rem;
+  }
 }

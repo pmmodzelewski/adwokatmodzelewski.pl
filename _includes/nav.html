@@ -1,12 +1,23 @@
 {%- comment -%}
-  Wspolny komponent nawigacji dla podstron Jekyll (post, lista wpisow).
-  Gorny index.html / en/index.html maja swoja wlasna kopie nawigacji
-  zeby pozostac czystym HTML bez Liquid.
-  Dwa argumenty:
+  Wspolny komponent nawigacji dla podstron Jekyll (post, lista wpisow,
+  strona specjalizacji oraz — po dodaniu front-mattera — index2.html).
+  Strona glowna (legacy index.html bez front-mattera) ma swoja kopie nawigacji
+  inline; po launchu redesignu cala nawigacja zyje w tym pliku.
+
+  Zmienne uzywane:
     page.lang     — 'pl' lub 'en' (z front-matter strony)
     page.lang_alt — opcjonalny URL do drugiej wersji jezykowej
+    page.url      — Liquid: aktualny URL strony
+    site.data.tags — _data/tags.yml: mapa slugow specjalizacji
 {%- endcomment -%}
 {%- assign lang = page.lang | default: 'pl' -%}
+{%- assign on_spec = page.url | default: '' -%}
+{%- if lang == 'en' -%}
+  {%- assign spec_active = on_spec | slice: 0, 17 | downcase -%}
+  {%- if spec_active == '/en/specjalizacje/' -%}{%- assign is_spec = true -%}{%- endif -%}
+{%- else -%}
+  {%- if on_spec contains '/specjalizacje/' -%}{%- assign is_spec = true -%}{%- endif -%}
+{%- endif -%}
 <nav id="nav">
   <div class="nav-inner">
     <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="nav-logo">Piotr <span>Modzelewski</span></a>
@@ -16,15 +27,37 @@
     <ul class="nav-links">
       {% if lang == 'en' %}
         <li><a href="/en/#about">About</a></li>
-        <li><a href="/en/#practice-areas">Practice areas</a></li>
-        <li><a href="/en/blog/">Blog</a></li>
-        <li><a href="/en/aktualnosci/">News</a></li>
       {% else %}
         <li><a href="/#o-mnie">O mnie</a></li>
-        <li><a href="/#specjalizacje">Specjalizacje</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/aktualnosci/">Aktualności</a></li>
       {% endif %}
+
+      <!-- ----- Dropdown: Specjalizacje ----- -->
+      <li class="has-dropdown {% if is_spec %}active{% endif %}">
+        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          {% if lang == 'en' %}Practice areas{% else %}Specjalizacje{% endif %}
+          <svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <ul class="dropdown-menu">
+          {% for tag in site.data.tags %}
+            {%- assign pl_slug = tag[0] -%}
+            {%- assign meta = tag[1] -%}
+            {% if lang == 'en' %}
+              <li><a href="/en/specjalizacje/{{ meta.en_slug }}/">{{ meta.en_label }}</a></li>
+            {% else %}
+              <li><a href="/specjalizacje/{{ pl_slug }}/">{{ meta.pl_label }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+
+      <li><a href="{% if lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}">{% if lang == 'en' %}News{% else %}Aktualności{% endif %}</a></li>
+
+      {% if lang == 'en' %}
+        <li><a href="/en/#contact">Contact</a></li>
+      {% else %}
+        <li><a href="/#kontakt">Kontakt</a></li>
+      {% endif %}
+
       <li>
         <span class="lang-switch">
           {% if lang == 'en' %}
