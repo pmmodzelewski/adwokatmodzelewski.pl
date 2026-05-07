@@ -2,6 +2,7 @@
 title: "Sample post — how the blog works"
 date: 2026-05-07
 lang: en
+tag: criminal-law
 summary: "A short example showing how a single blog post looks and is authored. Safe to delete once the first real article is added."
 lang_alt: /aktualnosci/2026/05/07/przykladowy-wpis/
 sitemap: false

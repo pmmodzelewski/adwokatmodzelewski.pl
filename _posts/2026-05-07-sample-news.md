@@ -2,6 +2,7 @@
 title: "Sample news — short announcement"
 date: 2026-05-07
 lang: en
+tag: uniformed-services
 summary: "An example of a short announcement. News items are usually concise — single pieces of information, dates, deadlines."
 lang_alt: /aktualnosci/2026/05/07/przykladowa-aktualnosc/
 sitemap: false

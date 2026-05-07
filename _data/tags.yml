@@ -1,0 +1,40 @@
+# =====================================================================
+# Mapa slugow specjalizacji — jedno zrodlo prawdy.
+# ---------------------------------------------------------------------
+# Klucz = slug PL (uzywany w polu `tag` we wpisach po polsku).
+# Pole en_slug = odpowiednik EN (uzywany jako `tag` we wpisach po angielsku
+# oraz jako slug strony specjalizacji w /en/specjalizacje/...).
+#
+# Zmieniajac/dodajac obszar praktyki — dodaj/zmien wpis tutaj
+# I dodaj/zmien odpowiadajace pliki w _specjalizacje/.
+# =====================================================================
+
+prawo-karne:
+  pl_label: "Prawo karne"
+  en_slug: criminal-law
+  en_label: "Criminal law"
+
+prawo-cywilne:
+  pl_label: "Prawo cywilne"
+  en_slug: civil-law
+  en_label: "Civil law"
+
+prawo-rodzinne:
+  pl_label: "Prawo rodzinne"
+  en_slug: family-law
+  en_label: "Family law"
+
+prawo-spadkowe:
+  pl_label: "Prawo spadkowe"
+  en_slug: inheritance-law
+  en_label: "Inheritance law"
+
+prawo-pracy:
+  pl_label: "Prawo pracy"
+  en_slug: labour-law
+  en_label: "Labour law"
+
+sluzby-mundurowe:
+  pl_label: "Służby mundurowe"
+  en_slug: uniformed-services
+  en_label: "Uniformed services"

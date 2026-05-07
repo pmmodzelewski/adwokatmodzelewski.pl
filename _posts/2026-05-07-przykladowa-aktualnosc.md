@@ -2,6 +2,7 @@
 title: "Przykładowa aktualność — krótkie ogłoszenie"
 date: 2026-05-07
 lang: pl
+tag: sluzby-mundurowe
 summary: "Przykład krótkiego ogłoszenia. Aktualności są zwykle zwięzłe — pojedyncze informacje, daty, terminy."
 lang_alt: /en/aktualnosci/2026/05/07/sample-news/
 sitemap: false
