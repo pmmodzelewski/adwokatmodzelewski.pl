@@ -28,6 +28,9 @@ Reprezentujemy kleintów przede wszystkim w Warszawie i okolicznych miejscowośc
 ## Zakres usług
 
 Reprezentuję klientów w sprawach dot. m. in.:
+
+(podzielić na sekcje tematyczne 5 czy 6 i do każdej po dwa zdania, a nie taka wymienianka)
+
 -	kradzieży;
 -	przywłaszczenia;
 -	rozboju i kradzieży rozbójniczej;
