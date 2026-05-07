@@ -101,6 +101,18 @@ nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
 .nav-links .has-dropdown {
   position: relative;
 }
+/* Niewidzialny mostek pod toggle-em — utrzymuje hover na .has-dropdown
+   gdy kursor przechodzi w dol do menu przez 1rem przerwy. Bez tego
+   menu chowa sie zanim mysz dosiegnie pierwszej pozycji. */
+.has-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 1.2rem;
+  pointer-events: auto;
+}
 .dropdown-toggle {
   background: none;
   border: none;
@@ -618,6 +630,7 @@ footer {
 
   /* Dropdown mobilny: rozwija sie w linii, nie absolutnie */
   .nav-links .has-dropdown { width: 100%; }
+  .has-dropdown::after { display: none; }
   .dropdown-toggle {
     width: 100%;
     justify-content: space-between;
