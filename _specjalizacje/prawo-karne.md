@@ -23,7 +23,7 @@ Podejmuję się reprezentacji Klientów we wszelkich rodzajach spraw karnych, st
 
 Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, Oskarżyciela posiłkowego lub Oskarżyciela prywatnego.
 
-### Zakres usług
+## Zakres usług
 
 Reprezentuję klientów w sprawach dot. m. in.:
 -	kradzieży;
