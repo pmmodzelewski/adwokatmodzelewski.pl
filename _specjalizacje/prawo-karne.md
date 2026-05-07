@@ -14,19 +14,33 @@ robots: noindex
 
 ## Czym się zajmuję w sprawach karnych
 
-Reprezentuję Klientów w sprawach z zakresu prawa karnego materialnego
-i procesowego — zarówno po stronie obrony, jak i po stronie pokrzywdzonych.
-Prowadzę sprawy przed sądami powszechnymi wszystkich instancji oraz przed
-Sądem Najwyższym.
+Podejmuję się reprezentacji Klientów we wszelkich rodzajach spraw karnych, starając się jak najlepiej sprostać ich oczekiwaniom. Występowałem przed:
+•	Sądami Rejonowymi;
+•	Sądami Okręgowymi (jako Sądami I i II instancji);
+•	Sądami Apelacyjnymi;
+•	Sądami Wojskowymi (Garnizonowymi i Okręgowymi);
+•	Sądem Najwyższym (kasacja oraz postępowanie w II instancji w sprawach wojskowych).
+
+Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, Oskarżyciela posiłkowego lub Oskarżyciela prywatnego.
 
 ### Zakres usług
 
-- obrona w postępowaniu przygotowawczym i sądowym,
-- reprezentacja pokrzywdzonych, oskarżycieli posiłkowych i prywatnych,
-- sprawy z zakresu prawa karnego skarbowego,
-- sprawy o wykroczenia,
-- środki zapobiegawcze (tymczasowe aresztowanie, dozór, zakazy),
-- kasacje i wnioski o wznowienie postępowania.
+•	kradzieży;
+•	przywłaszczenia;
+•	rozboju i kradzieży rozbójniczej;
+•	oszustwa;
+•	prowadzenia pojazdów pod wpływem alkoholu lub środków odurzających;
+•	wypadku komunikacyjnego;
+•	posiadania środków odurzających;
+•	przestępstw przeciwko wolności seksualnej;
+•	naruszenia nietykalności cielesnej;
+•	wyrządzenia uszczerbku na zdrowiu;
+•	znęcania się;
+•	zniesławienia i znieważenia;
+•	przestępstw i wykroczeń skarbowych (w szczególności uszczuplenia podatku);
+•	fałszerstwa;
+•	niedopełnienia obowiązków służbowych i przekroczenia uprawnień;
+•	i innych.
 
 ## Doświadczenie
 
