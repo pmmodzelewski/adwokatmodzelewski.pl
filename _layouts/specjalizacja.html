@@ -63,7 +63,19 @@
         {% if page.lang == 'en' %}Related news{% else %}Powiązane aktualności{% endif %}
       </h2>
 
-      {% assign tagged = site.posts | where: "lang", page.lang | where: "tag", page.slug | sort: "date" | reverse %}
+      {%- comment -%}
+        Posty maja `tag` zawsze jako PL slug (canonical). EN strony specjalizacji
+        maja swoj wlasny `slug` po angielsku, wiec mapujemy go na PL przez _data/tags.yml.
+      {%- endcomment -%}
+      {%- assign canonical_tag = page.slug -%}
+      {%- if page.lang == 'en' -%}
+        {%- for entry in site.data.tags -%}
+          {%- if entry[1].en_slug == page.slug -%}
+            {%- assign canonical_tag = entry[0] -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {% assign tagged = site.posts | where: "lang", page.lang | where: "tag", canonical_tag | sort: "date" | reverse %}
       {% if tagged.size == 0 %}
         <p class="post-list-empty">
           {% if page.lang == 'en' %}No related news yet.{% else %}Brak powiązanych aktualności.{% endif %}

@@ -3,6 +3,7 @@ layout: null
 lang: en
 lang_alt: /aktualnosci/
 sitemap: false
+robots: noindex
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -49,17 +50,27 @@ sitemap: false
       <ul class="post-list">
         {% for item in items_en %}
           <li class="post-list-item">
-            <a href="{{ item.url }}" class="post-link">
-              <div class="post-list-date">{{ item.date | date: "%-d.%m.%Y" }}</div>
-              <h2>{{ item.title }}</h2>
-              {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
-            </a>
+            <div class="post-list-date">{{ item.date | date: "%-d.%m.%Y" }}</div>
+            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+            {% if item.tag %}
+              {%- assign meta = site.data.tags[item.tag] -%}
+              {% if meta %}
+                <a class="post-tag" href="/en/specjalizacje/{{ meta.en_slug }}/">{{ meta.en_label }}</a>
+              {% endif %}
+            {% endif %}
           </li>
         {% endfor %}
       </ul>
     {% endif %}
   </div>
 </section>
+
+
+<!-- ====================================================================
+     ======================== Section: Contact ==========================
+     ==================================================================== -->
+{% include contact-block.html %}
 
 
 <!-- ====================================================================
