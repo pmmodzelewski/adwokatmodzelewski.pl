@@ -1,10 +1,10 @@
 # =====================================================================
-# Jekyll — konfiguracja minimalna
+# Jekyll — konfiguracja
 # ---------------------------------------------------------------------
 # GitHub Pages uruchamia Jekyll automatycznie na pushu.
-# Ta konfiguracja jest celowo minimalna: index.html, /en/, /assets/
-# i pozostale pliki HTML zostaja przepuszczone bez zmian.
-# Jekyll obsluguje tylko nowe rzeczy: _posts/, _aktualnosci/, _layouts/.
+# Strony statyczne (assets, photo.jpg, CNAME) sa kopiowane 1:1.
+# Pliki HTML z front-matterem oraz Markdown w _posts / _specjalizacje
+# sa renderowane przez Jekyll/Liquid.
 # =====================================================================
 
 title: "Adwokat Piotr Modzelewski"
@@ -25,27 +25,15 @@ exclude:
   - README.md
   - .gitignore
 
-# ----- Permalinki dla wpisow blogowych -----
-# Wynikowy URL: /blog/2026/05/07/slug/
-permalink: /blog/:year/:month/:day/:slug/
+# ----- Permalinki wpisow (blog i aktualnosci scalone w _posts) -----
+# Wynikowy URL: /aktualnosci/2026/05/07/slug/
+permalink: /aktualnosci/:year/:month/:day/:slug/
 
-# ----- Kolekcje (Aktualnosci jako osobna kolekcja obok _posts) -----
-collections:
-  aktualnosci:
-    output: true
-    permalink: /aktualnosci/:year/:month/:day/:slug/
-
-# ----- Domyslny layout dla wpisow blogowych i aktualnosci -----
+# ----- Domyslny layout / lang dla _posts -----
 defaults:
   - scope:
       path: ""
       type: "posts"
-    values:
-      layout: "post"
-      lang: "pl"
-  - scope:
-      path: ""
-      type: "aktualnosci"
     values:
       layout: "post"
       lang: "pl"

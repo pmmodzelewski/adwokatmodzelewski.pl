@@ -39,15 +39,11 @@
      ==================================================================== -->
 <article class="post-page">
   <div class="container">
-    <a href="{% if page.collection == 'aktualnosci' %}{% if page.lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}{% else %}{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}{% endif %}" class="post-back">
+    <a href="{% if page.lang == 'en' %}/en/aktualnosci/{% else %}/aktualnosci/{% endif %}" class="post-back">
       {% if page.lang == 'en' %}&larr; Back to list{% else %}&larr; Wróć do listy{% endif %}
     </a>
     <div class="section-label">
-      {% if page.collection == 'aktualnosci' %}
-        {% if page.lang == 'en' %}News{% else %}Aktualności{% endif %}
-      {% else %}
-        Blog
-      {% endif %}
+      {% if page.lang == 'en' %}News{% else %}Aktualności{% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-date">{{ page.date | date: "%-d.%m.%Y" }}</p>

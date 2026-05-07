@@ -42,7 +42,7 @@ sitemap: false
     <h1 class="section-title">Current information</h1>
     <div class="divider"></div>
 
-    {% assign items_en = site.aktualnosci | where: "lang", "en" | sort: "date" | reverse %}
+    {% assign items_en = site.posts | where: "lang", "en" | sort: "date" | reverse %}
     {% if items_en.size == 0 %}
       <p class="post-list-empty">No news items to show.</p>
     {% else %}

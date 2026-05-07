@@ -42,7 +42,7 @@ sitemap: false
     <h1 class="section-title">Bieżące informacje</h1>
     <div class="divider"></div>
 
-    {% assign items_pl = site.aktualnosci | where: "lang", "pl" | sort: "date" | reverse %}
+    {% assign items_pl = site.posts | where: "lang", "pl" | sort: "date" | reverse %}
     {% if items_pl.size == 0 %}
       <p class="post-list-empty">Brak aktualności do wyświetlenia.</p>
     {% else %}
