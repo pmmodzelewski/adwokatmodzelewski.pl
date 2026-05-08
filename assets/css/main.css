@@ -406,6 +406,51 @@ a.practice-item:hover h3 {
   transition: color 0.25s;
 }
 
+/* ----- Wariant: piramida (1 + 2 + 3) — uzywany na index2 -----
+   Trzy rzedy o roznej liczbie kafelkow. Sluzby mundurowe jako
+   wyrozniony pierwszy kafelek na szczycie (variant: practice-item-feature).
+   Zachowujemy ten sam efekt 1px ramki przez gap+background trick. */
+.practice-pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-top: 1rem;
+  /* override grid z .practice-list */
+  grid-template-columns: none;
+}
+.practice-row {
+  display: grid;
+  gap: 1px;
+  background: var(--rule);
+}
+.practice-row-1 { grid-template-columns: 1fr; }
+.practice-row-2 { grid-template-columns: repeat(2, 1fr); }
+.practice-row-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* Wyrozniony kafelek na szczycie: wieksze paddingi, ikona wieksza,
+   typografia silniejsza — pyramid feature tile. */
+.practice-item-feature {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.practice-item-feature .practice-icon {
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.practice-item-feature h3 {
+  font-size: 1.5rem;
+}
+.practice-item-feature p {
+  font-size: 0.9rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* ---------------------------------------------------------------------
    ----- Sekcja: Aktualnosci preview na stronie glownej -----
@@ -660,6 +705,9 @@ footer {
   .hero-cta { margin: 0 auto; }
   .about-grid { grid-template-columns: 1fr; }
   .practice-list { grid-template-columns: 1fr 1fr; }
+  /* Piramida na <900px: row-2 zostaje 2-kolumnowy, row-3 collapse'uje
+     do 1 kolumny (zeby uniknac wisiora 2+1). Feature tile juz 1-kolumnowy. */
+  .practice-row-3 { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
   .nav-brand { gap: 1.2rem; margin-right: 0; }
@@ -715,6 +763,7 @@ footer {
   .nav-contact { gap: 0.7rem; }
   .nav-inner { padding: 0 1.5rem; }      /* zgodne z section padding ponizej */
   .practice-list { grid-template-columns: 1fr; }
+  .practice-row-2 { grid-template-columns: 1fr; }
   .about-highlights { grid-template-columns: 1fr 1fr; }
   section { padding: 3.5rem 1.5rem; }
   .contact-form .form-row { grid-template-columns: 1fr; }

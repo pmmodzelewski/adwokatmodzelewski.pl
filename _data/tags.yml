@@ -5,9 +5,18 @@
 # Pole en_slug = odpowiednik EN (uzywany jako `tag` we wpisach po angielsku
 # oraz jako slug strony specjalizacji w /en/specjalizacje/...).
 #
+# Kolejnosc tutaj wyznacza kolejnosc w dropdownie nawigacji oraz
+# w piramidzie kafelkow na stronie glownej. Sluzby mundurowe
+# pierwsze — to wyrozniajaca specjalizacja kancelarii.
+#
 # Zmieniajac/dodajac obszar praktyki — dodaj/zmien wpis tutaj
 # I dodaj/zmien odpowiadajace pliki w _specjalizacje/.
 # =====================================================================
+
+sluzby-mundurowe:
+  pl_label: "Służby mundurowe"
+  en_slug: uniformed-services
+  en_label: "Uniformed services"
 
 prawo-karne:
   pl_label: "Prawo karne"
@@ -19,22 +28,17 @@ prawo-cywilne:
   en_slug: civil-law
   en_label: "Civil law"
 
-prawo-rodzinne:
-  pl_label: "Prawo rodzinne"
-  en_slug: family-law
-  en_label: "Family law"
-
 prawo-spadkowe:
   pl_label: "Prawo spadkowe"
   en_slug: inheritance-law
   en_label: "Inheritance law"
 
+prawo-rodzinne:
+  pl_label: "Prawo rodzinne"
+  en_slug: family-law
+  en_label: "Family law"
+
 prawo-pracy:
   pl_label: "Prawo pracy"
   en_slug: labour-law
   en_label: "Labour law"
-
-sluzby-mundurowe:
-  pl_label: "Służby mundurowe"
-  en_slug: uniformed-services
-  en_label: "Uniformed services"
