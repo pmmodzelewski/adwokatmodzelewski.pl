@@ -641,10 +641,11 @@ footer {
 .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
 .mobile-toggle svg { width: 22px; height: 22px; color: var(--text); }
 
-/* Wezsze desktopy: chowamy najdluzsza etykiete (email),
-   numer telefonu zostaje. */
+/* Wezsze desktopy: chowamy oba labels (telefon + email) razem —
+   zostaja same ikony zeby zachowac symetrie i nie wprowadzac
+   "polowicznego" stanu (jeden tekst + jedna ikona). */
 @media (max-width: 1200px) {
-  .nav-contact-item--email .nav-contact-label { display: none; }
+  .nav-contact-label { display: none; }
   .nav-brand { gap: 1.5rem; }
   .nav-contact { gap: 1rem; }
 }
@@ -658,16 +659,15 @@ footer {
   .practice-list { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
-  /* Tablet: chowamy wszystkie etykiety, zostaja tylko ikony */
-  .nav-contact-label { display: none; }
   .nav-brand { gap: 1.2rem; }
   .nav-contact { gap: 0.9rem; }
 }
 @media (max-width: 640px) {
   .mobile-toggle { display: block; }
-  /* Mobile: chowamy caly blok contact w nawigacji — sa w hamburger menu
-     (sekcja Kontakt) i w stopce. */
-  .nav-contact { display: none; }
+  /* Mobile: kontakt zostaje jako ikony obok logo (klikalne tel:/mailto:).
+     Etykieta i tak schowana od 1200px wzwyz. */
+  .nav-brand { gap: 1rem; }
+  .nav-contact { gap: 0.7rem; }
   .nav-links {
     display: none; flex-direction: column; gap: 0;
     position: absolute; top: 64px; left: 0; right: 0;
