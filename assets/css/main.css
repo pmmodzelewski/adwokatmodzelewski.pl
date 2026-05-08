@@ -713,6 +713,7 @@ footer {
   /* Bardzo waskie ekrany: contact icons jeszcze ciasniej */
   .nav-brand { gap: 1rem; }
   .nav-contact { gap: 0.7rem; }
+  .nav-inner { padding: 0 1.5rem; }      /* zgodne z section padding ponizej */
   .practice-list { grid-template-columns: 1fr; }
   .about-highlights { grid-template-columns: 1fr 1fr; }
   section { padding: 3.5rem 1.5rem; }
