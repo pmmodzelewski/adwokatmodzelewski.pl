@@ -372,6 +372,11 @@ section { padding: 5rem 2rem; }
   background: var(--white);
   padding: 2.4rem 2rem;
   transition: background 0.3s;
+  text-align: center;
+}
+.practice-item .practice-icon {
+  margin-left: auto;
+  margin-right: auto;
 }
 .practice-item:hover { background: var(--off-white); }
 .practice-icon {
