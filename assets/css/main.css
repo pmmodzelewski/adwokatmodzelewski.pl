@@ -105,6 +105,7 @@ nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
   align-items: center;
   gap: 2rem;
   flex-shrink: 0;             /* logo + contact nie kurcza sie */
+  margin-right: 3rem;         /* min. odstep do menu glownego */
 }
 .nav-brand .nav-logo {
   white-space: nowrap;
@@ -650,6 +651,8 @@ footer {
   .nav-contact { gap: 1rem; }
 }
 
+/* Tablet/wezsze desktopy: layout jednokolumnowy; nawigacja przelacza sie
+   na hamburger zeby pasek menu nie kolidowal z blokiem kontaktowym. */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
   .hero-photo { max-width: 300px; margin: 0 auto; order: -1; }
@@ -659,15 +662,9 @@ footer {
   .practice-list { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
-  .nav-brand { gap: 1.2rem; }
+  .nav-brand { gap: 1.2rem; margin-right: 0; }
   .nav-contact { gap: 0.9rem; }
-}
-@media (max-width: 640px) {
   .mobile-toggle { display: block; }
-  /* Mobile: kontakt zostaje jako ikony obok logo (klikalne tel:/mailto:).
-     Etykieta i tak schowana od 1200px wzwyz. */
-  .nav-brand { gap: 1rem; }
-  .nav-contact { gap: 0.7rem; }
   .nav-links {
     display: none; flex-direction: column; gap: 0;
     position: absolute; top: 64px; left: 0; right: 0;
@@ -679,16 +676,9 @@ footer {
   .nav-links.open { display: flex; }
   .nav-links a { padding: 0.7rem 2rem; display: block; }
   .nav-links .lang-switch { padding: 0.7rem 2rem; }
-  .practice-list { grid-template-columns: 1fr; }
-  .about-highlights { grid-template-columns: 1fr 1fr; }
-  section { padding: 3.5rem 1.5rem; }
-  .contact-form .form-row { grid-template-columns: 1fr; }
-  .contact-form { padding: 1.5rem; }
 
-  /* Dropdown mobilny: rozwija sie w linii (push, nie overlap).
-     Toggle ma byc wycentrowany jak pozostale pozycje menu
-     (.nav-links ma align-items: center, wiec <li> dopasowuje sie
-     do tresci i siedzi na srodku osi poziomej). */
+  /* Dropdown specjalizacji w mobile menu: rozwija sie w linii (push).
+     Toggle wycentrowany jak inne pozycje. */
   .has-dropdown::after { display: none; }
   .dropdown-toggle {
     justify-content: center;
@@ -705,18 +695,27 @@ footer {
     border-bottom: 1px solid var(--rule);
     background: var(--off-white);
     width: 100vw;
-    margin-left: calc(50% - 50vw);  /* break out of <li>'s shrunk width */
+    margin-left: calc(50% - 50vw);
     padding: 0.4rem 0;
     text-align: center;
   }
   .has-dropdown.open > .dropdown-menu { display: block; }
-  /* na mobile rezygnujemy z otwierania na hover — tylko klik */
   .has-dropdown:hover > .dropdown-menu { display: none; }
-  .has-dropdown.open > .dropdown-menu { display: block; }
   .dropdown-menu li { list-style: none; }
   .dropdown-menu a {
     padding: 0.7rem 1rem;
     font-size: 0.85rem;
     display: block;
   }
+}
+
+@media (max-width: 640px) {
+  /* Bardzo waskie ekrany: contact icons jeszcze ciasniej */
+  .nav-brand { gap: 1rem; }
+  .nav-contact { gap: 0.7rem; }
+  .practice-list { grid-template-columns: 1fr; }
+  .about-highlights { grid-template-columns: 1fr 1fr; }
+  section { padding: 3.5rem 1.5rem; }
+  .contact-form .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 1.5rem; }
 }
