@@ -20,7 +20,22 @@
 {%- endif -%}
 <nav id="nav">
   <div class="nav-inner">
-    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="nav-logo">Piotr <span>Modzelewski</span></a>
+    <div class="nav-brand">
+      <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="nav-logo">Piotr <span>Modzelewski</span></a>
+
+      <!-- ----- Bezposredni kontakt obok logo: telefon + email ----- -->
+      <div class="nav-contact">
+        <a class="nav-contact-item" href="tel:+48881209300" aria-label="{% if lang == 'en' %}Call: +48 881 209 300{% else %}Zadzwoń: +48 881 209 300{% endif %}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span class="nav-contact-label">+48 881 209 300</span>
+        </a>
+        <a class="nav-contact-item" href="mailto:kancelaria@adwokatmodzelewski.pl" aria-label="Email: kancelaria@adwokatmodzelewski.pl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="nav-contact-label">kancelaria@adwokatmodzelewski.pl</span>
+        </a>
+      </div>
+    </div>
+
     <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>

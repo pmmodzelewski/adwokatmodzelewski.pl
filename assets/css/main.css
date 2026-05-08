@@ -96,6 +96,41 @@ nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
 
 
 /* ---------------------------------------------------------------------
+   ----- Sekcja: Bezposredni kontakt w nawigacji (telefon + email) -----
+   --------------------------------------------------------------------- */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  min-width: 0;     /* pozwala kontentowi sie kurczyc w razie potrzeby */
+}
+.nav-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.nav-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.nav-contact-item:hover {
+  color: var(--accent);
+}
+.nav-contact-item svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+
+/* ---------------------------------------------------------------------
    ----- Sekcja: Dropdown w nawigacji (Specjalizacje) -----
    --------------------------------------------------------------------- */
 .nav-links .has-dropdown {
@@ -608,9 +643,15 @@ footer {
   .practice-list { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
+  /* Tablet: chowamy etykiety, zostaja tylko ikony */
+  .nav-contact-label { display: none; }
+  .nav-contact { gap: 1rem; margin-right: 1rem; }
 }
 @media (max-width: 640px) {
   .mobile-toggle { display: block; }
+  /* Mobile: chowamy caly blok contact w nawigacji — sa w hamburger menu
+     (sekcja Kontakt) i w stopce. */
+  .nav-contact { display: none; }
   .nav-links {
     display: none; flex-direction: column; gap: 0;
     position: absolute; top: 64px; left: 0; right: 0;
