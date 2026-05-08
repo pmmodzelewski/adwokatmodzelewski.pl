@@ -60,4 +60,4 @@ W mojej karierze zajmowałem się wieloma sprawami nietypowymi i precendensowymi
 wyliczenia emerytury należnej funkcjonariuszom Straży Granicznej zajmujących się fizycznym zwalczaniem terroryzmu. Wielokrotnie stawałem przed
 Sądami Wojskowymi (w Warszawie, Gdańsku, Poznaniu, Lublinie czy Wrocławiu), brałem udział w czynnościach Żandarmerii Wojskowej czy raportach
 dyscyplinarnych na terenie Jednostek Wojskowych. Obsługiwałem żołnierzy i funkcjonariuszy niezależnie od historii ich służby, długości stażu czy
-stopnia - od szeregowych, przed podoficerów aż po oficerów starszych i generałów.
+stopnia - od szeregowych, przez podoficerów aż po oficerów.
