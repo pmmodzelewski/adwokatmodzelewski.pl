@@ -727,6 +727,14 @@ footer {
     padding: 1rem 0;
   }
   .nav-links.open { display: flex; }
+  /* W mobile menu wszystkie pozycje sa pelnej szerokosci.
+     Domyslny align-items: center na .nav-links zwijal <li>
+     do szerokosci tresci, przez co dropdown-menu nie mialo
+     prawidlowej referencji szerokosci. Stretch + text-align: center
+     daje ten sam wizualnie efekt (wycentrowany tekst), ale <li>
+     i jego dzieci zajmuja pelna szerokosc kontenera. */
+  .nav-links { align-items: stretch; text-align: center; }
+  .nav-links > li { width: 100%; }
   .nav-links a { padding: 0.7rem 2rem; display: block; }
   .nav-links .lang-switch { padding: 0.7rem 2rem; }
 
@@ -734,6 +742,7 @@ footer {
      Toggle wycentrowany jak inne pozycje. */
   .has-dropdown::after { display: none; }
   .dropdown-toggle {
+    width: 100%;
     justify-content: center;
     padding: 0.7rem 2rem;
   }
@@ -741,20 +750,19 @@ footer {
     display: none;
     position: static;
     transform: none;
-    margin-top: 0;
+    margin: 0;
     box-shadow: none;
     border: none;
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
     background: var(--off-white);
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
     padding: 0.4rem 0;
     text-align: center;
   }
   .has-dropdown.open > .dropdown-menu { display: block; }
   .has-dropdown:hover > .dropdown-menu { display: none; }
-  .dropdown-menu li { list-style: none; }
+  .dropdown-menu li { list-style: none; width: 100%; }
   .dropdown-menu a {
     padding: 0.7rem 1rem;
     font-size: 0.85rem;
