@@ -20,32 +20,32 @@ Wojskowego.
 
 ## Zakres usług
 
-### - Sprawy karne i wykroczeniowe
+### Sprawy karne i wykroczeniowe
 
 Na każdym etapie - od czynności w Żandarmerii Wojskowej, przez Sądy powszechne i wojskowej aż do reprezentacji przed Sądem Najwyższym.
 
-### - Postępowania dyscyplinarne
+### Postępowania dyscyplinarne
 
 Czynności przed rzecznikiem dyscyplinarnym, udział w raporcie dyscyplinarnym, odwołanie.
 
-### - Sprawy dotyczące decyzji i rozkazów personalnych
+### Sprawy dotyczące decyzji i rozkazów personalnych
 
 M. in. dotyczących zwolnienia ze służby czy przeniesienie na inne stanowisko służbowe.
 
-### - Opiniowanie służbowe
+### Opiniowanie służbowe
 
 Analiza opinii, sporządzenie odwołania i reakcja na ich konsekwencje.
 
-### - Sprawy administracyjne
+### Sprawy administracyjne
 
 Świadczenia (w tym mieszkaniowe, rozkłąkowe czy przenosinowe), odprawy, mudnurówki.
 Dodatowo kwestie należności żołnierzy - odpowiedzialność majątkowa czy koszty szkolenia.
 
-### - Emerytury i renty
+### Emerytury i renty
 
 Łącznie z odwołaniami i postępowaniami sądowymi, także w zakresie podwyższenia ich ze względu na inwalidztwo czy szczególne warunki służby.
 
-### - Orzekanie o zdolności do służby 
+### Orzekanie o zdolności do służby 
 
 Sporządzanie odwołań i prowadzenie tych spraw, sporządzanie wniosku o zmianę kategorii zdolności do słuzby wojskowej (zarówno zawodowej jak i czynnej) etc.
 

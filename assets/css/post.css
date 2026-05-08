@@ -52,9 +52,14 @@
 }
 .post-body h3 {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin: 2rem 0 0.8rem;
+}
+.post-body h3::before {
+  content: "— ";
+  color: var(--accent);
+  margin-right: 0.1em;
 }
 .post-body ul, .post-body ol {
   padding-left: 1.4rem;

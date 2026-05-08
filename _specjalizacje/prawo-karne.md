@@ -29,47 +29,47 @@ Reprezentujemy kleintów przede wszystkim w Warszawie i okolicznych miejscowośc
 
 Reprezentuję klientów (m. in.) w sprawach dotyczących przestępstw:
 
-### - Zdrowiu i życiu
+### Zdrowiu i życiu
 
 W tym w sprawach o zabójstwo, wyrządzenie ciężkiego uszczerbku na zdriwiu.
 
-### - Przeciwko mieniu
+### Przeciwko mieniu
 
 M. in. w postępowaniach dotyczącyc kradzieży, przywłaszczenia, rozboju i kradzieży rozbójniczej, oszustwa czy naruszenia miru domowego.
 
-### - Przeciwko bezpieczeństwu w komunikacji
+### Przeciwko bezpieczeństwu w komunikacji
 
 W zakresie spowodowania wypadku komunikacyjnego lub prowadzenia pojazdu pod wpływem alkoholu czy środków odurzających.
 
-### - Przeciwko wolności seksualnej i obyczajności
+### Przeciwko wolności seksualnej i obyczajności
 
 Zarówno dotyczących czynów skierowanych przeciwko tej wolnosći jak i posiadania materiałów, których posiadanie jest zabronione.
 
-### - Przeciwko czci i nietykalności cielesnej
+### Przeciwko czci i nietykalności cielesnej
 
 W sprawach dotyczących zniesławienia czy znieważenia oraz narszenia tej nietykalności.
 
-### - Przeciwko rodzinie i opiece
+### Przeciwko rodzinie i opiece
 
 Zarówno pod kątem niealimentacji, niewłaściwej opieki czy znęcania się.
 
-### - Przeciwko wiarygodności dokumentów
+### Przeciwko wiarygodności dokumentów
 
 W szczególności w zakresie fałszerstwa dokumentów, ich podrabiania i przerabiania oraz posługiwania się dokumentami sfałszowanymi czy z innych powodów nieautentycznymi.
 
-### - Przeciwko działalności instytucji państwowych
+### Przeciwko działalności instytucji państwowych
 
 W sprawach o przekroczenie uprawnień czy niedopełnienie obowiązków.
 
-### - Z zakresu Ustawy o przeciwdziałaniu narkomanii
+### Z zakresu Ustawy o przeciwdziałaniu narkomanii
 
 W zakresie posiadania środków odurzających, a także przestępstw poważniejszych, jak wprowadzanie tych środków do obrodu, handel nimi czy ich wytwarzanie.
 
-### - Żołnierzy zawodowych z części wojskowej Kodeksu karnego
+### Żołnierzy zawodowych z części wojskowej Kodeksu karnego
 
 M. in. dot. dezercji, niewykonania rozkazu, znęcania się nad podwładnymi etc.
 
-### - Skarbowych
+### Skarbowych
 
 Takich jak wystawianie nierzetelnych faktur czy uszczuplenie należności publicznoprawnej.
 
