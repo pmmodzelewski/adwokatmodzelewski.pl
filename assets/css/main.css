@@ -760,8 +760,11 @@ footer {
     padding: 0.4rem 0;
     text-align: center;
   }
-  .has-dropdown.open > .dropdown-menu { display: block; }
+  /* Na mobile rezygnujemy z hover-CSS — tylko klik (toggle .open).
+     Najpierw zerujemy hover-rule, potem ustawiamy regule .open
+     zeby nadpisala (rowna specyficznosc — wygrywa pozniejsza). */
   .has-dropdown:hover > .dropdown-menu { display: none; }
+  .has-dropdown.open > .dropdown-menu { display: block; }
   .dropdown-menu li { list-style: none; width: 100%; }
   .dropdown-menu a {
     padding: 0.7rem 1rem;
