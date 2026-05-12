@@ -8,6 +8,27 @@ permalink: /specjalizacje/prawo-pracy/
 lang_alt: /en/specjalizacje/labour-law/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Jakiego odszkodowania mogę żądać w razie niezgodnego z prawem rozwiązania umowy o pracę?"
+    a: "Można domagać się odszkodowania w wysokości maksymalnie wynagrodzenia za trzy miesiące,
+    jednak nie więcej niż wynagrodzenie za okres wypowiedzenia."
+
+  - q: "Czy to, że otrzymuję niższe wynagrodzenie niż kolega lub koleżanka do dyskryminacja?"
+    a: "Na to pytanie nie sposób jest jednoznacznie odpowiedzieć. Nierówne traktowanie może być
+    dyskryminacją, jeśli opiera się na kryteriach niemerytorycznych, jeśli jednak różne wynagrodzenie
+    to efekt różnic w kompetencjach, doświadczeniu czy innych, istotnych cechach pracownika,
+    jest to dopuszczalne."
+
+  - q: "Czy mogę zostać zwolniona gdy jestem w ciąży?"
+    a: "Kobiety przebywające na zwolnieniu lekarskim w związku z ciążą są chronione przed zwolnieniem za wypowiedzeniem.
+    Dodatkowo, gdyby pracodawca złamał ten zakaz, dysponują one dodatkową ochroną i uprawnieniami. Co istotne,
+    ciąża może być podstawą do cofnięcia skutków oświadczenia o rozwiązaniu umowy za porozumieniem stron, jeśli
+    pracownica dowiedziałą się o swoim stanie już po jego podpisaniu (a w chwili zawierania porozumienia była już w ciąży)."
+
+  - q: "Czy pracodawca musi wprowadzić regulamin pracy i regulamin wynagradzania?"
+    a: "W przypadku mniejszych zakładów pracy, nie jest to konieczne (aczkolwiek może być wskazane,
+    by ujednolicić reguły dotyczące wszystkich zatrudnionych i wprowadzić większą przejrzystość.
+    Jeśli pracodawca zatrudnia co najmniej 50 pracowników, musi wprowadzić regulamin pracy i wynagradzania."
 ---
 
 > Oferuję pomoc prawną zarówno pracownikom, jak i pracodawcom.
