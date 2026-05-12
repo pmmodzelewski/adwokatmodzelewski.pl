@@ -22,6 +22,8 @@ name: Submit URLs to IndexNow
 on:
   push:
     branches: [main]
+  # Manualne uruchomienie z zakladki Actions na GitHubie (przycisk "Run workflow").
+  workflow_dispatch:
 
 jobs:
   ping:
