@@ -10,7 +10,8 @@ sitemap: false
 robots: noindex
 ---
 
-> Kompleksowa obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
+> Pełna obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
+> Od postawiena zarzutów po postępowanie wykonawcze.
 > Obrona oraz występowanie w charakterze pełnomocnika.
 
 ## Czym się zajmuję w sprawach karnych
