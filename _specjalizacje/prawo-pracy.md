@@ -13,7 +13,7 @@ faq:
     a: "Można domagać się odszkodowania w wysokości maksymalnie wynagrodzenia za trzy miesiące,
     jednak nie więcej niż wynagrodzenie za okres wypowiedzenia."
 
-  - q: "Czy to, że otrzymuję niższe wynagrodzenie niż kolega lub koleżanka do dyskryminacja?"
+  - q: "Czy to, że otrzymuję niższe wynagrodzenie niż kolega lub koleżanka to dyskryminacja?"
     a: "Na to pytanie nie sposób jest jednoznacznie odpowiedzieć. Nierówne traktowanie może być
     dyskryminacją, jeśli opiera się na kryteriach niemerytorycznych, jeśli jednak różne wynagrodzenie
     to efekt różnic w kompetencjach, doświadczeniu czy innych, istotnych cechach pracownika,
