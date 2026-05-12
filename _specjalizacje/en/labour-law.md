@@ -8,6 +8,28 @@ permalink: /en/specjalizacje/labour-law/
 lang_alt: /specjalizacje/prawo-pracy/
 sitemap: false
 robots: noindex
+faq:
+  - q: "What compensation can I claim in the event of an unlawful termination of an employment contract?"
+    a: "You may claim compensation of up to the equivalent of three months' salary,
+    but not more than the salary for the notice period."
+
+  - q: "Does the fact that I receive a lower salary than a colleague constitute discrimination?"
+    a: "There is no clear-cut answer to this question. Unequal treatment may constitute
+    discrimination if it is based on non-substantive criteria; however, if the salary difference
+    results from differences in qualifications, experience, or other relevant employee characteristics,
+    it is permissible."
+
+  - q: "Can I be dismissed while I am pregnant?"
+    a: "Women on sick leave related to pregnancy are protected against dismissal with notice.
+    Additionally, if the employer violates this prohibition, they are entitled to additional protection
+    and rights. Importantly, pregnancy may serve as grounds for reversing the legal effects of a mutual
+    termination agreement if the employee learned about her condition only after signing it (while she
+    was already pregnant at the time of concluding the agreement)."
+
+  - q: "Is an employer required to introduce workplace regulations and remuneration regulations?"
+    a: "In smaller workplaces, this is not necessary (although it may be advisable
+    to standardize rules for all employees and increase transparency).
+    If the employer employs at least 50 people, they must introduce workplace and remuneration regulations."
 ---
 
 > I offer legal assistance to both employees and employers.
