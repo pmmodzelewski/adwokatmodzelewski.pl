@@ -10,26 +10,26 @@ sitemap: false
 robots: noindex
 ---
 
-> **Stub copy — to be replaced by the owner before launch.**
+> Family law concerns both issues of relationships between spouses, parents and children,
+> as well as other members of the family. I assist clients in all such matters.
 
-## Practice in family matters
+## Scope of Practice in Family Matters
 
-Family cases require not only legal expertise but also a measure of
-sensitivity. I conduct them with care for the Client's interests and —
-where children are involved — for their wellbeing.
+I have repeatedly assisted clients in a variety of family and guardianship law cases at all levels of jurisdiction and across Poland.
+Through my experience, I understand the expectations of judges adjudicating in Family and Juvenile Divisions, which enables me to prepare appropriately for each case.
+My practice includes in particular:
 
-### Scope of services
+### Scope of Services
 
-- divorce and separation (with or without a finding of fault),
-- alimony (spousal, child),
-- parental authority, place of residence, and contact arrangements,
-- division of marital property,
-- establishment of separation of property,
-- paternity actions (establishment and denial),
-- adoption, guardianship.
+- divorce proceedings (both uncontested and contested);
+- maintenance (alimony) cases (establishment, increase, reduction, and declaration of expiry), both for minor children and other family members;
+- cases concerning contact arrangements or modification of contact arrangements;
+- division of marital property;
+- proceedings concerning parental authority and the place of residence of minor children;
+- proceedings concerning court supervision over the exercise of parental authority;
+- guardianship proceedings and cases involving juveniles.
 
-## Mediation vs. court proceedings
+## Mediation vs Court Proceedings
 
-In every family matter I try to propose the least burdensome path to
-resolution. Where possible — mediation and settlement. Where necessary —
-full, efficient court proceedings.
+In every family case, I seek to propose the least burdensome method of resolving the dispute for the client. Where possible — mediation
+and amicable settlement. Where necessary — full and efficient court proceedings.
