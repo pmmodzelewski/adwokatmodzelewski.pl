@@ -3,7 +3,7 @@ lang: en
 slug: inheritance-law
 title: "Inheritance law"
 title_display: "INHERITANCE LAW"
-summary: "Proceedings for confirmation of inheritance acquisition and division of the estate, claims for the legitime (zachowek), and related matters."
+summary: "Inheritance proceedings — statutory and testamentary succession, division of the estate, forced heirship, and related matters."
 permalink: /en/specjalizacje/inheritance-law/
 lang_alt: /specjalizacje/prawo-spadkowe/
 sitemap: false
