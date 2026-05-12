@@ -24,6 +24,7 @@ exclude:
   - CLAUDE.md
   - README.md
   - .gitignore
+  - FAQ-TEMPLATE.md
 
 # ----- Permalinki wpisow (blog i aktualnosci scalone w _posts) -----
 # Wynikowy URL: /aktualnosci/2026/05/07/slug/

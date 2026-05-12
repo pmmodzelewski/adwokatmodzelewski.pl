@@ -26,6 +26,35 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/post.css">
+
+  {%- comment -%}
+    JSON-LD FAQPage — renderowane tylko gdy strona ma niepuste pole `faq`
+    we front-matter. Format kazdego elementu:
+        faq:
+          - q: "Pytanie..."
+            a: "Odpowiedz..."
+    Google/Bing/ChatGPT/Claude czytaja to jako semantyczna mape pytan-odpowiedzi.
+  {%- endcomment -%}
+  {% if page.faq and page.faq.size > 0 %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for item in page.faq -%}
+      {
+        "@type": "Question",
+        "name": {{ item.q | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ item.a | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
 
@@ -103,6 +132,29 @@
 
   </div>
 </section>
+
+
+<!-- ====================================================================
+     ===================== Sekcja: FAQ (opcjonalna) =====================
+     Renderowana tylko gdy front-matter zawiera pole `faq:` z >= 1 wpisem.
+     Pasujace JSON-LD FAQPage juz wyemitowane w <head>.
+     ==================================================================== -->
+{% if page.faq and page.faq.size > 0 %}
+<section class="spec-faq">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">{% if page.lang == 'en' %}Frequently asked questions{% else %}Najczęściej zadawane pytania{% endif %}</h2>
+    <div class="divider"></div>
+
+    <dl class="faq-list">
+      {% for item in page.faq %}
+        <dt class="faq-question">{{ item.q }}</dt>
+        <dd class="faq-answer">{{ item.a | markdownify }}</dd>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+{% endif %}
 
 
 <!-- ====================================================================

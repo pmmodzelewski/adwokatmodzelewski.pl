@@ -279,3 +279,55 @@
   background: var(--accent);
   color: var(--white);
 }
+
+
+/* ---------------------------------------------------------------------
+   ----- Sekcja: FAQ na stronie specjalizacji -----
+   --------------------------------------------------------------------- */
+.spec-faq {
+  background: var(--off-white);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--rule);
+}
+.faq-list {
+  max-width: 820px;
+  margin-top: 1.5rem;
+}
+.faq-question {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1.8rem;
+  padding-left: 0;
+}
+.faq-question::before {
+  content: "— ";
+  color: var(--accent);
+  margin-right: 0.1em;
+}
+.faq-question:first-child {
+  margin-top: 0;
+}
+.faq-answer {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.faq-answer p {
+  margin: 0 0 0.8rem;
+}
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+.faq-answer a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-light);
+  transition: border-color 0.25s;
+}
+.faq-answer a:hover {
+  border-color: var(--accent);
+}
