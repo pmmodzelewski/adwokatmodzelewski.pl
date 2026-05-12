@@ -1,0 +1,57 @@
+# =====================================================================
+# IndexNow — powiadamia Bing / Yandex / Seznam / Naver o zmianach.
+# ---------------------------------------------------------------------
+# Po kazdym pushu na main:
+#   1. Czekamy 90s zeby GitHub Pages zdazyl zbudowac i opublikowac strone
+#      (jezeli to commit z zawartoscia, nie sama konfiguracja CI).
+#   2. Wysylamy POST do api.indexnow.org z lista URL-i do recrawlu.
+#      Jeden request -> rozglos do wszystkich zaprzyjaznionych engines.
+#
+# Klucz INDEXNOW_KEY zyje w GitHub repo secrets, NIE w kodzie. Plik
+# /e83c34f8d77c48419f0343746c0b5e18.txt w roocie repo serwuje ten sam
+# klucz publicznie — api.indexnow.org sciaga go zeby zweryfikowac
+# wlasnosc domeny przed przyjeciem submissions.
+#
+# Aby zmienic liste URL-i, edytuj sekcje `urlList` ponizej.
+# Submitujemy tylko strony do indeksowania (live homepage, aktualnosci);
+# /index2.html, /specjalizacje/* i fake-posty maja sitemap:false /
+# robots:noindex, wiec nie ma sensu ich submitowac do IndexNow.
+# =====================================================================
+name: Submit URLs to IndexNow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages deploy
+        run: sleep 90
+
+      - name: Submit to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "INDEXNOW_KEY secret not set — skipping submission."
+            exit 0
+          fi
+
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d @- <<EOF
+          {
+            "host": "adwokatmodzelewski.pl",
+            "key": "${INDEXNOW_KEY}",
+            "keyLocation": "https://adwokatmodzelewski.pl/${INDEXNOW_KEY}.txt",
+            "urlList": [
+              "https://adwokatmodzelewski.pl/",
+              "https://adwokatmodzelewski.pl/en/",
+              "https://adwokatmodzelewski.pl/aktualnosci/",
+              "https://adwokatmodzelewski.pl/en/aktualnosci/"
+            ]
+          }
+          EOF
+          echo "(IndexNow submission complete)"
