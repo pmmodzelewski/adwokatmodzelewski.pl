@@ -3,33 +3,40 @@ lang: pl
 slug: prawo-spadkowe
 title: "Prawo spadkowe"
 title_display: "PRAWO SPADKOWE"
-summary: "Postępowania o stwierdzenie nabycia spadku oraz dział spadku, sprawy o zachowek i inne."
+summary: "Postępowania spadkowe - dziedziczenie ustawowe i testamentowe, dział spadku, zachowek i inne"
 permalink: /specjalizacje/prawo-spadkowe/
 lang_alt: /en/specjalizacje/inheritance-law/
 sitemap: false
 robots: noindex
 ---
 
-> **Stub do uzupełnienia.** Właściciel uzupełni docelową treść SEO przed launchem.
+> Profesjonalna pomoc prawna potrzebna jest szczególnie w sytuacji tak trudnej, jak śmierć osoby bliskiej.
+> Szybkie zwrócenie się do profesjonalisty jest wskazane także dlatego, że wiele aspektów prawa spadkowego
+> obwarowane jest terminami.
 
-## Czym się zajmuję w sprawach spadkowych
+## Pomoc prawna w sprawach spadkowych
 
-Sprawy spadkowe to obszar, w którym znajomość procedury często decyduje
-o ostatecznym wyniku. Prowadzę zarówno postępowania niesporne (notarialne
-i sądowe), jak i procesy sporne między spadkobiercami.
+Sprawne poruszanie się w prawie spadkowym wymaga znajomości nie tylko prawa (zarówno w zakresie dziedziczenia
+ustawowego, testamentowego czy regulacji dotyczących skutecsności oświadczenia woli), ale także podstawowej znajomości
+medycyny czy empatii.
 
 ### Zakres usług
 
-- stwierdzenie nabycia spadku (postanowienie sądowe lub akt notarialny),
-- dział spadku — sądowy i umowny,
-- zachowek (dochodzenie i obrona),
-- przyjęcie i odrzucenie spadku, oświadczenia w imieniu małoletnich,
-- testamenty — sporządzanie i podważanie,
-- sprawy o uznanie za niegodnego dziedziczenia,
-- spadki z elementem zagranicznym (jurysdykcja, prawo właściwe).
+Pomagam klientom w szczególności w zakresie:
 
-## Czas i koszty
+- stwierdzenia nabycia spadku (postępowanie sądowe, zarówno niesporne jak i sporne);
+- dział spadku (przed Sądem i w formie umowy);
+- zachowku (ustalanie wysokości, dochodzenie na drodze przedsądowej i sądowej, skutecznośc wydziedziczenia);
+- spraw bardziej skomplikowanych (z udziałem małoletnich dzieci, dalekich krewnych, osób zamieszkujących za granicą);
+- spraw mniej typowych (uznanie za niegodnego dziedziczenia, sprawy o charakterze mięrzynarodowym, odrzucenie spadku).
 
-Postępowania spadkowe potrafią być długotrwałe — szczególnie sprawy
-o dział spadku z udziałem wielu spadkobierców. Już na etapie pierwszej
-konsultacji przedstawiam realistyczne ramy czasowe i kosztowe.
+## Testament
+
+Właściwe dokonanie rozporządzeń swoim majątkiem jeszcze za życia, potrafi nie tylko oszczędzić bliskim wielu problemów,
+ale także gwarantuje spokój ducha i świadomość, że nasza ostatnia wola zostanie spełniona.
+
+## Akt notarialny
+
+Wiele czynności z zakresu prawa spadkowego wymaga pomocy notariusza. Jako adwokat mogę jednak pomóc
+przygotować się do wizyty u niego tak, aby kwestie techniczne związane ze sporządzeniem testamentu,
+aktu poświadczenia dziedziczenia czy działu spadku były tylko formalnością.
