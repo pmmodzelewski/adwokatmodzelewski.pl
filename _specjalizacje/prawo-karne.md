@@ -29,7 +29,7 @@ faq:
 
   - q: "Jak sprawdzić, czy jestem poszukiwany?"
     a: "Krajowy Rejest Karny zawiera co prawda informacje o osobach poszukiwanych listem gończym, ale nie zawsze gdy Policja
-    chciałaby z nami "porozmawiać", zastosuje taki środek. Oznacza to, że aby mieć pewność (lub przynajmniej większą wiedzę)
+    chciałaby z nami porozmawiać, zastosuje taki środek. Oznacza to, że aby mieć pewność (lub przynajmniej większą wiedzę)
     o naszym aktualnym statusie, warto często skontaktować się z jednostkami Policji czy Prokuratury które mogą zajmować się sprawa
     w której bylibyśmy poszukiwani i upewnić się, czy nie oczekują od nas stawiennictwa."
 ---
