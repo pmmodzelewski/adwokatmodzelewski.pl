@@ -8,6 +8,29 @@ permalink: /specjalizacje/prawo-cywilne/
 lang_alt: /en/specjalizacje/civil-law/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Jak prawidłowo sporządzić testament?"
+    a: "Najprostszy testament, własnoręczny (zwany też holograficznym) powinien być sporządzony w całości własnoręcznie
+    i zawierać miejscowość i datę, rozporządzenie (tj. wskazanie kto powinien dziedziczyć) oraz własnoręczny podpis. Co istotne,
+    nie musi (a wręcz nie powinien) zawierać wyliczenia i podziału poszczególnych składników majątku."
+
+  - q: "Czego mogę żądać, gdy ktoś mnie publicznie obraża lub zdyskredytuje?"
+    a: "Taka sytuacja stanowi naruszenie dóbr osobistych - czci, dobrego imienia, reputacji. Można żądać przede wszystkim
+    zaprzestania dalszych naruszeń, a także naprawienia ich skutków - przeprosin. Możliwe jest tez domaganie się finansowego
+    zadośćuczynienia lub wpłaty na cele społeczne."
+
+  - q: "Czy mogę odstąpić od umowy, gdy zakupiony przeze mnie towar jest wadliwy?"
+    a: "Konsument (tj. osoba niebędąca przedsiębiorcą) nabywająca towar jest szeroko chroniona w ramach tzw. rękojmi.
+    Uprawnienia w jej ramach pozwalają żądać obniżenia ceny, naprawienia lub wymiany rzeczy sprzedanej, a w niektórych
+    sytuacjach, także odstąpienia od umowy i żądania zwrotu ceny (w zamian za zwrot zakupionego towaru). Prawidłowe
+    skorzystanie z tych uprawnień może jednak nie zawsze być proste, dlatego warto skonsultować się z prawnikiem."
+
+  - q: "Czy wynajmujący może wymienić zamki w lokalu, gdy przestanę płacić czynsz?"
+    a: "Regulane płacenie czynszu jest obowiązkiem najemcy, tak jak obowiązkiem wynajmującego jest udostępnianie lokalu.
+    Nie oznacza to jednak, że opóźnienia w zapłacie czynszu automatycznie skuktują możliwością eksmisji najemcy. Przeprowadza ją
+    komornik (a więc nie Policja) i wyłącznie w oparciu o tytuł egzekucyjny (prawomocny wyrok Sądu lub akt notarialny). Wymiana zamków
+    stanowiłaby samowolne naruszenie posiadania, które nie byłoby zgodne z prawem i w takiej sytuacji przysługuje najemcy tzw. ochrona
+    posesoryjna."
 ---
 
 > Kompleksowa obsługa w postępowaniach cywilnych z zakresu prawa rzeczowego,
