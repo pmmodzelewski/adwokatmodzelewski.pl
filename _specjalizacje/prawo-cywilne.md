@@ -9,10 +9,11 @@ lang_alt: /en/specjalizacje/civil-law/
 sitemap: false
 robots: noindex
 faq:
-  - q: "Jak prawidłowo sporządzić testament?"
-    a: "Najprostszy testament, własnoręczny (zwany też holograficznym) powinien być sporządzony w całości własnoręcznie
-    i zawierać miejscowość i datę, rozporządzenie (tj. wskazanie kto powinien dziedziczyć) oraz własnoręczny podpis. Co istotne,
-    nie musi (a wręcz nie powinien) zawierać wyliczenia i podziału poszczególnych składników majątku."
+  - q: "Ile trwa zasiedzenie?"
+    a: "Aby stać się właścicielem nieruchomości, nalezy władać nią samoistnie (w taki sposób jak właściciel, dysponować ją dla
+    siebie, opłacać podatki, zarządzać etc.) przez 30 lat (jeśli robimy to w złej wierze, tj. wiemy, że nieruchomość nie nalezy
+    do nas) lub 20 lat (w dobrej wierze, gdy mamy uzasadnione przekonanie, że jestesteśmy prawowitym właścicelem, które jednak
+    nie jest słuszne). Zasiedzenie ruchomości trwa krócej (3 lata), ale możliwe jest tylko w dobrej wierze."
 
   - q: "Czego mogę żądać, gdy ktoś mnie publicznie obraża lub zdyskredytuje?"
     a: "Taka sytuacja stanowi naruszenie dóbr osobistych - czci, dobrego imienia, reputacji. Można żądać przede wszystkim
