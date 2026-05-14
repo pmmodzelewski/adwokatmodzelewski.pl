@@ -8,6 +8,28 @@ permalink: /en/specjalizacje/criminal-law/
 lang_alt: /specjalizacje/prawo-karne/
 sitemap: false
 robots: noindex
+faq:
+  - q: "What compensation can I claim in the event of unlawful termination of an employment contract?"
+    a: "One may claim compensation of up to three months' salary,
+    but not more than the salary for the notice period."
+
+  - q: "Is it discrimination that I receive a lower salary than a colleague?"
+    a: "This question cannot be answered unequivocally. Unequal treatment may constitute
+    discrimination if it is based on non-meritorious criteria; however, if different remuneration
+    results from differences in competencies, experience, or other significant employee characteristics,
+    it is permissible."
+
+  - q: "Can I be dismissed while I am pregnant?"
+    a: "Women on sick leave related to pregnancy are protected against termination with notice.
+    Additionally, if the employer violates this prohibition, they are granted additional protection and rights. Importantly,
+    pregnancy may constitute grounds for revoking the effects of an agreement terminating employment by mutual consent if
+    the employee learned about her condition only after signing it (and was already pregnant at the time of concluding the agreement)."
+
+  - q: "Is the employer required to introduce work regulations and remuneration regulations?"
+    a: "In the case of smaller workplaces, this is not necessary (although it may be advisable
+    to standardize rules applicable to all employees and increase transparency).
+    If the employer employs at least 50 employees, they are required to introduce work and remuneration regulations."
+
 ---
 
 > Comprehensive legal services in misdemeanor, criminal, and fiscal penal cases.
