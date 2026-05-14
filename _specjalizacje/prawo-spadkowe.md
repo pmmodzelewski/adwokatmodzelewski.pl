@@ -8,6 +8,30 @@ permalink: /specjalizacje/prawo-spadkowe/
 lang_alt: /en/specjalizacje/inheritance-law/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Jak prawidłowo sporządzić testament?"
+    a: "Najprostszy testament, własnoręczny (zwany też holograficznym) powinien być sporządzony w całości własnoręcznie
+    i zawierać miejscowość i datę, rozporządzenie (tj. wskazanie kto powinien dziedziczyć) oraz własnoręczny podpis. Co istotne,
+    nie musi (a wręcz nie powinien) zawierać wyliczenia i podziału poszczególnych składników majątku."
+
+  - q: "Czym jest wydziedziczenie?"
+    a: "Wbrew powszechnemu rozumieniu, wydziedziczenie nie oznacza jedynie nieuwzględnienia kogoś w testamencie. Skuteczne wydziedziczenie
+    oznacza pozbawienie danej osoby prawa do zachowku (którego w normalnych warunkach mogłaby się domagać), idzie więc dalej niż tylko
+    niewskazanie danej osoby jako spadkobiercy. Wydziedziczenie wymaga testamentu w formie aktu notarialnego, a także określonych
+    okoliczości faktycznych."
+
+  - q: "Kto może domagać się zachowku?"
+    a: "Zachowku, czyli zapłaty równowartości w pieniądzu cześci spadku mogą domagać się małżonek, zstępni (dzieci, wnuki, prawnuki etc.)
+    oraz rodzice spadkodawcy, którzy zostali pominięci w testamencie lub otrzymali w nim mniejszy niż wynikający z przepisów
+    udział. Zachowku nie mogą skutecznie domagać się osoby wydziedziczone oraz dalsi spadkobiercy ustawowi. Kwestie zachowku
+    i prawa do niego bywają skomplikowane - w razie wątpliwości warto skonsultować sie z adwokatem."
+
+  - q: "Czym jest dobrodziejstwo inwentarza?"
+    a: "Przyjęcie spadku z dobrodziejstwem inwentarza oznacza ograniczenie odpowiedzialności za zobowiązania spadkowe
+    do wartości odziedziczonych aktywów. W praktyce powoduje to, że spadkodawca nigdy nie będzie stratny przyjmując w ten sposób
+    spadek. Nawet jeśli długi spadkowe były wyższe niż wartość tego, co odziedziczono, odpowiedzialność będzie
+    odpowiednio ograniczona. Praktyczne korzystanie z dobrodziejstwa inwentarza w celu ochrony przed wierzycielami
+    wymaga jednak dokładnego rozumienia przepisów i sytuacji prawnej."
 ---
 
 > Profesjonalna pomoc prawna potrzebna jest szczególnie w sytuacji tak trudnej, jak śmierć osoby bliskiej.
