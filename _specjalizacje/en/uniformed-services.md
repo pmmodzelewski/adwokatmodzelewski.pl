@@ -8,6 +8,29 @@ permalink: /en/specjalizacje/uniformed-services/
 lang_alt: /specjalizacje/sluzby-mundurowe/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Can I apply for a change to the decision of the Military Medical Commission?"
+    a: "The simplest answer is yes, you can. If your health condition has changed, either for better or worse, you may apply for a referral to the Commission
+    which will reassess your condition. This may result in a change of your fitness
+    category for military service, both active and professional."
+
+  - q: "How can I appeal a service opinion?"
+    a: "According to established case law, a service opinion is not an administrative decision and therefore is not subject to review by
+    Administrative Courts. This means that the procedure provided by law (usually limited to the immediate superior and
+    their superior) is final – if an unfavorable assessment is upheld after an appeal, no further action can be taken. Importantly, however,
+    personnel decisions issued on the basis of a service opinion which is, in our view, flawed, may be reviewed by Administrative Courts."
+
+  - q: "Is a soldier entitled to overtime pay?"
+    a: "Unfortunately, no. Apart from a few exceptions (including situations involving pregnant female soldiers), the provisions of the
+    Labour Code do not apply to soldiers. Regulations of the Homeland Defence Act clearly state that in the event of service
+    exceeding the normal scope of duties, a soldier may only request time off, not additional pay."
+
+  - q: "What can lead to demotion?"
+    a: "It is reasonable to state that demotion is, for a professional soldier, the most severe disciplinary measure,
+    in many cases even more burdensome than imprisonment. It means not only the loss of military rank (returning to the rank of private),
+    but also dismissal from service and the loss of many privileges (e.g. severance pay, including housing benefits or a military pension).
+    For this reason, demotion should only be imposed for the most serious offences committed in connection with service and resulting in clear disgrace
+    to the uniform. Fortunately, courts (in particular non-military courts) apply it relatively rarely."
 ---
 
 > For many years, I have been providing legal services dedicated to professional soldiers
