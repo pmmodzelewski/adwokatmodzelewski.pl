@@ -8,6 +8,31 @@ permalink: /specjalizacje/prawo-rodzinne/
 lang_alt: /en/specjalizacje/family-law/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Czym jest intercyza?"
+    a: "Intercyza to określenie najczęściej stosowane na umowę ustanawiającą między małżonkami ustrój rozdzielności majątkowej.
+    Zawarcie takiej umowy powoduje, że przestaje istniej (lub nigdy nie powstaje) wspólny majątek małżonków. W efekcie każdy
+    z nich pozostaje właścicielem wszystkiego, co nabywa w trakcie małżeństwa."
+
+  - q: "Jak załatwić kwestie majątkowe w trakcie rozwodu?"
+    a: "Pytanie to oparte jest na zasadniczo błędnym założeniu - mimo, że teoretycznie istnieje taka możliwość, w praktyce
+    prawie nigdy nie zdarza się, by Sąd zajmował się podziałem majątku wspólnego małżonków w postępowaniu rozwodowym.
+    Co istotne, kwestie majątkowa rozstrzygnąć można niezależnie od rozwodu, w osobnym postępowaniu albo nawet
+    przed notariuszem. Łączenie rozwodu i kwestii podziału majątku jest zwykle niewskazane, gdyż dodatkowo komplikuje
+    i tak złożony problem."
+
+  - q: "Jakie alimenty należą mi się na moje dziecko/dzieci?"
+    a: "Zgodnie z obowiązującymi przepisami, wysokość alimentów uzależniona jest od dwóch czynników. Pierwszy z nich to
+    uzasadnione potrzeby małoletniego - dziecko ma prawo żyć na takim samym poziomie jak rodzice (zasada równej stopy
+    życiowej). Zależnie od tego jaki standard życia utrzymuje rodzic zobowiązany do alimentów, takiego może oczekiwać
+    dziecko. Oczywiście rolę grają też specjalne potrzeby (edukacyjne, zdrowotne etc.). Drugi czynnik to sytuacja
+    majątkowa i możliwości zarobkowe zobowiązanego - a więc to ile zarabia lub ile mógłby zarabiać."
+
+  - q: "Czym rożni się władza rodzicielska od kontaktów?"
+    a: "Kluczowe jest by zrozumieć, że władza rodzicielska nie obejmuje prawa do kontaktów. Rodzic pozbawiony władzy rodzicielskiej nadal
+    ma prawo kontaktów z dzieckiem i odwrotnie - niewykonywanie kontaktów nie oznacza jeszcze utraty władzy rodzicielskiej. Władza
+    rodzicielska (piecza) to, co do zasady, prawo podejmowania w imieniu dziecka decyzji, a także decydowania o nim (edukacja,
+    leczenie, wyjazdy zagraniczne etc.), zarząd jego majątkiem i sprawowanie opieki. Kontakty to jedynie wspólne spędzanie czasu."
 ---
 
 > Prawo rodzinne dotyczy zarówno kwesti relacji między małżonkami, rodzicami a dziećmi, a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego typu.
