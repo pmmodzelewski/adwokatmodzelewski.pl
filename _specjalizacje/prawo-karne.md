@@ -8,6 +8,30 @@ permalink: /specjalizacje/prawo-karne/
 lang_alt: /en/specjalizacje/criminal-law/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Co grozi za kradzież? Co grozi za niealimentację? Co grozi za sfałszowanie dokumentu?"
+    a: "Oceniając realne zagrożenie karą w razie popełnienia określonego przestępstwa należy brać pod uwagę
+    nie tylko widełki zawarte w danym artykule kodeksu karnego. Na wymiar kary wpływają także okoliczności obciążające
+    (dotyczące popełnienia czynu czy wcześniejszej karalności sprawcy) oraz łagodzące (w szczególności zachowanie po
+    popełnieniu przestępstwa, pojednanie się z Pokrzywdzonym etc.). Realistyczna ocena zagrożenia karą wymaga zawsze
+    szczegółowej analizy stanu faktycznego sprawy."
+
+  - q: "Co zrobić, gdy padłam/em ofiarą przestępstwa?"
+    a: "Zawiadomienie o popełnieniu przestępstwa złożyć można ustnie lub pisemnie. Obydwie formy mają wady i zalety, jednak
+    już na tym etapie można ułatwić pracę organom ścigania (i przyspieszyć ustalenie i skazanie sprawcy) lub ją utrudnić.
+    Prawodłowe przygotowanie i sformułowanie zawiadomienia (z pomocą profesjonalisty) może bardzo pomóć w sprawnym zakończeniu
+    sprawy."
+
+  - q: "Czy popełniony przeze mnie czyn się przedawnił?"
+    a: "Bieg przedawnienia czynu zabronionego może mieć różną długość, zależną nie tylko od jego charakteru, ale także tego
+    co działo się w sprawie, w szczególności czy wszczęte zostało postępowanie w sprawie. Aby upewnić się, że dane przestępstwo
+    lub wykroczenie się przedawniło, warto szczegółowo przeanalizować sprawę i ocenić ją z pomocą adwokata."
+
+  - q: "Jak sprawdzić, czy jestem poszukiwany?"
+    a: "Krajowy Rejest Karny zawiera co prawda informacje o osobach poszukiwanych listem gończym, ale nie zawsze gdy Policja
+    chciałaby z nami "porozmawiać", zastosuje taki środek. Oznacza to, że aby mieć pewność (lub przynajmniej większą wiedzę)
+    o naszym aktualnym statusie, warto często skontaktować się z jednostkami Policji czy Prokuratury które mogą zajmować się sprawa
+    w której bylibyśmy poszukiwani i upewnić się, czy nie oczekują od nas stawiennictwa."
 ---
 
 > Pełna obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
