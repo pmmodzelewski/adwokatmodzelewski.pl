@@ -8,6 +8,32 @@ permalink: /specjalizacje/sluzby-mundurowe/
 lang_alt: /en/specjalizacje/uniformed-services/
 sitemap: false
 robots: noindex
+faq:
+  - q: "Czy mogę ubiegać się o zmianę orzeczenia Wojskowej Komisji Lekarskiej?"
+    a: Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i nagorsze,
+    możesz starać się o uzyskanie skierowania do Komisji, która ponownie to zbada. Może to skutkować zmianą kategorii
+    zdolności do służby wojskowej - zarówno czynnej, jak i zawodowej."
+
+  - q: "Jak odwołać się od opinii służbowej?"
+    a: "Zgodnie z ustalonym orzecznictwem, opinia służbowa nie jest decyzją administracyjną i jako taka nie podlega
+    ocenie Sądów Administracyjnych. Oznacza to, że ścieżka przewidziana w Ustawie (ograniczająca się zwykle do
+    bezpośredniego przełożonego i jego przełożonego) jest ostateczna - jeśli nieodpowiadająca nam ocena
+    zostanie utrzymana po odwołaniu, nie możemy z tym nic zrobić. Co jednak istotne, decyzje personale wydawane
+    w oparciu o opinię służbową która, naszym zdaniem, jest wadliwa, mogą być oceniane przez Sądy Administracyjne."
+
+  - q: "Czy żołnierzowi należy się wynagrodzenie za nadgodziny?"
+    a: "Niestety nie. Poza nielicznymi wyjątkami (dotyczącymi m. in. sytuacji kobiet-żołnierzy w ciąży, przepisy Kodeksu
+    pracy nie mają zastosowania do sytuacji żołnierzy. Regulacje Ustawy o obronie Ojczyzny jednoznacznie wskazują zaś,
+    że w razie służby przekraczającej zwyczajny wymiar obowiązków, żołnierz może ubiegać się jedynie o czas wolny,
+    nie zaś o dodatkowe wynagrodzenie."
+
+  - q: "Za co grozi degradacja?"
+    a: "Uzasadnione wydaje się stwierdzenie, że degradacja jest, dla żołnierza zawodowego, najsurowszym możliwym środkiem
+    karnym, w wielu sytuacjach bardziej dotkliwym nawet od kary więzienia. Oznacza ona nie tylko utratę stopnia wojskowego
+    (staje się na powrót szeregowym), ale także wydalenie ze służby i utratę wielu przywilejów (np. prawa do odprawy,
+    w tym mieszkaniowej czy emerytury wojskowej). Z tego powodu degradacja powinan być wymierzana jedynie za najpoważniejsze
+    przestępstwa popełnione w związku ze służbą i powodujące jednoznaczną hańbę dla munduru. Szczęśliwie Sądy (w szczególności
+    Sądy powszechne) stosują ją relatywnie rzadko."
 ---
 
 > Od wielu lat zajmuję się świadczeniem usług dedykowanych żołnierzom zawodowym oraz funkcjonariuszom innych służb mundurowych (Policji, Straży Granicznej etc.).
