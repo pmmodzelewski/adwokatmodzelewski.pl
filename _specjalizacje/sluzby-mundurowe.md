@@ -10,7 +10,7 @@ sitemap: false
 robots: noindex
 faq:
   - q: "Czy mogę ubiegać się o zmianę orzeczenia Wojskowej Komisji Lekarskiej?"
-    a: Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i nagorsze,
+    a: "Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i nagorsze,
     możesz starać się o uzyskanie skierowania do Komisji, która ponownie to zbada. Może to skutkować zmianą kategorii
     zdolności do służby wojskowej - zarówno czynnej, jak i zawodowej."
 
