@@ -11,7 +11,7 @@ robots: noindex
 faq:
   - q: "Ile trwa zasiedzenie?"
     a: "Aby stać się właścicielem nieruchomości, nalezy władać nią samoistnie (w taki sposób jak właściciel, dysponować ją dla
-    siebie, opłacać podatki, zarządzać etc.) przez 30 lat (jeśli robimy to w złej wierze, tj. wiemy, że nieruchomość nie nalezy
+    siebie, opłacać podatki, zarządzać itp.) przez 30 lat (jeśli robimy to w złej wierze, tj. wiemy, że nieruchomość nie nalezy
     do nas) lub 20 lat (w dobrej wierze, gdy mamy uzasadnione przekonanie, że jestesteśmy prawowitym właścicelem, które jednak
     nie jest słuszne). Zasiedzenie ruchomości trwa krócej (3 lata), ale możliwe jest tylko w dobrej wierze."
 
