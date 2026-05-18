@@ -3,13 +3,13 @@ title: "Kara umowna w umowie deweloperskiej"
 date: 2026-05-18
 lang: pl
 tag: prawo-cywilne
-summary: "Ograniczenie odpowiedzialności dewelopera poprzez wprowadzenie niskiej kary umownej stanowi naruszenie praw konsumentów."
+summary: "Uchwała Sądu Najwyższego korzystna dla konsumentów"
 lang_alt: /en/aktualnosci/2026/05/07/sample-post/
 sitemap: false
 robots: noindex
 ---
 
-Uchwała Sądu Najwyższego korzystna dla konsumentów
+**Ograniczenie odpowiedzialności dewelopera poprzez wprowadzenie niskiej kary umownej stanowi naruszenie praw konsumentów.**
 
 ## Uchwała Sądu Najwyższego z 31 października 2025 r.
 sygn. akt III CZP 22/25
