@@ -11,7 +11,8 @@ robots: noindex
 
 Uchwała Sądu Najwyższego korzystna dla konsumentów
 
-## Uchwała Sądu Najwyższego z 31 października 2025 r., sygn. akt III CZP 22/25
+## Uchwała Sądu Najwyższego z 31 października 2025 r.
+sygn. akt III CZP 22/25
 
 Wydana w odpowiedzi na zagadnienie prawne podniesione przez Sąd Apelacyjny w
 Warszawie w sprawie Klientów adw. Piotra Modzelewskiego wydał Uchwałę jednoznacznie
