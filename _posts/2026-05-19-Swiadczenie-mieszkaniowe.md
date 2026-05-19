@@ -1,6 +1,6 @@
 ---
 title: "Świadczenie mieszkaniowe a jednorazowa pomoc"
-date: 2026-05-18
+date: 2026-05-19
 lang: pl
 tag: sluzby-mundurowe
 summary: "Brak podstaw do odmowy przyznania świadczenia mieszkaniowego i odprawy mieszkaniowej"
