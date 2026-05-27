@@ -9,7 +9,7 @@ sitemap: false
 robots: noindex
 ---
 
-**Istotną instytucji zachowku jest odpowiedzialność spadkobiercy dziedziczącego na podstawie**
+**Istotą instytucji zachowku jest odpowiedzialność spadkobiercy dziedziczącego na podstawie**
 **testamentu wobec określonych osób, które dziedziczyłyby na podstawie ustawy. Co jednak istotne,**
 **za zachowek subsydiarnie odpowiedzialni mogą być także obdarowani.**
 
