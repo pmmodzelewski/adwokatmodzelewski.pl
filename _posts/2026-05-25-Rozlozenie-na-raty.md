@@ -9,7 +9,7 @@ sitemap: false
 robots: noindex
 ---
 
-**w sytuacji, w której sytuacja osobista Skazanego uniemożliwia mu niezwłoczne wywiązanie się**
+**W sytuacji, w której sytuacja osobista Skazanego uniemożliwia mu niezwłoczne wywiązanie się**
 **z nałożonych na niego obowiązków o charakterze finansowym (grzywna, świadczenie, koszty sądowe)**
 **może on ubiegać się o rozłożenie ich na raty.**
 
