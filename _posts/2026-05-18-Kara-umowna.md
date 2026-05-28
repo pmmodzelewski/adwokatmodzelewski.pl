@@ -4,7 +4,7 @@ date: 2026-05-18
 lang: pl
 tag: prawo-cywilne
 summary: "Uchwała Sądu Najwyższego korzystna dla konsumentów"
-lang_alt: /en/aktualnosci/2026/05/07/sample-post/
+lang_alt: /en/aktualnosci/2026/05/18/contractual-penalty-developer-agreement/
 sitemap: false
 robots: noindex
 ---

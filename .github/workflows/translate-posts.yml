@@ -1,0 +1,88 @@
+# =====================================================================
+# Automatyczne tlumaczenie nowych wpisow PL -> EN
+# ---------------------------------------------------------------------
+# Po pushu na main, ktory dodaje/zmienia pliki w _posts/:
+#   1. Wykrywamy nowo dodane/zmienione pliki _posts/*.md w tym pushu.
+#   2. scripts/translate_post.py tlumaczy te ktore sa PL i nie maja
+#      jeszcze odpowiednika EN (Anthropic API, klucz z sekretu).
+#   3. Otwieramy PR z plikami EN (+ poprawka lang_alt w plikach PL).
+#      Wlasciciel przeglada i scala. Nic nie trafia na zywo bez review.
+#
+# Loop guard: skrypt pomija wpisy PL, ktore maja juz lang_alt wskazujacy
+# na istniejacy plik EN. Po scaleniu PR-a ponowny trigger nic nie robi.
+#
+# Wymaga:
+#   - sekret repo ANTHROPIC_API_KEY
+#   - Settings > Actions > General > Workflow permissions:
+#       "Read and write" + "Allow GitHub Actions to create and approve PRs"
+# Bez sekretu skrypt loguje informacje i konczy bez bledu.
+# =====================================================================
+name: Translate new posts (PL -> EN)
+
+on:
+  push:
+    branches: [main]
+    paths: ['_posts/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2          # potrzebne do diff before/after
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Detect new/changed PL posts
+        id: detect
+        shell: bash
+        run: |
+          set -euo pipefail
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || \
+             [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ]; then
+            # Pierwszy run / reczne odpalenie: bierzemy wszystkie wpisy w _posts/
+            files=$(git ls-files '_posts/*.md' || true)
+          else
+            files=$(git diff --name-only --diff-filter=AM "$before" "$after" -- '_posts/*.md' || true)
+          fi
+          # Spacja-separowana lista do jednej linii
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ *$//')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "Wykryte pliki: $files"
+
+      - name: Translate
+        if: steps.detect.outputs.files != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/translate_post.py ${{ steps.detect.outputs.files }}
+
+      - name: Open Pull Request
+        if: steps.detect.outputs.files != ''
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto-translate/${{ github.sha }}
+          title: "Tłumaczenie EN: nowe wpisy"
+          body: |
+            Angielskie wersje nowych wpisów, do przejrzenia i scalenia.
+
+            - Sprawdź jakość tłumaczenia i poprawność terminów prawnych.
+            - Front-matter (permalink /en/, tag, lang_alt) ustawiany automatycznie.
+            - Możesz edytować pliki w tym PR przed scaleniem.
+          commit-message: "Dodanie angielskich wersji nowych wpisów"
+          labels: translation
+          delete-branch: true
