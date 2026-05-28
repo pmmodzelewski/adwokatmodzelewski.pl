@@ -3,6 +3,7 @@ title: "Świadczenie mieszkaniowe a jednorazowa pomoc"
 date: 2026-05-19
 lang: pl
 tag: sluzby-mundurowe
+lang_alt: /en/aktualnosci/2026/05/19/housing-allowance-and-one-off-financial-assistance/
 summary: "Brak podstaw do odmowy przyznania świadczenia mieszkaniowego i odprawy mieszkaniowej"
 sitemap: false
 robots: noindex
