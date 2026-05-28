@@ -4,7 +4,6 @@ date: 2026-05-19
 lang: pl
 tag: sluzby-mundurowe
 summary: "Brak podstaw do odmowy przyznania świadczenia mieszkaniowego i odprawy mieszkaniowej"
-lang_alt: /en/aktualnosci/2026/05/07/sample-post/
 sitemap: false
 robots: noindex
 ---
