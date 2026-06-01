@@ -26,6 +26,117 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/post.css">
+
+  {%- comment -%}
+    Etykiety i URL-e specjalizacji (kanoniczny PL slug -> EN slug/label przez _data/tags.yml).
+  {%- endcomment -%}
+  {%- if page.lang == 'en' -%}
+    {%- assign home_url = '/en/' -%}
+    {%- assign home_name = 'Home' -%}
+    {%- assign aktualnosci_url = '/en/aktualnosci/' -%}
+    {%- assign aktualnosci_name = 'News' -%}
+  {%- else -%}
+    {%- assign home_url = '/' -%}
+    {%- assign home_name = 'Strona główna' -%}
+    {%- assign aktualnosci_url = '/aktualnosci/' -%}
+    {%- assign aktualnosci_name = 'Aktualności' -%}
+  {%- endif -%}
+  {%- assign spec_meta = site.data.tags[page.tag] -%}
+  {%- if spec_meta -%}
+    {%- if page.lang == 'en' -%}
+      {%- assign spec_url = '/en/specjalizacje/' | append: spec_meta.en_slug | append: '/' -%}
+      {%- assign spec_name = spec_meta.en_label -%}
+    {%- else -%}
+      {%- assign spec_url = '/specjalizacje/' | append: page.tag | append: '/' -%}
+      {%- assign spec_name = spec_meta.pl_label -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%}
+    JSON-LD BreadcrumbList — Home > Aktualnosci > [Specjalizacja] > Wpis.
+    Pozycja specjalizacji obecna tylko gdy post ma `tag` znajdujacy sie
+    w _data/tags.yml.
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": {{ home_name | jsonify }},
+        "item": "{{ site.url }}{{ home_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ aktualnosci_name | jsonify }},
+        "item": "{{ site.url }}{{ aktualnosci_url }}"
+      }{% if spec_meta %},
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ spec_name | jsonify }},
+        "item": "{{ site.url }}{{ spec_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": {{ page.title | jsonify }},
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+      {% else %},
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ page.title | jsonify }},
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+  {%- comment -%}
+    JSON-LD Article — kazdy wpis to Article z autorem, data, naglowkiem.
+    Uprawnia do rich results i pomaga silnikom AI cytowac z atrybucja.
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    {% if page.summary %}"description": {{ page.summary | jsonify }},{% endif %}
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "inLanguage": "{{ page.lang | default: 'pl' }}",
+    "author": {
+      "@type": "Person",
+      "name": "Piotr Modzelewski",
+      "@id": "https://adwokatmodzelewski.pl/#piotr-modzelewski",
+      "url": "https://adwokatmodzelewski.pl/{% if page.lang == 'en' %}en/{% endif %}"
+    },
+    "publisher": {
+      "@type": "LegalService",
+      "name": "{% if page.lang == 'en' %}Piotr Modzelewski, Attorney-at-Law{% else %}Adwokat Piotr Modzelewski — Kancelaria Adwokacka{% endif %}",
+      "url": "https://adwokatmodzelewski.pl/{% if page.lang == 'en' %}en/{% endif %}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://adwokatmodzelewski.pl/assets/favicon-512.png"
+      }
+    },
+    "image": "https://adwokatmodzelewski.pl/og-image.jpg",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    }{% if page.tag and spec_meta %},
+    "about": {
+      "@type": "Thing",
+      "name": {{ spec_name | jsonify }}
+    }{% endif %}
+  }
+  </script>
 </head>
 <body>
 
@@ -49,10 +160,54 @@
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-date">{{ page.date | date: "%-d.%m.%Y" }}</p>
+    {% if page.tag and spec_meta %}
+      <a class="post-tag" href="{{ spec_url }}">{{ spec_name }}</a>
+    {% endif %}
     <div class="divider"></div>
     <div class="post-body">
       {{ content }}
     </div>
+
+    {%- comment -%}
+      Sekcja "Powiazane" — link do strony specjalizacji + do 3 innych wpisow
+      z tym samym tagiem (z tego samego jezyka). Buduje topic cluster i daje
+      wewnetrzne linkowanie istotne dla SEO.
+    {%- endcomment -%}
+    {% if spec_meta %}
+      {%- assign related_posts = site.posts
+            | where: "lang", page.lang
+            | where: "tag", page.tag
+            | sort: "date" | reverse -%}
+      <aside class="post-related">
+        <h2 class="post-related-title">
+          {% if page.lang == 'en' %}Related{% else %}Powiązane{% endif %}
+        </h2>
+        <ul class="post-related-list">
+          <li>
+            <a href="{{ spec_url }}">
+              <span class="post-related-kind">
+                {% if page.lang == 'en' %}Practice area{% else %}Specjalizacja{% endif %}
+              </span>
+              <span class="post-related-name">{{ spec_name }}</span>
+            </a>
+          </li>
+          {% assign shown = 0 %}
+          {% for item in related_posts %}
+            {% if item.url != page.url and shown < 3 %}
+              <li>
+                <a href="{{ item.url }}">
+                  <span class="post-related-kind">
+                    {% if page.lang == 'en' %}Article{% else %}Wpis{% endif %} &middot; {{ item.date | date: "%-d.%m.%Y" }}
+                  </span>
+                  <span class="post-related-name">{{ item.title }}</span>
+                </a>
+              </li>
+              {% assign shown = shown | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+    {% endif %}
   </div>
 </article>
 

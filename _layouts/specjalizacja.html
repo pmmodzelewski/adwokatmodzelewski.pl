@@ -55,6 +55,45 @@
   }
   </script>
   {% endif %}
+
+  {%- comment -%}
+    JSON-LD BreadcrumbList — Google moze pokazac w wynikach jako sciezke
+    nawigacji (Home > Specjalizacje > <Tytul>) zamiast surowego URL-a.
+  {%- endcomment -%}
+  {%- if page.lang == 'en' -%}
+    {%- assign home_url = '/en/' -%}
+    {%- assign home_name = 'Home' -%}
+    {%- assign parent_name = 'Practice areas' -%}
+  {%- else -%}
+    {%- assign home_url = '/' -%}
+    {%- assign home_name = 'Strona główna' -%}
+    {%- assign parent_name = 'Specjalizacje' -%}
+  {%- endif -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": {{ home_name | jsonify }},
+        "item": "{{ site.url }}{{ home_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ parent_name | jsonify }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ page.title | jsonify }},
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
