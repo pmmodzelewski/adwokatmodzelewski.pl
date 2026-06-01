@@ -703,9 +703,13 @@ footer {
 /* Wezsze desktopy: chowamy oba labels (telefon + email) razem —
    zostaja same ikony zeby zachowac symetrie i nie wprowadzac
    "polowicznego" stanu (jeden tekst + jedna ikona). */
-@media (max-width: 1200px) {
+/* Wezsze desktopy: chowamy etykiety telefonu/emaila — zostaja ikony.
+   Granica musi byc na tyle wysoka, by przy widocznych etykietach mial
+   sie cale menu + lang switch bez przycinania prawej krawedzi
+   (~1390px potrzebnych przy pelnym tekscie). */
+@media (max-width: 1400px) {
   .nav-contact-label { display: none; }
-  .nav-brand { gap: 1.5rem; }
+  .nav-brand { gap: 1.5rem; margin-right: 2rem; }
   .nav-contact { gap: 1rem; }
 }
 
