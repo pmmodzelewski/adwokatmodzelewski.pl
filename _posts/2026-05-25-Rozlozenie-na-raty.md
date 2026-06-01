@@ -4,7 +4,6 @@ date: 2026-05-25
 lang: pl
 tag: prawo-karne
 summary: "Większość zobowiązań o charakterze pieniężnym nakładanych w postępowaniu karnym może być rozłożona na raty"
-lang_alt: /en/aktualnosci/2026/05/07/sample-post/
 sitemap: false
 robots: noindex
 ---

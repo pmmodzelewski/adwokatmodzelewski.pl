@@ -4,7 +4,6 @@ date: 2026-05-27
 lang: pl
 tag: prawo-spadkowe
 summary: "Obowiązek zapłaty zachowku dotyczyć może nie tylko spadkobiercy testamentowego, ale także obdarowanego"
-lang_alt: /en/aktualnosci/2026/05/07/sample-post/
 sitemap: false
 robots: noindex
 ---
