@@ -563,6 +563,14 @@ a.practice-item:hover h3 {
   transition: border-color 0.25s;
 }
 .contact-detail-text a:hover { border-color: var(--accent); }
+.contact-detail-text .address-note {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--mid-gray);
+  line-height: 1.45;
+  max-width: 32rem;
+}
 .contact-map {
   background: var(--light-gray);
   min-height: 320px;
