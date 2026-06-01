@@ -6,8 +6,6 @@ title_display: "PRAWO SPADKOWE"
 summary: "Postępowania spadkowe - dziedziczenie ustawowe i testamentowe, dział spadku, zachowek i inne"
 permalink: /specjalizacje/prawo-spadkowe/
 lang_alt: /en/specjalizacje/inheritance-law/
-sitemap: false
-robots: noindex
 faq:
   - q: "Jak prawidłowo sporządzić testament?"
     a: "Najprostszy testament, własnoręczny (zwany też holograficznym) powinien być sporządzony w całości własnoręcznie

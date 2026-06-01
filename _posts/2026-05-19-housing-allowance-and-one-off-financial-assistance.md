@@ -6,8 +6,6 @@ tag: sluzby-mundurowe
 summary: "No grounds exist to refuse the award of a housing allowance or housing severance pay on account of a one-off grant received from the Police."
 permalink: /en/aktualnosci/2026/05/19/housing-allowance-and-one-off-financial-assistance/
 lang_alt: /aktualnosci/2026/05/19/swiadczenie-mieszkaniowe/
-sitemap: false
-robots: noindex
 ---
 
 **The receipt by a soldier, or his or her spouse, of a one-off financial grant from the Police**

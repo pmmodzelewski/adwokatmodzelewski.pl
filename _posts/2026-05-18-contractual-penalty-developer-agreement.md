@@ -6,8 +6,6 @@ tag: prawo-cywilne
 summary: "A Supreme Court resolution favourable to consumers"
 permalink: /en/aktualnosci/2026/05/18/contractual-penalty-developer-agreement/
 lang_alt: /aktualnosci/2026/05/18/kara-umowna/
-sitemap: false
-robots: noindex
 ---
 
 **Limiting a developer's liability by stipulating a low contractual penalty constitutes an infringement of consumer rights.**

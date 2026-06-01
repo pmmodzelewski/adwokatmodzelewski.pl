@@ -1,3 +1,7 @@
+---
+layout: null
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,8 +148,9 @@
   }
   </script>
 
-  <!-- Main stylesheet (../assets/css/main.css) -->
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- Main stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
 </head>
 <body>
 
@@ -153,30 +158,7 @@
 <!-- ====================================================================
      ======================= Section: Navigation ========================
      ==================================================================== -->
-<nav id="nav">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">Piotr <span>Modzelewski</span></a>
-    <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#practice-areas">Practice areas</a></li>
-      <!-- Blog and News pages are live at /en/blog/ and /en/aktualnosci/,
-           but intentionally NOT linked from the menu until official launch. -->
-      <li style="display:none"><a href="/en/blog/">Blog</a></li>
-      <li style="display:none"><a href="/en/aktualnosci/">News</a></li>
-      <li style="display:none"><a href="#contact">Contact</a></li>
-      <li>
-        <span class="lang-switch">
-          <a href="/">PL</a>
-          <span class="sep">/</span>
-          <a href="/en/" class="active" aria-current="page">EN</a>
-        </span>
-      </li>
-    </ul>
-  </div>
-</nav>
+{% include nav.html %}
 
 
 <!-- ====================================================================
@@ -189,15 +171,11 @@
       <h1 class="hero-name">Piotr<br>Modzelewski</h1>
       <p class="hero-title">Attorney-at-Law · Warsaw, Poland</p>
       <p class="hero-desc">I represent Clients throughout Poland in litigation matters (criminal, civil, inheritance, family and labour law) and provide comprehensive legal services to professional soldiers and other uniformed services personnel. I also work fluently in English.</p>
-      <a href="#contact" class="hero-cta" style="display:none">
-        Schedule a consultation
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
     </div>
     <div class="hero-photo">
       <picture>
-        <source srcset="../photo.webp" type="image/webp">
-        <img src="../photo.jpg" alt="Piotr Modzelewski, Attorney-at-Law" loading="eager">
+        <source srcset="/photo.webp" type="image/webp">
+        <img src="/photo.jpg" alt="Piotr Modzelewski, Attorney-at-Law" loading="eager">
       </picture>
     </div>
   </div>
@@ -245,112 +223,84 @@
 
 <!-- ====================================================================
      ===================== Section: Practice areas ======================
+     Clickable tiles — each links to its specialization page.
      ==================================================================== -->
 <section class="practice" id="practice-areas">
   <div class="container reveal">
     <div class="section-label">Practice areas</div>
     <div class="section-title">Areas of practice</div>
     <div class="divider"></div>
-    <div class="practice-list">
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><rect x="9" y="13" width="6" height="8"/><path d="M9 9h1m4 0h1"/></svg>
-        <h3>Criminal law</h3>
-        <p>Defence in criminal, petty-offence and fiscal-criminal cases, as well as representation of injured parties and auxiliary or private prosecutors.</p>
+    <!-- Pyramid: row-1 (1 wide tile), row-2 (2 tiles), row-3 (3 tiles).
+         Uniformed services on top — the firm's signature practice area. -->
+    <div class="practice-list practice-pyramid">
+
+      <div class="practice-row practice-row-1">
+        <a class="practice-item practice-item-feature" href="/en/specjalizacje/uniformed-services/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h3>Uniformed services</h3>
+          <p>All matters concerning professional soldiers and other uniformed services officers (administrative, pension, disciplinary, criminal, etc.).</p>
+        </a>
       </div>
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
-        <h3>Civil law</h3>
-        <p>Payment claims, damages, infringement of personal rights, property law and contract law.</p>
+
+      <div class="practice-row practice-row-2">
+        <a class="practice-item" href="/en/specjalizacje/criminal-law/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><rect x="9" y="13" width="6" height="8"/><path d="M9 9h1m4 0h1"/></svg>
+          <h3>Criminal law</h3>
+          <p>Defence in criminal, petty-offence and fiscal-criminal cases, as well as representation of injured parties and auxiliary or private prosecutors.</p>
+        </a>
+
+        <a class="practice-item" href="/en/specjalizacje/civil-law/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+          <h3>Civil law</h3>
+          <p>Payment claims, damages, infringement of personal rights, property law and contract law.</p>
+        </a>
       </div>
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        <h3>Family law</h3>
-        <p>Representation in divorce, alimony, parental authority, place-of-residence and contact cases, as well as in property matters (division of marital assets).</p>
+
+      <div class="practice-row practice-row-3">
+        <a class="practice-item" href="/en/specjalizacje/inheritance-law/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <h3>Inheritance law</h3>
+          <p>Proceedings for confirmation of inheritance acquisition and division of the estate, claims for the legitime (zachowek) and related matters.</p>
+        </a>
+
+        <a class="practice-item" href="/en/specjalizacje/family-law/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <h3>Family law</h3>
+          <p>Representation in divorce, alimony, parental authority, place-of-residence and contact cases, as well as in property matters (division of marital assets).</p>
+        </a>
+
+        <a class="practice-item" href="/en/specjalizacje/labour-law/">
+          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          <h3>Labour law</h3>
+          <p>Representation of both employees (claims for payment, unlawful termination of employment, work certificates) and employers.</p>
+        </a>
       </div>
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        <h3>Inheritance law</h3>
-        <p>Proceedings for confirmation of inheritance acquisition and division of the estate, claims for the legitime (zachowek) and related matters.</p>
-      </div>
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-        <h3>Labour law</h3>
-        <p>Representation of both employees (claims for payment, unlawful termination of employment, work certificates) and employers.</p>
-      </div>
-      <div class="practice-item">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <h3>Uniformed services</h3>
-        <p>All matters concerning professional soldiers and other uniformed services officers (administrative, pension, disciplinary, criminal, etc.).</p>
-      </div>
+
     </div>
   </div>
 </section>
 
 
 <!-- ====================================================================
-     ======================== Section: Contact ==========================
-     (currently hidden — remove style="display:none" to show)
+     ===================== Section: News preview ========================
      ==================================================================== -->
-<section class="contact" id="contact" style="display:none">
-  <div class="container reveal">
-    <div class="section-label">Contact</div>
-    <div class="section-title">Schedule a meeting</div>
-    <div class="divider"></div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p>You are welcome to get in touch by phone or email to arrange a consultation. The firm is based in Warsaw — meetings are held by prior appointment.</p>
+{% include aktualnosci-preview.html %}
 
-        <div class="contact-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <div class="contact-detail-text">
-            <div class="label">Phone</div>
-            <div class="value"><a href="tel:+48881209300">+48 881 209 300</a></div>
-          </div>
-        </div>
 
-        <div class="contact-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <div class="contact-detail-text">
-            <div class="label">Email</div>
-            <div class="value"><a href="mailto:kancelaria@adwokatmodzelewski.pl">kancelaria@adwokatmodzelewski.pl</a></div>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div class="contact-detail-text">
-            <div class="label">Address</div>
-            <div class="value">
-              ul. Olesińska 21, room 121<br>
-              02-548 Warsaw, Poland
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-map">
-        <iframe
-          src="https://www.google.com/maps?q=ul.+Olesi%C5%84ska+21,+02-548+Warszawa&hl=en&z=16&output=embed"
-          title="Map: Olesińska 21, Warsaw"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ====================================================================
+     ======================== Section: Contact ==========================
+     ==================================================================== -->
+{% include contact-form.html %}
 
 
 <!-- ====================================================================
      ========================= Section: Footer ==========================
      ==================================================================== -->
-<footer>
-  &copy; 2025 Piotr Modzelewski, Attorney-at-Law — Law Firm in Warsaw. All rights reserved.
-</footer>
+{% include footer.html %}
 
 
-<!-- Main script (../assets/js/main.js) -->
-<script src="../assets/js/main.js"></script>
+<!-- Main script -->
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

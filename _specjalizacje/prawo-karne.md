@@ -6,8 +6,6 @@ title_display: "PRAWO KARNE"
 summary: "Obrona w sprawach karnych, wykroczeniowych i karnoskarbowych. Reprezentacja Pokrzywdzonych i Oskarżycieli posiłkowych oraz prywatnych - Warszawa i cała Polska"
 permalink: /specjalizacje/prawo-karne/
 lang_alt: /en/specjalizacje/criminal-law/
-sitemap: false
-robots: noindex
 faq:
   - q: "Co grozi za kradzież? Co grozi za niealimentację? Co grozi za sfałszowanie dokumentu?"
     a: "Oceniając realne zagrożenie karą w razie popełnienia określonego przestępstwa należy brać pod uwagę

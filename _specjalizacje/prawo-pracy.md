@@ -6,8 +6,6 @@ title_display: "PRAWO PRACY"
 summary: "Prawo pracy, zarówno dla zatrudnionych, jak i zatrudniających. Sprawy pracownicze, oraz z zakresu ubezpieczeń społecznych"
 permalink: /specjalizacje/prawo-pracy/
 lang_alt: /en/specjalizacje/labour-law/
-sitemap: false
-robots: noindex
 faq:
   - q: "Jakiego odszkodowania mogę żądać w razie niezgodnego z prawem rozwiązania umowy o pracę?"
     a: "Można domagać się odszkodowania w wysokości maksymalnie wynagrodzenia za trzy miesiące,

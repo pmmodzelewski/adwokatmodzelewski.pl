@@ -6,8 +6,6 @@ title_display: "SŁUŻBY MUNDUROWE"
 summary: "Wszelkie sprawy żołnierzy, Policjantów, Strażników Granicznych, funkcjonariuszy służby więziennej i innych służb mundurowych - w Warszawie i w całej Polsce"
 permalink: /specjalizacje/sluzby-mundurowe/
 lang_alt: /en/specjalizacje/uniformed-services/
-sitemap: false
-robots: noindex
 faq:
   - q: "Czy mogę ubiegać się o zmianę orzeczenia Wojskowej Komisji Lekarskiej?"
     a: "Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i nagorsze,

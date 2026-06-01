@@ -6,8 +6,6 @@ tag: prawo-karne
 summary: "The majority of financial obligations imposed in criminal proceedings may be spread over instalments"
 permalink: /en/aktualnosci/2026/05/25/instalment-arrangements-fines-penal-measures-court-costs/
 lang_alt: /aktualnosci/2026/05/25/rozlozenie-na-raty/
-sitemap: false
-robots: noindex
 ---
 
 **Where a convicted person's personal circumstances prevent them from immediately discharging**

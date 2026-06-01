@@ -6,8 +6,6 @@ title_display: "PRAWO CYWILNE"
 summary: "Sprawy o zapłatę, o odszkodowanie, naruszenie dóbr osobistych, prawo rzeczowe i kontraktowe. Warszawa i cała Polska."
 permalink: /specjalizacje/prawo-cywilne/
 lang_alt: /en/specjalizacje/civil-law/
-sitemap: false
-robots: noindex
 faq:
   - q: "Ile trwa zasiedzenie?"
     a: "Aby stać się właścicielem nieruchomości, nalezy władać nią samoistnie (w taki sposób jak właściciel, dysponować ją dla

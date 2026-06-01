@@ -6,8 +6,6 @@ title_display: "PRAWO RODZINNE"
 summary: "Reprezentacja w sprawach rozwodowych, alimentacyjnych, dotyczących władzy rodzicielskiej, miejsca zamieszkania i kontaktów oraz w sprawach majątkowych."
 permalink: /specjalizacje/prawo-rodzinne/
 lang_alt: /en/specjalizacje/family-law/
-sitemap: false
-robots: noindex
 faq:
   - q: "Czym jest intercyza?"
     a: "Intercyza to określenie najczęściej stosowane na umowę ustanawiającą między małżonkami ustrój rozdzielności majątkowej.

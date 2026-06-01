@@ -6,8 +6,6 @@ title_display: "LABOUR LAW"
 summary: "Labour law services for both employees and employers. Employment-related matters, as well as social security cases."
 permalink: /en/specjalizacje/labour-law/
 lang_alt: /specjalizacje/prawo-pracy/
-sitemap: false
-robots: noindex
 faq:
   - q: "What compensation can I claim in the event of unlawful termination of an employment contract?"
     a: "One may claim compensation of up to three months' salary,

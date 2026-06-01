@@ -6,8 +6,6 @@ title_display: "FAMILY LAW"
 summary: "Representation in divorce, alimony, parental authority, place-of-residence and contact cases, as well as in property matters."
 permalink: /en/specjalizacje/family-law/
 lang_alt: /specjalizacje/prawo-rodzinne/
-sitemap: false
-robots: noindex
 faq:
   - q: "What is a prenuptial agreement?"
     a: "A prenuptial agreement is a term most commonly used for a contract establishing separation of property between spouses.

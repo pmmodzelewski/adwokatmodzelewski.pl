@@ -6,8 +6,6 @@ title_display: "CRIMINAL LAW"
 summary: "Defense in criminal, misdemeanor, and fiscal penal cases. Representation of injured parties as well as auxiliary and private prosecutors — in Warsaw and throughout Poland."
 permalink: /en/specjalizacje/criminal-law/
 lang_alt: /specjalizacje/prawo-karne/
-sitemap: false
-robots: noindex
 faq:
   - q: "What compensation can I claim in the event of unlawful termination of an employment contract?"
     a: "One may claim compensation of up to three months' salary,

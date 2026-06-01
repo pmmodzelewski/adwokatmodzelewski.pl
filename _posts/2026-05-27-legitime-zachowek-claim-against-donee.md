@@ -6,8 +6,6 @@ tag: prawo-spadkowe
 summary: "The obligation to pay the legitime (zachowek) may fall not only on a testamentary heir but also on a donee who received gifts from the deceased."
 permalink: /en/aktualnosci/2026/05/27/legitime-zachowek-claim-against-donee/
 lang_alt: /aktualnosci/2026/05/27/zachowek-od-obdarowanego/
-sitemap: false
-robots: noindex
 ---
 
 **The essence of the institution of the legitime (zachowek) is the liability of a testamentary heir towards certain persons who would otherwise have inherited by operation of law. Crucially, however, donees may also bear subsidiary liability for the legitime.**

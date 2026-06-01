@@ -6,8 +6,6 @@ title_display: "INHERITANCE LAW"
 summary: "Inheritance proceedings — statutory and testamentary succession, division of the estate, forced heirship, and related matters."
 permalink: /en/specjalizacje/inheritance-law/
 lang_alt: /specjalizacje/prawo-spadkowe/
-sitemap: false
-robots: noindex
 faq:
   - q: "How to properly draft a will?"
     a: "The simplest will, handwritten (also called holographic), should be written entirely by hand

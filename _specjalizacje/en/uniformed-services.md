@@ -6,8 +6,6 @@ title_display: "UNIFORMED SERVICES"
 summary: "All matters concerning soldiers, police officers, border guards, prison service officers, and other uniformed services — in Warsaw and throughout Poland."
 permalink: /en/specjalizacje/uniformed-services/
 lang_alt: /specjalizacje/sluzby-mundurowe/
-sitemap: false
-robots: noindex
 faq:
   - q: "Can I apply for a change to the decision of the Military Medical Commission?"
     a: "The simplest answer is yes, you can. If your health condition has changed, either for better or worse, you may apply for a referral to the Commission

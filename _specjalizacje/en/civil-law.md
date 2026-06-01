@@ -6,8 +6,6 @@ title_display: "CIVIL LAW"
 summary: "Cases concerning payment claims, damages, infringement of personal rights, as well as property and contract law. Serving clients in Warsaw and throughout Poland."
 permalink: /en/specjalizacje/civil-law/
 lang_alt: /specjalizacje/prawo-cywilne/
-sitemap: false
-robots: noindex
 faq:
   - q: "How long does acquisitive prescription take?"
     a: "In order to become the owner of real property, one must possess it as an owner (i.e., use it as one’s own, dispose of it for oneself,

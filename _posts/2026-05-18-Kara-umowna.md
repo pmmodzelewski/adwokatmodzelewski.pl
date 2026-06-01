@@ -5,8 +5,6 @@ lang: pl
 tag: prawo-cywilne
 summary: "Uchwała Sądu Najwyższego korzystna dla konsumentów"
 lang_alt: /en/aktualnosci/2026/05/18/contractual-penalty-developer-agreement/
-sitemap: false
-robots: noindex
 ---
 
 **Ograniczenie odpowiedzialności dewelopera poprzez wprowadzenie niskiej kary umownej stanowi naruszenie praw konsumentów.**
