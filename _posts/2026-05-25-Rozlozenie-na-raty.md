@@ -3,6 +3,7 @@ title: "Rozłożenie na raty grzywny, środków karnych i kosztów sądowych"
 date: 2026-05-25
 lang: pl
 tag: prawo-karne
+lang_alt: /en/aktualnosci/2026/05/25/instalment-arrangements-fines-penal-measures-court-costs/
 summary: "Większość zobowiązań o charakterze pieniężnym nakładanych w postępowaniu karnym może być rozłożona na raty"
 sitemap: false
 robots: noindex

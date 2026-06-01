@@ -3,6 +3,7 @@ title: "Zachowek od obdarowanego"
 date: 2026-05-27
 lang: pl
 tag: prawo-spadkowe
+lang_alt: /en/aktualnosci/2026/05/27/legitime-zachowek-claim-against-donee/
 summary: "Obowiązek zapłaty zachowku dotyczyć może nie tylko spadkobiercy testamentowego, ale także obdarowanego"
 sitemap: false
 robots: noindex
