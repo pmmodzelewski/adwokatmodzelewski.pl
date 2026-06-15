@@ -38,9 +38,9 @@ Współpracuję zarówno z pracownikami jak i osobami zatrudnionymi na umowach c
 Moim głównym celem jest zrozumienie potrzeb i oczekiwań klienta, a następnie zaproponowanie i wdrożenie rozwiązań
 które dają największe szanse osiągnięcia przyjętych założeń.
 
-### Zakres usług dla pracowników
+## Zakres usług dla pracowników
 
-## Analizy
+### Analizy
 
 Analizuję dokumenty - umowy o pracę, aneksy, porozumienia dotyczące rozwiązania umowy o pracę czy zmiany warunków zatrudnienia etc.
 
@@ -57,7 +57,7 @@ Występuję w imieniu pracowników w każdym rodzaju spraw z zakresu prawa pracy
 
 Reprezentuję klientów w sporach także na etapie przedsądowym, zarówno w negocjacjach jak i w mediacjach.
 
-### Zakres usług dla ubezpieczonych
+## Zakres usług dla ubezpieczonych
 
 Z prawem pracy i zatrudnieniem ściśle związane są także uprawnienia z zakresu ubezpieczeń społecznych - emerytura, renta,
 wynagrodzenie i świadczenie chorobowe czy wypadkowe.
@@ -68,14 +68,14 @@ oraz w sporach sądowych z nimi. Zajmowałem się między innymi:
 - sprawami dotyczącymi uprawnień związanych z uprawnieniami związanymi z pracą w warunkach szczególnych;
 - sprawami kwestionowania przez Zakład Ubezpieczeń Społęcznych przyznanych uprawnień (nieprawidłowo pobierane wynagrodzenie chorobowe czy macieżyńskie).
 
-### Zakres usług dla pracodawców
+## Zakres usług dla pracodawców
 
-## Druga strona
+### Druga strona
 
 Opisane wyżej sytuacje dotyczą zwykle sporu na linii pracownik-pracodawca. We wszystkich wskazanych rodzajach spraw, w których
 występuję w imieniu pracownika, zastępuję także pracodawców.
 
-## Przygotowywanie dokumentów
+### Przygotowywanie dokumentów
 
 Jednocześnie mam doświadczenie w pracy nad poważniejszymi dokumentami, istotnymi ze strony większego pracodawcy, takimi jak:
 - regulamin pracy;
@@ -83,7 +83,7 @@ Jednocześnie mam doświadczenie w pracy nad poważniejszymi dokumentami, istotn
 - umowy o pracę;
 - umowy o zakazie konkurencji.
 
-### Terminy
+## Terminy
 
 Jeśli jest jedna zasada, która w przypadku spraw z zakresu prawa pracy ma szczególne znaczenie, jest nią punktualność.
 Wiele terminów wynikających z Kodeksu pracy jest niezwykle krótkich.
