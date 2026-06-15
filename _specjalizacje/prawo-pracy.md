@@ -44,7 +44,7 @@ które dają największe szanse osiągnięcia przyjętych założeń.
 
 Analizuję dokumenty - umowy o pracę, aneksy, porozumienia dotyczące rozwiązania umowy o pracę czy zmiany warunków zatrudnienia etc.
 
-## Sprawy sądowe
+### Sprawy sądowe
 
 Występuję w imieniu pracowników w każdym rodzaju spraw z zakresu prawa pracy, w tym w sprawach dotyczących:
 - odwołania od wypowiedzenia/rozwiązania umowy o pracę bez wypowiedzenia;
@@ -53,7 +53,7 @@ Występuję w imieniu pracowników w każdym rodzaju spraw z zakresu prawa pracy
 - mobbingu i dyskryminacji (nierównego traktowania);
 - sporach zbiorowych.
 
-## Mediacje i negocjacje
+### Mediacje i negocjacje
 
 Reprezentuję klientów w sporach także na etapie przedsądowym, zarówno w negocjacjach jak i w mediacjach.
 
