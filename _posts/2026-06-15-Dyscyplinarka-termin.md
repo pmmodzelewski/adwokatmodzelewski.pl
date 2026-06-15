@@ -4,7 +4,7 @@ date: 2026-06-15
 lang: pl
 tag: prawo-pracy
 summary: "Omówienie zagadnienia uzyskania przez pracodawcę wiadomości o okoliczności uzasadniającej rozwiązanie umowy."
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/06/15/one-month-time-limit-summary-dismissal-start/
 ---
 
 **Fakt, że przełożony uzyskał informacje o okoliczności uzasadniającej rozwiązanie umowy bez wypowiedzenia nie musi oznaczać
