@@ -4,7 +4,7 @@ date: 2026-06-17
 lang: pl
 tag: prawo-cywilne
 summary: "Możliwość pozwania dłużnika przed Sąd miejsca zamieszkania wierzyciela"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/06/17/court-jurisdiction-in-payment-claims/
 ---
 
 **Przepisy Kodeksu postępowania cywilnego o właściwości przemiennej stwarzają możliwość
