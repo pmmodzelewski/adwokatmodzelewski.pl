@@ -3,6 +3,8 @@
 # ---------------------------------------------------------------------
 # Po pushu na main, ktory dodaje/zmienia pliki w _posts/:
 #   1. Wykrywamy nowo dodane/zmienione pliki _posts/*.md w tym pushu.
+#      (Uzywamy -z + core.quotepath=false, zeby nazwy z polskimi znakami
+#       sie nie wysypaly.)
 #   2. scripts/translate_post.py tlumaczy te ktore sa PL i nie maja
 #      jeszcze odpowiednika EN (Anthropic API, klucz z sekretu).
 #   3. Otwieramy PR z plikami EN (+ poprawka lang_alt w plikach PL).
@@ -15,7 +17,9 @@
 #   - sekret repo ANTHROPIC_API_KEY
 #   - Settings > Actions > General > Workflow permissions:
 #       "Read and write" + "Allow GitHub Actions to create and approve PRs"
-# Bez sekretu skrypt loguje informacje i konczy bez bledu.
+#
+# UWAGA: workflow ma byc GLOSNY. Brak sekretu, niewykryte pliki przy pushu
+# do _posts/**, blad skryptu — wszystko to konczy sie czerwonym X.
 # =====================================================================
 name: Translate new posts (PL -> EN)
 
@@ -51,32 +55,96 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Wylacz git-quotepath, zeby UTF-8 (np. "Wlasciwosc.md") nie byl
+          # zamienany na sekwencje typu "W\305\202asciwosc.md".
+          git config core.quotepath false
+
           before="${{ github.event.before }}"
           after="${{ github.sha }}"
+
+          # files.txt: jeden plik na linie, UTF-8, bez cudzyslowow
+          : > files.txt
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || \
              [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ]; then
-            # Pierwszy run / reczne odpalenie: bierzemy wszystkie wpisy w _posts/
-            files=$(git ls-files '_posts/*.md' || true)
+            git ls-files -z '_posts/*.md' \
+              | tr '\0' '\n' > files.txt
+            echo "Mode: pelny skan (workflow_dispatch lub pierwszy push)."
           else
-            files=$(git diff --name-only --diff-filter=AM "$before" "$after" -- '_posts/*.md' || true)
+            git diff --name-only -z --diff-filter=AM "$before" "$after" -- '_posts/*.md' \
+              | tr '\0' '\n' > files.txt
+            echo "Mode: diff $before..$after na _posts/*.md"
           fi
-          # Spacja-separowana lista do jednej linii
-          files=$(echo "$files" | tr '\n' ' ' | sed 's/ *$//')
-          echo "files=$files" >> "$GITHUB_OUTPUT"
-          echo "Wykryte pliki: $files"
+
+          # Usun puste linie na koniec.
+          sed -i '/^$/d' files.txt
+
+          count=$(wc -l < files.txt | tr -d ' ')
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Wykryto $count plikow:"
+          cat files.txt || true
+
+          # Twarda asercja: jezeli push touched _posts/** ale nic nie wykryto,
+          # to znaczy ze cos w detekcji sie zepsulo (np. dziwne nazwy plikow).
+          # workflow_dispatch nie ma "before", wiec nie sprawdzamy go tu.
+          if [ "${{ github.event_name }}" = "push" ] && [ "$count" = "0" ]; then
+            echo "::error::Push dotknal _posts/** ale wykryto 0 plikow. To podejrzane — sprawdz detekcje."
+            exit 1
+          fi
 
       - name: Translate
-        if: steps.detect.outputs.files != ''
+        if: steps.detect.outputs.count != '0'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/translate_post.py ${{ steps.detect.outputs.files }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "::error::Brak ANTHROPIC_API_KEY (secret repo). Workflow nie moze tlumaczyc."
+            exit 1
+          fi
+          # Przekaz pliki przez stdin — uniezalezniamy sie od shell-quotingu
+          # nazw z non-ASCII.
+          python scripts/translate_post.py --stdin < files.txt
+
+      - name: Collect new EN files for PR title
+        id: pr_meta
+        if: steps.detect.outputs.count != '0'
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Lista nowo utworzonych plikow EN (untracked w _posts/).
+          mapfile -t new_files < <(git ls-files -o --exclude-standard -z _posts/ \
+            | tr '\0' '\n' | grep -v '^$' || true)
+
+          if [ "${#new_files[@]}" -eq 0 ]; then
+            echo "::warning::Skrypt zakonczyl sie OK ale nie utworzyl nowych plikow EN. Mozliwe ze wszystko juz przetlumaczone."
+            echo "title=Tłumaczenie EN: brak nowych plików" >> "$GITHUB_OUTPUT"
+            echo "have_files=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ "${#new_files[@]}" -eq 1 ]; then
+            # Wyciagnij tytul z front-matter pierwszego pliku.
+            t=$(awk '/^title:/{
+              sub(/^title:[[:space:]]*/, "");
+              gsub(/^"/, "");
+              gsub(/"$/, "");
+              print;
+              exit
+            }' "${new_files[0]}")
+            if [ -z "$t" ]; then t="${new_files[0]##*/}"; fi
+            echo "title=Tłumaczenie EN: $t" >> "$GITHUB_OUTPUT"
+          else
+            echo "title=Tłumaczenie EN: ${#new_files[@]} nowych wpisów" >> "$GITHUB_OUTPUT"
+          fi
+          echo "have_files=true" >> "$GITHUB_OUTPUT"
+          printf '%s\n' "${new_files[@]}"
 
       - name: Open Pull Request
-        if: steps.detect.outputs.files != ''
+        if: steps.pr_meta.outputs.have_files == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: auto-translate/${{ github.sha }}
-          title: "Tłumaczenie EN: nowe wpisy"
+          title: ${{ steps.pr_meta.outputs.title }}
           body: |
             Angielskie wersje nowych wpisów, do przejrzenia i scalenia.
 

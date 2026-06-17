@@ -2,8 +2,11 @@
 """
 Tlumaczenie wpisow PL -> EN przez Anthropic API (Claude).
 
-Uzycie:
+Uzycie (CLI):
     python scripts/translate_post.py _posts/2026-05-18-Kara-umowna.md [kolejne pliki...]
+
+Uzycie (stdin, jeden plik per linia — pewniejsze dla nazw z non-ASCII):
+    printf '_posts/2026-06-17-Wlasciwosc.md\n' | python scripts/translate_post.py --stdin
 
 Dla kazdego podanego pliku wpisu PL:
   - parsuje front-matter + tresc,
@@ -18,13 +21,19 @@ Wymaga zmiennej srodowiskowej ANTHROPIC_API_KEY.
 Loop guard: pomija wpis PL, ktory ma juz ustawione lang_alt ORAZ istnieje
 plik EN, do ktorego to lang_alt wskazuje. Dzieki temu po scaleniu PR-a
 ponowny trigger workflow nic nie robi.
+
+Exit codes (eksplicite — workflow ma byc glosny gdy cos nie tak):
+  0 = wszystko dobrze (utworzono >=1 plik EN, albo wszystkie pominiete
+      legitnie loop-guardem)
+  1 = blad konfiguracji (brak klucza, brak argumentow)
+  2 = blad przy przetwarzaniu pliku (brak pliku, blad parsera, blad API)
 """
 
 import os
 import re
 import sys
 import json
-import glob
+import argparse
 
 try:
     import yaml
@@ -39,9 +48,8 @@ except ImportError:
 
 POSTS_DIR = "_posts"
 MODEL = os.environ.get("TRANSLATE_MODEL", "claude-sonnet-4-6")
+IS_CI = bool(os.environ.get("CI") or os.environ.get("GITHUB_ACTIONS"))
 
-# Front-matter dzielimy recznie (nie YAML-dump z powrotem), zeby zachowac
-# kolejnosc i formatowanie blisko tego, co pisze wlasciciel.
 FM_DELIM = "---"
 
 SYSTEM_PROMPT = """You are a professional legal translator for a Polish law firm \
@@ -76,7 +84,6 @@ def parse_post(path):
         raw = f.read()
     if not raw.startswith(FM_DELIM):
         raise ValueError(f"{path}: brak front-matter")
-    # Split na: '', front-matter, body
     parts = raw.split(FM_DELIM, 2)
     if len(parts) < 3:
         raise ValueError(f"{path}: nieprawidlowy front-matter")
@@ -97,16 +104,12 @@ def slug_from_filename(path):
 
 
 def date_parts(date_str):
-    """'2026-05-18' -> ('2026', '05', '18'). Akceptuje tez date YAML."""
     s = str(date_str)[:10]
     y, mo, d = s.split("-")
     return y, mo, d
 
 
 def en_file_exists_for(lang_alt):
-    """Czy istnieje plik EN, do ktorego wskazuje lang_alt PL?
-    lang_alt PL: /en/aktualnosci/YYYY/MM/DD/<slug>/  -> szukamy _posts/YYYY-MM-DD-<slug>.md
-    """
     if not lang_alt:
         return False
     m = re.search(r"/en/aktualnosci/(\d{4})/(\d{2})/(\d{2})/([^/]+)/?", lang_alt)
@@ -118,16 +121,14 @@ def en_file_exists_for(lang_alt):
 
 
 def build_en_frontmatter(fm, slug_en, title_en, summary_en, permalink_en, lang_alt_en):
-    """Sklada front-matter wpisu EN jako tekst (zachowujac sensowna kolejnosc)."""
     lines = ["---"]
     lines.append(f'title: "{title_en}"')
     lines.append(f"date: {fm['date']}")
     lines.append("lang: en")
-    lines.append(f"tag: {fm['tag']}")            # NIEzmieniony — kanoniczny PL slug
+    lines.append(f"tag: {fm['tag']}")
     lines.append(f'summary: "{summary_en}"')
-    lines.append(f"permalink: {permalink_en}")    # WYMAGANE dla prefiksu /en/
+    lines.append(f"permalink: {permalink_en}")
     lines.append(f"lang_alt: {lang_alt_en}")
-    # Odziedzicz flagi pre-launch jesli sa w zrodle
     if "sitemap" in fm:
         lines.append(f"sitemap: {str(fm['sitemap']).lower()}")
     if "robots" in fm:
@@ -137,7 +138,6 @@ def build_en_frontmatter(fm, slug_en, title_en, summary_en, permalink_en, lang_a
 
 
 def patch_pl_lang_alt(path, raw_fm, new_lang_alt):
-    """Ustawia/zamienia lang_alt w pliku PL, zachowujac reszte pliku 1:1."""
     with open(path, "r", encoding="utf-8") as f:
         raw = f.read()
     if re.search(r"^lang_alt:.*$", raw_fm, flags=re.MULTILINE):
@@ -149,7 +149,6 @@ def patch_pl_lang_alt(path, raw_fm, new_lang_alt):
             flags=re.MULTILINE,
         )
     else:
-        # Wstaw lang_alt po linii z tag: (lub na koncu front-matter)
         new_raw = re.sub(
             r"(^tag:.*$)",
             r"\1\n" + f"lang_alt: {new_lang_alt}",
@@ -162,7 +161,6 @@ def patch_pl_lang_alt(path, raw_fm, new_lang_alt):
 
 
 def translate(client, fm, body):
-    """Wywolanie Anthropic API. System prompt cache'owany. Zwraca dict z JSON."""
     user_msg = (
         f"Title (PL): {fm.get('title','')}\n"
         f"Summary (PL): {fm.get('summary','')}\n\n"
@@ -179,35 +177,53 @@ def translate(client, fm, body):
         messages=[{"role": "user", "content": user_msg}],
     )
     text = "".join(block.text for block in resp.content if block.type == "text").strip()
-    # Wytnij ewentualne ```json ... ``` ogrodzenie
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
     return json.loads(text)
 
 
+class SkipReason:
+    NOT_PL = "not-pl"
+    NO_TAG = "no-tag"
+    ALREADY_TRANSLATED = "already-translated"
+
+
 def process(path, client):
-    fm, body, raw_fm = parse_post(path)
+    """Zwraca (status, info). status in {'created','skipped','error'}."""
+    if not os.path.exists(path):
+        return ("error", f"plik nie istnieje: {path!r}")
+
+    try:
+        fm, body, raw_fm = parse_post(path)
+    except Exception as e:
+        return ("error", f"parse error: {e}")
 
     if fm.get("lang") != "pl":
-        print(f"POMINIETO (nie PL): {path}")
-        return None
+        return ("skipped", SkipReason.NOT_PL)
 
-    # Loop guard
     if fm.get("lang_alt") and en_file_exists_for(fm["lang_alt"]):
-        print(f"POMINIETO (EN juz istnieje): {path}")
-        return None
+        return ("skipped", SkipReason.ALREADY_TRANSLATED)
 
     if not fm.get("tag"):
-        print(f"POMINIETO (brak tag): {path}")
-        return None
+        return ("error", f"{path}: brak pola `tag` we front-matter")
 
-    date_str, pl_slug = slug_from_filename(path)
-    y, mo, d = date_parts(fm["date"])
+    try:
+        date_str, pl_slug = slug_from_filename(path)
+        y, mo, d = date_parts(fm["date"])
+    except Exception as e:
+        return ("error", f"{path}: {e}")
 
-    result = translate(client, fm, body)
-    slug_en = result["slug_en"].strip().strip("-").lower()
+    try:
+        result = translate(client, fm, body)
+    except Exception as e:
+        return ("error", f"{path}: API error: {e}")
+
+    try:
+        slug_en = result["slug_en"].strip().strip("-").lower()
+    except (KeyError, AttributeError) as e:
+        return ("error", f"{path}: bad API response shape: {e}; got: {result!r}")
 
     permalink_en = f"/en/aktualnosci/{y}/{mo}/{d}/{slug_en}/"
-    lang_alt_en = f"/aktualnosci/{y}/{mo}/{d}/{pl_slug}/"   # EN -> PL
+    lang_alt_en = f"/aktualnosci/{y}/{mo}/{d}/{pl_slug}/"
 
     en_fm = build_en_frontmatter(
         fm, slug_en, result["title_en"], result["summary_en"],
@@ -217,43 +233,76 @@ def process(path, client):
     with open(en_path, "w", encoding="utf-8") as f:
         f.write(en_fm + "\n\n" + result["body_en"].rstrip() + "\n")
 
-    # Zaktualizuj PL lang_alt -> EN
     patch_pl_lang_alt(path, raw_fm, permalink_en)
 
-    print(f"UTWORZONO: {en_path}")
-    print(f"ZAKTUALIZOWANO lang_alt w: {path}")
-    return en_path
+    return ("created", en_path)
+
+
+def read_paths_from_stdin():
+    paths = []
+    for line in sys.stdin:
+        s = line.strip()
+        if s:
+            paths.append(s)
+    return paths
 
 
 def main():
-    args = sys.argv[1:]
-    if not args:
-        print("Uzycie: python scripts/translate_post.py <plik_pl.md> [...]")
+    parser = argparse.ArgumentParser(description="Tlumaczenie wpisow PL -> EN.")
+    parser.add_argument("files", nargs="*", help="Sciezki do plikow PL")
+    parser.add_argument("--stdin", action="store_true",
+                        help="Czytaj liste plikow ze stdin (jeden per linia)")
+    args = parser.parse_args()
+
+    paths = read_paths_from_stdin() if args.stdin else args.files
+    if not paths:
+        print("BLAD: brak plikow do przetworzenia.", file=sys.stderr)
         sys.exit(1)
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        print("ANTHROPIC_API_KEY nie ustawiony — pomijam tlumaczenie.")
-        sys.exit(0)   # bezpieczny default (jak indexnow.yml)
+        # W CI to twardy blad — workflow musi byc glosny.
+        # Lokalnie tez bez sensu probowac bez klucza.
+        msg = "BLAD: ANTHROPIC_API_KEY nie jest ustawiony."
+        if IS_CI:
+            msg += " W CI to oznacza brak/niedostepny secret repo."
+        print(msg, file=sys.stderr)
+        sys.exit(1)
 
     client = Anthropic(api_key=api_key)
 
-    created = []
-    for path in args:
-        if not os.path.exists(path):
-            print(f"POMINIETO (brak pliku): {path}")
-            continue
-        try:
-            out = process(path, client)
-            if out:
-                created.append(out)
-        except Exception as e:
-            print(f"BLAD przy {path}: {e}", file=sys.stderr)
+    created, skipped, errors = [], [], []
+    for path in paths:
+        status, info = process(path, client)
+        if status == "created":
+            created.append(info)
+            print(f"UTWORZONO: {info}")
+        elif status == "skipped":
+            skipped.append((path, info))
+            print(f"POMINIETO ({info}): {path}")
+        else:
+            errors.append((path, info))
+            print(f"BLAD: {info}", file=sys.stderr)
 
-    if created:
-        print(f"\nUtworzono {len(created)} plikow EN.")
-    else:
-        print("\nNic nie utworzono.")
+    print()
+    print(f"Podsumowanie: utworzono={len(created)}, pominieto={len(skipped)}, bledow={len(errors)}")
+
+    if errors:
+        # Jakikolwiek blad twardy = exit nonzero. Workflow ma to zobaczyc.
+        sys.exit(2)
+
+    # Wszystkie skipowania moga byc OK (loop-guard po scaleniu PR-a).
+    # Tylko gdy wszystkie skipy to NOT_PL/ALREADY_TRANSLATED — to spodziewany "nic do roboty".
+    if not created:
+        non_loopguard = [r for _, r in skipped
+                         if r not in (SkipReason.NOT_PL, SkipReason.ALREADY_TRANSLATED)]
+        if non_loopguard:
+            print(f"BLAD: nic nie utworzono i sa nieoczekiwane skipy: {non_loopguard}",
+                  file=sys.stderr)
+            sys.exit(2)
+        print("(Nic do tlumaczenia — wszystkie wpisy juz maja EN albo nie sa PL.)")
+
+    sys.exit(0)
 
 
 if __name__ == "__main__":
