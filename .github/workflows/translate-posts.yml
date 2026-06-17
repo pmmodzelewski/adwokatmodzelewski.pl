@@ -62,26 +62,26 @@ jobs:
           before="${{ github.event.before }}"
           after="${{ github.sha }}"
 
-          # files.txt: jeden plik na linie, UTF-8, bez cudzyslowow
-          : > files.txt
+          # "${{ runner.temp }}/files.txt": jeden plik na linie, UTF-8, bez cudzyslowow
+          : > "${{ runner.temp }}/files.txt"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || \
              [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ]; then
             git ls-files -z '_posts/*.md' \
-              | tr '\0' '\n' > files.txt
+              | tr '\0' '\n' > "${{ runner.temp }}/files.txt"
             echo "Mode: pelny skan (workflow_dispatch lub pierwszy push)."
           else
             git diff --name-only -z --diff-filter=AM "$before" "$after" -- '_posts/*.md' \
-              | tr '\0' '\n' > files.txt
+              | tr '\0' '\n' > "${{ runner.temp }}/files.txt"
             echo "Mode: diff $before..$after na _posts/*.md"
           fi
 
           # Usun puste linie na koniec.
-          sed -i '/^$/d' files.txt
+          sed -i '/^$/d' "${{ runner.temp }}/files.txt"
 
-          count=$(wc -l < files.txt | tr -d ' ')
+          count=$(wc -l < "${{ runner.temp }}/files.txt" | tr -d ' ')
           echo "count=$count" >> "$GITHUB_OUTPUT"
           echo "Wykryto $count plikow:"
-          cat files.txt || true
+          cat "${{ runner.temp }}/files.txt" || true
 
           # Twarda asercja: jezeli push touched _posts/** ale nic nie wykryto,
           # to znaczy ze cos w detekcji sie zepsulo (np. dziwne nazwy plikow).
@@ -103,7 +103,7 @@ jobs:
           fi
           # Przekaz pliki przez stdin — uniezalezniamy sie od shell-quotingu
           # nazw z non-ASCII.
-          python scripts/translate_post.py --stdin < files.txt
+          python scripts/translate_post.py --stdin < "${{ runner.temp }}/files.txt"
 
       - name: Collect new EN files for PR title
         id: pr_meta

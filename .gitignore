@@ -8,3 +8,6 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# Plik roboczy wytwarzany przez .github/workflows/translate-posts.yml
+files.txt
