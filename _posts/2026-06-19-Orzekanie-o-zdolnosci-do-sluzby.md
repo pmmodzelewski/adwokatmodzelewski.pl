@@ -1,5 +1,5 @@
 ---
-title: "Świadczenie mieszkaniowe a jednorazowa pomoc"
+title: "Ocena zdolności do służby wojskowej przez Wojskowe Komisje Lekarskie"
 date: 2026-06-19
 lang: pl
 tag: sluzby-mundurowe
