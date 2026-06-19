@@ -8,9 +8,9 @@ permalink: /specjalizacje/prawo-cywilne/
 lang_alt: /en/specjalizacje/civil-law/
 faq:
   - q: "Ile trwa zasiedzenie?"
-    a: "Aby stać się właścicielem nieruchomości, nalezy władać nią samoistnie (w taki sposób jak właściciel, dysponować ją dla
-    siebie, opłacać podatki, zarządzać itp.) przez 30 lat (jeśli robimy to w złej wierze, tj. wiemy, że nieruchomość nie nalezy
-    do nas) lub 20 lat (w dobrej wierze, gdy mamy uzasadnione przekonanie, że jestesteśmy prawowitym właścicelem, które jednak
+    a: "Aby stać się właścicielem nieruchomości, należy władać nią samoistnie (w taki sposób jak właściciel, dysponować ją dla
+    siebie, opłacać podatki, zarządzać itp.) przez 30 lat (jeśli robimy to w złej wierze, tj. wiemy, że nieruchomość nie należy
+    do nas) lub 20 lat (w dobrej wierze, gdy mamy uzasadnione przekonanie, że jesteśmy prawowitym właścicielem, które jednak
     nie jest słuszne). Zasiedzenie ruchomości trwa krócej (3 lata), ale możliwe jest tylko w dobrej wierze."
 
   - q: "Czego mogę żądać, gdy ktoś mnie publicznie obraża lub zdyskredytuje?"
@@ -25,8 +25,8 @@ faq:
     skorzystanie z tych uprawnień może jednak nie zawsze być proste, dlatego warto skonsultować się z prawnikiem."
 
   - q: "Czy wynajmujący może wymienić zamki w lokalu, gdy przestanę płacić czynsz?"
-    a: "Regulane płacenie czynszu jest obowiązkiem najemcy, tak jak obowiązkiem wynajmującego jest udostępnianie lokalu.
-    Nie oznacza to jednak, że opóźnienia w zapłacie czynszu automatycznie skuktują możliwością eksmisji najemcy. Przeprowadza ją
+    a: "Regularne płacenie czynszu jest obowiązkiem najemcy, tak jak obowiązkiem wynajmującego jest udostępnianie lokalu.
+    Nie oznacza to jednak, że opóźnienia w zapłacie czynszu automatycznie skutkują możliwością eksmisji najemcy. Przeprowadza ją
     komornik (a więc nie Policja) i wyłącznie w oparciu o tytuł egzekucyjny (prawomocny wyrok Sądu lub akt notarialny). Wymiana zamków
     stanowiłaby samowolne naruszenie posiadania, które nie byłoby zgodne z prawem i w takiej sytuacji przysługuje najemcy tzw. ochrona
     posesoryjna."
