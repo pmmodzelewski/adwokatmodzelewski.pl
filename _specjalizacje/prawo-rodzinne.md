@@ -33,7 +33,7 @@ faq:
     leczenie, wyjazdy zagraniczne etc.), zarząd jego majątkiem i sprawowanie opieki. Kontakty to jedynie wspólne spędzanie czasu."
 ---
 
-> Prawo rodzinne dotyczy zarówno kwesti relacji między małżonkami, rodzicami a dziećmi, a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego typu.
+> Prawo rodzinne dotyczy zarówno kwestii relacji między małżonkami, rodzicami a dziećmi, a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego typu.
 
 ## Czym się zajmuję w sprawach rodzinnych
 
@@ -53,5 +53,5 @@ Działam w szczególności w zakresie:
 
 ## Mediacja vs postępowanie sądowe
 
-W każdej sprawie rodzinnej staram się zaproponować Klientowi najmniejobciążającą drogę rozwiązania sporu. Tam gdzie to możliwe — mediacja
+W każdej sprawie rodzinnej staram się zaproponować Klientowi najmniej obciążającą drogę rozwiązania sporu. Tam gdzie to możliwe — mediacja
 i porozumienie. Tam gdzie konieczne — pełne, sprawne postępowanie sądowe.
