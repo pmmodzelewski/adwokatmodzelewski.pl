@@ -17,7 +17,7 @@ faq:
   - q: "Co zrobić, gdy padłam/em ofiarą przestępstwa?"
     a: "Zawiadomienie o popełnieniu przestępstwa złożyć można ustnie lub pisemnie. Obydwie formy mają wady i zalety, jednak
     już na tym etapie można ułatwić pracę organom ścigania (i przyspieszyć ustalenie i skazanie sprawcy) lub ją utrudnić.
-    Prawodłowe przygotowanie i sformułowanie zawiadomienia (z pomocą profesjonalisty) może bardzo pomóć w sprawnym zakończeniu
+    Prawidłowe przygotowanie i sformułowanie zawiadomienia (z pomocą profesjonalisty) może bardzo pomóc w sprawnym zakończeniu
     sprawy."
 
   - q: "Czy popełniony przeze mnie czyn się przedawnił?"
@@ -26,14 +26,14 @@ faq:
     lub wykroczenie się przedawniło, warto szczegółowo przeanalizować sprawę i ocenić ją z pomocą adwokata."
 
   - q: "Jak sprawdzić, czy jestem poszukiwany?"
-    a: "Krajowy Rejest Karny zawiera co prawda informacje o osobach poszukiwanych listem gończym, ale nie zawsze gdy Policja
+    a: "Krajowy Rejestr Karny zawiera co prawda informacje o osobach poszukiwanych listem gończym, ale nie zawsze gdy Policja
     chciałaby z nami porozmawiać, zastosuje taki środek. Oznacza to, że aby mieć pewność (lub przynajmniej większą wiedzę)
     o naszym aktualnym statusie, warto często skontaktować się z jednostkami Policji czy Prokuratury które mogą zajmować się sprawa
     w której bylibyśmy poszukiwani i upewnić się, czy nie oczekują od nas stawiennictwa."
 ---
 
 > Pełna obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
-> Od postawiena zarzutów po postępowanie wykonawcze.
+> Od postawienia zarzutów po postępowanie wykonawcze.
 > Obrona oraz występowanie w charakterze pełnomocnika.
 
 ## Czym się zajmuję w sprawach karnych
@@ -46,7 +46,7 @@ Podejmuję się reprezentacji Klientów we wszelkich rodzajach spraw karnych, st
 -	Sądem Najwyższym (kasacja oraz postępowanie w II instancji w sprawach wojskowych).
 
 Występuję w charakterze zarówno obrońcy jak i pełnomocnika Pokrzywdzonego, Oskarżyciela posiłkowego lub Oskarżyciela prywatnego.
-Reprezentujemy kleintów przede wszystkim w Warszawie i okolicznych miejscowościach, ale przyjmujemy takżę sprawy z terytorium całej Polski.
+Reprezentuję klientów przede wszystkim w Warszawie i okolicznych miejscowościach, ale przyjmujemy także sprawy z terytorium całej Polski.
 
 ## Zakres usług
 
@@ -54,11 +54,11 @@ Reprezentuję klientów (m. in.) w sprawach dotyczących przestępstw:
 
 ### Zdrowiu i życiu
 
-W tym w sprawach o zabójstwo, wyrządzenie ciężkiego uszczerbku na zdriwiu.
+W tym w sprawach o zabójstwo, wyrządzenie ciężkiego uszczerbku na zdrowiu.
 
 ### Przeciwko mieniu
 
-M. in. w postępowaniach dotyczącyc kradzieży, przywłaszczenia, rozboju i kradzieży rozbójniczej, oszustwa czy naruszenia miru domowego.
+M. in. w postępowaniach dotyczących kradzieży, przywłaszczenia, rozboju i kradzieży rozbójniczej, oszustwa czy naruszenia miru domowego.
 
 ### Przeciwko bezpieczeństwu w komunikacji
 
@@ -66,11 +66,11 @@ W zakresie spowodowania wypadku komunikacyjnego lub prowadzenia pojazdu pod wpł
 
 ### Przeciwko wolności seksualnej i obyczajności
 
-Zarówno dotyczących czynów skierowanych przeciwko tej wolnosći jak i posiadania materiałów, których posiadanie jest zabronione.
+Zarówno dotyczących czynów skierowanych przeciwko tej wolnosci jak i posiadania materiałów, których posiadanie jest zabronione.
 
 ### Przeciwko czci i nietykalności cielesnej
 
-W sprawach dotyczących zniesławienia czy znieważenia oraz narszenia tej nietykalności.
+W sprawach dotyczących zniesławienia czy znieważenia oraz naruszenia tej nietykalności.
 
 ### Przeciwko rodzinie i opiece
 
