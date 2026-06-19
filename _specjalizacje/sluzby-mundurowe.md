@@ -29,7 +29,7 @@ faq:
     a: "Uzasadnione wydaje się stwierdzenie, że degradacja jest, dla żołnierza zawodowego, najsurowszym możliwym środkiem
     karnym, w wielu sytuacjach bardziej dotkliwym nawet od kary więzienia. Oznacza ona nie tylko utratę stopnia wojskowego
     (staje się na powrót szeregowym), ale także wydalenie ze służby i utratę wielu przywilejów (np. prawa do odprawy,
-    w tym mieszkaniowej czy emerytury wojskowej). Z tego powodu degradacja powinan być wymierzana jedynie za najpoważniejsze
+    w tym mieszkaniowej czy emerytury wojskowej). Z tego powodu degradacja powinna być wymierzana jedynie za najpoważniejsze
     przestępstwa popełnione w związku ze służbą i powodujące jednoznaczną hańbę dla munduru. Szczęśliwie Sądy (w szczególności
     Sądy powszechne) stosują ją relatywnie rzadko."
 ---
@@ -62,8 +62,8 @@ Analiza opinii, sporządzenie odwołania i reakcja na ich konsekwencje.
 
 ### Sprawy administracyjne
 
-Świadczenia (w tym mieszkaniowe, rozkłąkowe czy przenosinowe), odprawy, mudnurówki.
-Dodatowo kwestie należności żołnierzy - odpowiedzialność majątkowa czy koszty szkolenia.
+Świadczenia (w tym mieszkaniowe, rozłąkowe czy przenosinowe), odprawy, mundurówki.
+Dodatkowo kwestie należności żołnierzy - odpowiedzialność majątkowa czy koszty szkolenia.
 
 ### Emerytury i renty
 
@@ -71,7 +71,7 @@ Dodatowo kwestie należności żołnierzy - odpowiedzialność majątkowa czy ko
 
 ### Orzekanie o zdolności do służby 
 
-Sporządzanie odwołań i prowadzenie tych spraw, sporządzanie wniosku o zmianę kategorii zdolności do słuzby wojskowej (zarówno zawodowej jak i czynnej) etc.
+Sporządzanie odwołań i prowadzenie tych spraw, sporządzanie wniosku o zmianę kategorii zdolności do służby wojskowej (zarówno zawodowej jak i czynnej) etc.
 
 ## Specyfika spraw mundurowych
 
@@ -80,7 +80,7 @@ system zaopatrzenia emerytalnego. Szybka i trafna analiza stanu prawnego od pier
 
 ## Moje doświadczenie
 
-W mojej karierze zajmowałem się wieloma sprawami nietypowymi i precendensowymi, jak te dotyczące odmowy wypłaty odprawy mieszkaniowej czy prawidłowego
+W mojej karierze zajmowałem się wieloma sprawami nietypowymi i precedensowymi, jak te dotyczące odmowy wypłaty odprawy mieszkaniowej czy prawidłowego
 wyliczenia emerytury należnej funkcjonariuszom Straży Granicznej zajmujących się fizycznym zwalczaniem terroryzmu. Wielokrotnie stawałem przed
 Sądami Wojskowymi (w Warszawie, Gdańsku, Poznaniu, Lublinie czy Wrocławiu), brałem udział w czynnościach Żandarmerii Wojskowej czy raportach
 dyscyplinarnych na terenie Jednostek Wojskowych. Obsługiwałem żołnierzy i funkcjonariuszy niezależnie od historii ich służby, długości stażu czy
