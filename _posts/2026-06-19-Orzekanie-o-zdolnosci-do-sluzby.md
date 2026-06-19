@@ -3,7 +3,7 @@ title: "Świadczenie mieszkaniowe a jednorazowa pomoc"
 date: 2026-06-19
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/06/19/how-military-medical-commissions-assess-fitness-for-service/
 summary: "Wyjaśnienie w jaki sposób Wojskowe Komisje Lekarskie oceniają zdolność do służby wojskowej"
 ---
 
