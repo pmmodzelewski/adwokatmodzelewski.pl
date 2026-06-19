@@ -1,5 +1,5 @@
 ---
-title: "Housing Allowance and One-Off Financial Assistance"
+title: "Asessing fitness for military duty by Military Medical Comissions"
 date: 2026-06-19
 lang: en
 tag: sluzby-mundurowe
