@@ -21,7 +21,7 @@ faq:
     a: "Kobiety przebywające na zwolnieniu lekarskim w związku z ciążą są chronione przed zwolnieniem za wypowiedzeniem.
     Dodatkowo, gdyby pracodawca złamał ten zakaz, dysponują one dodatkową ochroną i uprawnieniami. Co istotne,
     ciąża może być podstawą do cofnięcia skutków oświadczenia o rozwiązaniu umowy za porozumieniem stron, jeśli
-    pracownica dowiedziałą się o swoim stanie już po jego podpisaniu (a w chwili zawierania porozumienia była już w ciąży)."
+    pracownica dowiedziała się o swoim stanie już po jego podpisaniu (a w chwili zawierania porozumienia była już w ciąży)."
 
   - q: "Czy pracodawca musi wprowadzić regulamin pracy i regulamin wynagradzania?"
     a: "W przypadku mniejszych zakładów pracy, nie jest to konieczne (aczkolwiek może być wskazane,
@@ -30,7 +30,7 @@ faq:
 ---
 
 > Oferuję pomoc prawną zarówno pracownikom, jak i pracodawcom.
-> Zajmuję się sprawami dotyczacymi zatrudnienia, emerytur i rent czy działalności związkó zawodowych.
+> Zajmuję się sprawami dotyczącymi zatrudnienia, emerytur i rent czy działalności związków zawodowych.
 
 ## Komu pomagam?
 
@@ -66,7 +66,7 @@ Posiadam bogate doświadczenie w sprawach prowadzonych przez Zakład Ubezpiecze�
 oraz w sporach sądowych z nimi. Zajmowałem się między innymi:
 - sprawami o ponowne ustalenie wysokości emerytury;
 - sprawami dotyczącymi uprawnień związanych z uprawnieniami związanymi z pracą w warunkach szczególnych;
-- sprawami kwestionowania przez Zakład Ubezpieczeń Społęcznych przyznanych uprawnień (nieprawidłowo pobierane wynagrodzenie chorobowe czy macieżyńskie).
+- sprawami kwestionowania przez Zakład Ubezpieczeń Społecznych przyznanych uprawnień (nieprawidłowo pobierane wynagrodzenie chorobowe czy macierzyńskie).
 
 ## Zakres usług dla pracodawców
 
