@@ -75,6 +75,62 @@
           </div>
         </div>
 
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 11h20"/><path d="M6 16h4"/></svg>
+          <div class="contact-detail-text">
+            <details class="bank-accounts">
+              <summary>
+                <span class="label">{% if lang == 'en' %}Bank accounts{% else %}Rachunki bankowe{% endif %}</span>
+              </summary>
+              <p class="bank-accounts-intro">
+                {% if lang == 'en' %}
+                  Below you will find the firm's bank account details.
+                  In case of any doubts, please contact us by email or telephone before initiating a transfer.
+                {% else %}
+                  Poniżej znajdą Państwo dane rachunków bankowych kancelarii.
+                  W razie jakichkolwiek wątpliwości, prosimy o kontakt mailowy lub telefoniczny przed zleceniem przelewu.
+                {% endif %}
+              </p>
+
+              <div class="bank-group">
+                <div class="bank-group-title">{% if lang == 'en' %}Domestic transfers{% else %}Przelewy krajowe{% endif %}</div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Fees (PLN){% else %}Wynagrodzenie w PLN{% endif %}</span>
+                  <span class="bank-iban">96 1050 1038 1000 0097 2324 3896</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Deposits{% else %}Depozyty{% endif %}</span>
+                  <span class="bank-iban">72 1050 1038 1000 0090 8708 9810</span>
+                </div>
+              </div>
+
+              <div class="bank-group">
+                <div class="bank-group-title">{% if lang == 'en' %}International transfers{% else %}Przelewy zagraniczne{% endif %}</div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Fees (PLN){% else %}Wynagrodzenie w PLN{% endif %}</span>
+                  <span class="bank-iban">PL 96 1050 1038 1000 0097 2324 3896</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Fees (EUR){% else %}Wynagrodzenie w EUR{% endif %}</span>
+                  <span class="bank-iban">PL 84 1050 1038 1000 0090 8708 9885</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Fees (USD){% else %}Wynagrodzenie w USD{% endif %}</span>
+                  <span class="bank-iban">PL 40 1050 1038 1000 0090 8708 9901</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-purpose">{% if lang == 'en' %}Deposits{% else %}Depozyty{% endif %}</span>
+                  <span class="bank-iban">PL 72 1050 1038 1000 0090 8708 9810</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-purpose">SWIFT</span>
+                  <span class="bank-iban">INGBPLPW</span>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
         <div class="contact-map">
           <iframe
             src="https://www.google.com/maps?q=ul.+Olesi%C5%84ska+21,+02-548+Warszawa&hl={{ lang }}&z=16&output=embed"

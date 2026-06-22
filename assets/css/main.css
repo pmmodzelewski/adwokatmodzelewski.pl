@@ -669,6 +669,85 @@ a.practice-item:hover h3 {
 
 
 /* ---------------------------------------------------------------------
+   ----- Sekcja: Rachunki bankowe w bloku kontaktowym -----
+   Renderowane jako <details>, domyslnie zwiniete. IBAN-y w monospace
+   dla latwosci kopiowania.
+   --------------------------------------------------------------------- */
+.bank-accounts {
+  margin-top: 0.1rem;
+}
+.bank-accounts summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0;
+  outline: none;
+}
+.bank-accounts summary::-webkit-details-marker {
+  display: none;
+}
+.bank-accounts summary::after {
+  content: "▾";
+  font-size: 0.7rem;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+.bank-accounts[open] summary::after {
+  transform: rotate(180deg);
+}
+.bank-accounts summary .label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+}
+.bank-accounts summary:hover .label {
+  color: var(--accent);
+}
+.bank-accounts-intro {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0.6rem 0 0.8rem;
+  line-height: 1.55;
+}
+.bank-group {
+  margin-top: 0.8rem;
+}
+.bank-group-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.bank-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.bank-row:last-child {
+  border-bottom: none;
+}
+.bank-purpose {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+.bank-iban {
+  font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  user-select: all;             /* podwojny klik zaznacza caly numer */
+}
+
+
+/* ---------------------------------------------------------------------
    ----- Sekcja: Stopka -----
    --------------------------------------------------------------------- */
 footer {
