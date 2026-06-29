@@ -8,7 +8,7 @@ permalink: /specjalizacje/sluzby-mundurowe/
 lang_alt: /en/specjalizacje/uniformed-services/
 faq:
   - q: "Czy mogę ubiegać się o zmianę orzeczenia Wojskowej Komisji Lekarskiej?"
-    a: "Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i nagorsze,
+    a: "Najprostsza odpowiedź brzmi - tak, możesz. Jeśli Twój stan zdrowia uległ zmianie, zarówno na lepsze, jak i na gorsze,
     możesz starać się o uzyskanie skierowania do Komisji, która ponownie to zbada. Może to skutkować zmianą kategorii
     zdolności do służby wojskowej - zarówno czynnej, jak i zawodowej."
 
