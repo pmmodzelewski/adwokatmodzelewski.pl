@@ -32,9 +32,10 @@ faq:
     and the legal situation."
 ---
 
-> Professional legal assistance is particularly needed in situations as difficult as the death of a loved one.
-> Seeking advice from a professional at an early stage is also advisable, as many aspects of inheritance law
-> are subject to strict statutory deadlines.
+> Professional legal assistance is especially crucial during such a difficult time
+> as the loss of a loved one. Seeking prompt expert advice is also advisable because
+> many aspects of inheritance law are subject to strict deadlines.
+> Although my practice is based in Warsaw, I assist clients nationwide.
 
 ## Legal Assistance in Inheritance Matters
 
