@@ -35,6 +35,7 @@ faq:
 ---
 
 > Od wielu lat zajmuję się świadczeniem usług dedykowanych żołnierzom zawodowym oraz funkcjonariuszom innych służb mundurowych (Policji, Straży Granicznej etc.).
+> Moja kancelaria mieści się w Warszawie, jednak obsługuję klientów z całej Polski.
 
 ## Sprawy żołnierzy i funkcjonariuszy
 
