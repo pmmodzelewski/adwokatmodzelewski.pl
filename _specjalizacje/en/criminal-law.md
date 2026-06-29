@@ -30,9 +30,10 @@ faq:
 
 ---
 
-> Comprehensive legal services in misdemeanor, criminal, and fiscal penal cases.
-> From arraignment through to enforcement proceedings.
-> Defense services as well as representation as a counsel.
+> Comprehensive legal representation in misdemeanor, criminal, and fiscal criminal cases.
+> From the initial filing of charges through enforcement proceedings.
+> Defense and representation as legal counsel.
+> Warsaw, Masovian Voivodeship, nationwide (Poland).
 
 ## Scope of Practice in Criminal Matters
 
