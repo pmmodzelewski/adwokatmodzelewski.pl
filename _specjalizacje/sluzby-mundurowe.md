@@ -16,7 +16,7 @@ faq:
     a: "Zgodnie z ustalonym orzecznictwem, opinia służbowa nie jest decyzją administracyjną i jako taka nie podlega
     ocenie Sądów Administracyjnych. Oznacza to, że ścieżka przewidziana w Ustawie (ograniczająca się zwykle do
     bezpośredniego przełożonego i jego przełożonego) jest ostateczna - jeśli nieodpowiadająca nam ocena
-    zostanie utrzymana po odwołaniu, nie możemy z tym nic zrobić. Co jednak istotne, decyzje personale wydawane
+    zostanie utrzymana po odwołaniu, nie możemy z tym nic zrobić. Co jednak istotne, decyzje personalne wydawane
     w oparciu o opinię służbową która, naszym zdaniem, jest wadliwa, mogą być oceniane przez Sądy Administracyjne."
 
   - q: "Czy żołnierzowi należy się wynagrodzenie za nadgodziny?"
@@ -54,7 +54,7 @@ Czynności przed rzecznikiem dyscyplinarnym, udział w raporcie dyscyplinarnym, 
 
 ### Sprawy dotyczące decyzji i rozkazów personalnych
 
-M. in. dotyczących zwolnienia ze służby czy przeniesienie na inne stanowisko służbowe.
+M.in. dotyczących zwolnienia ze służby czy przeniesienie na inne stanowisko służbowe.
 
 ### Opiniowanie służbowe
 
