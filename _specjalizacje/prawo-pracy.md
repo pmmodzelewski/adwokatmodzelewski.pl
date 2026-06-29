@@ -31,6 +31,7 @@ faq:
 
 > Oferuję pomoc prawną zarówno pracownikom, jak i pracodawcom.
 > Zajmuję się sprawami dotyczącymi zatrudnienia, emerytur i rent czy działalności związków zawodowych.
+> Reprezentuję klientów przed wszystkimi Sądami apelacji warszawskiej oraz w innych miejscowościach.
 
 ## Komu pomagam?
 
