@@ -35,7 +35,7 @@ faq:
 
 > Prawo rodzinne dotyczy zarówno kwestii relacji między małżonkami, rodzicami a dziećmi,
 > a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego
-> typu, zarówno w Warszawie jak i na terenie całkego kraju.
+> typu, zarówno w Warszawie jak i na terenie całego kraju.
 
 ## Czym się zajmuję w sprawach rodzinnych
 
