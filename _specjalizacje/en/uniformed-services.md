@@ -31,8 +31,9 @@ faq:
     to the uniform. Fortunately, courts (in particular non-military courts) apply it relatively rarely."
 ---
 
-> For many years, I have been providing legal services dedicated to professional soldiers
-> and officers of other uniformed services (Police, Border Guard, etc.).
+> For many years, I have been providing specialized legal services to professional
+> soldiers and officers of other uniformed services (such as the Police, Border Guard, etc.).
+> Although my office is located in Warsaw, I serve clients from all over Poland.
 
 ## Cases of Soldiers and Uniformed Service Officers
 
