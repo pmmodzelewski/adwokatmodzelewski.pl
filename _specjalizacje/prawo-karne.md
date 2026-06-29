@@ -28,7 +28,7 @@ faq:
   - q: "Jak sprawdzić, czy jestem poszukiwany?"
     a: "Krajowy Rejestr Karny zawiera co prawda informacje o osobach poszukiwanych listem gończym, ale nie zawsze gdy Policja
     chciałaby z nami porozmawiać, zastosuje taki środek. Oznacza to, że aby mieć pewność (lub przynajmniej większą wiedzę)
-    o naszym aktualnym statusie, warto często skontaktować się z jednostkami Policji czy Prokuratury które mogą zajmować się sprawa
+    o naszym aktualnym statusie, warto często skontaktować się z jednostkami Policji czy Prokuratury, które mogą zajmować się sprawą,
     w której bylibyśmy poszukiwani i upewnić się, czy nie oczekują od nas stawiennictwa."
 ---
 
@@ -66,7 +66,7 @@ W zakresie spowodowania wypadku komunikacyjnego lub prowadzenia pojazdu pod wpł
 
 ### Przeciwko wolności seksualnej i obyczajności
 
-Zarówno dotyczących czynów skierowanych przeciwko tej wolnosci jak i posiadania materiałów, których posiadanie jest zabronione.
+Zarówno dotyczących czynów skierowanych przeciwko tej wolności jak i posiadania materiałów, których posiadanie jest zabronione.
 
 ### Przeciwko czci i nietykalności cielesnej
 
@@ -86,7 +86,7 @@ W sprawach o przekroczenie uprawnień czy niedopełnienie obowiązków.
 
 ### Z zakresu Ustawy o przeciwdziałaniu narkomanii
 
-W zakresie posiadania środków odurzających, a także przestępstw poważniejszych, jak wprowadzanie tych środków do obrodu, handel nimi czy ich wytwarzanie.
+W zakresie posiadania środków odurzających, a także przestępstw poważniejszych, jak wprowadzanie tych środków do obrotu, handel nimi czy ich wytwarzanie.
 
 ### Żołnierzy zawodowych z części wojskowej Kodeksu karnego
 
