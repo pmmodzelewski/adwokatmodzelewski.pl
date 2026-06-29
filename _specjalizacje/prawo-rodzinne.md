@@ -33,7 +33,9 @@ faq:
     leczenie, wyjazdy zagraniczne etc.), zarząd jego majątkiem i sprawowanie opieki. Kontakty to jedynie wspólne spędzanie czasu."
 ---
 
-> Prawo rodzinne dotyczy zarówno kwestii relacji między małżonkami, rodzicami a dziećmi, a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego typu.
+> Prawo rodzinne dotyczy zarówno kwestii relacji między małżonkami, rodzicami a dziećmi,
+> a także innymi członkami rodziny. Pomagam klientom we wszystkich sprawach tego
+> typu, zarówno w Warszawie jak i na terenie całkego kraju.
 
 ## Czym się zajmuję w sprawach rodzinnych
 
