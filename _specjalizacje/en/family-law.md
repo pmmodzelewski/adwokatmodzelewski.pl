@@ -33,8 +33,10 @@ faq:
     Contact refers only to spending time together."
 ---
 
-> Family law concerns both issues of relationships between spouses, parents and children,
-> as well as other members of the family. I assist clients in all such matters.
+> Family law addresses relations between spouses, parents and children,
+> as well as other family members.
+> I assist clients with all matters in this field,
+> both in Warsaw and nationwide.
 
 ## Scope of Practice in Family Matters
 
