@@ -35,6 +35,7 @@ faq:
 > Pełna obsługa klientów w sprawach wykroczeniowych, karnych i karnoskarbowych.
 > Od postawienia zarzutów po postępowanie wykonawcze.
 > Obrona oraz występowanie w charakterze pełnomocnika.
+> Warszawa, Wojewódzwo Mazowieckie, cała Polska.
 
 ## Czym się zajmuję w sprawach karnych
 
