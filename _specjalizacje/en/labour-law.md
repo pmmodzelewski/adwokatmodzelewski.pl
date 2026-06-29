@@ -30,7 +30,8 @@ faq:
 ---
 
 > I offer legal assistance to both employees and employers.
-> I handle matters relating to employment, pensions and disability benefits, as well as trade union activities.
+> I handle matters concerning employment, pensions and disability benefits, as well as trade union activities.
+> I represent clients before all courts within the Warsaw appellate jurisdiction and in other locations.
 
 ## Who Do I Assist?
 
