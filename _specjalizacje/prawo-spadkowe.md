@@ -34,7 +34,7 @@ faq:
 
 > Profesjonalna pomoc prawna potrzebna jest szczególnie w sytuacji tak trudnej, jak śmierć osoby bliskiej.
 > Szybkie zwrócenie się do profesjonalisty jest wskazane także dlatego, że wiele aspektów prawa spadkowego
-> obwarowane jest terminami.
+> obwarowane jest terminami. Prowadzę kancelarię w Warszawie, jednak pomagam klientom na terenie całego kraju.
 
 ## Pomoc prawna w sprawach spadkowych
 
