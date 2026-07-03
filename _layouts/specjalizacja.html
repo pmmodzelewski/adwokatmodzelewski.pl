@@ -64,10 +64,12 @@
     {%- assign home_url = '/en/' -%}
     {%- assign home_name = 'Home' -%}
     {%- assign parent_name = 'Practice areas' -%}
+    {%- assign parent_url = '/en/#practice-areas' -%}
   {%- else -%}
     {%- assign home_url = '/' -%}
     {%- assign home_name = 'Strona główna' -%}
     {%- assign parent_name = 'Specjalizacje' -%}
+    {%- assign parent_url = '/#specjalizacje' -%}
   {%- endif -%}
   <script type="application/ld+json">
   {
@@ -83,7 +85,8 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": {{ parent_name | jsonify }}
+        "name": {{ parent_name | jsonify }},
+        "item": "{{ site.url }}{{ parent_url }}"
       },
       {
         "@type": "ListItem",
