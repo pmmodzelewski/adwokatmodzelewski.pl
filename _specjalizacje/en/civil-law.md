@@ -55,7 +55,7 @@ I have represented clients, inter alia, in proceedings concerning:
 - damages claims;
 - copyright law.
 
-### Contract Analysis
+## Contract Analysis
 
 I also provide services in the drafting and review of contracts and other documents, in particular:
 
@@ -70,6 +70,18 @@ I also provide services in the drafting and review of contracts and other docume
 - donation agreements;
 - lending for use agreements;
 - settlements (out-of-court, court-approved, and mediation settlements).
+
+## Mental health care
+
+Cases falling under the Mental Health Protection Act (most often involving involuntary admission
+to a psychiatric hospital or detention following the withdrawal of consent) are a uniquely specific
+branch of civil law and procedure. Hearings in these matters frequently take place on-site at
+psychiatric hospitals, requiring a legal representative to possess not only solid legal knowledge,
+but also a fundamental understanding of medicine, combined with genuine empathy and insight.
+
+I have repeatedly represented clients in these proceedings, including cases involving stays at
+the Institute of Psychiatry and Neurology, the Mazovian Specialist Health Center in Pruszkow,
+and the Clinic of Psychiatry, Combat Stress, and Psychotraumatology.
 
 ## How I work
 
