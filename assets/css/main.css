@@ -46,6 +46,7 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(12px);
+  padding: 0 2rem;
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--rule);
   transition: box-shadow 0.3s;
@@ -54,7 +55,7 @@ nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
 .nav-inner {
   max-width: 1100px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 2rem; height: 64px;
+  height: 64px;
 }
 .nav-logo {
   font-family: var(--font-display);
@@ -868,7 +869,7 @@ footer {
   /* Bardzo waskie ekrany: contact icons jeszcze ciasniej */
   .nav-brand { gap: 1rem; }
   .nav-contact { gap: 0.7rem; }
-  .nav-inner { padding: 0 1.5rem; }      /* zgodne z section padding ponizej */
+  nav { padding: 0 1.5rem; }             /* zgodne z section padding ponizej */
   .practice-list { grid-template-columns: 1fr; }
   .practice-row-2 { grid-template-columns: 1fr; }
   .about-highlights { grid-template-columns: 1fr 1fr; }
