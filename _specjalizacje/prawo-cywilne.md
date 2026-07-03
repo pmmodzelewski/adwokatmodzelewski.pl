@@ -71,6 +71,15 @@ Zajmuję się także przygotowywaniem i analizą umów i innych dokumentów, w s
 -	umów użyczenia;
 -	ugód (pozasądowych, sądowych i mediacyjnych).
 
+## Ochrona zdrowia psychicznego
+
+Sprawy z zakresu Ustawy o ochronie zdrowia psychicznego (dotyczącej najczęściej przyjęcia osoby do szpitala
+psychiatrycznego bez jej zgody lub zatrzymania jej tam w razie wycofania tej zgody) stanowią niezwykle
+specyficzny rodzaj spraw cywilnych. Posiedzenia z tego zakresu często odbywają się na terenach szpitali
+psychiatrycznych, zaś od pełnomocnika jego uczestnika wymagają nie tylko znajomości prawa, ale także
+podstaw medycyny oraz empatii i zrozumienia. Wielokrotnie reprezentowałem klientów w takich postępowaniach,
+dotyczących pobytu m. in. w Instytucie Psychiatrii i Neurologii, Mazowieckim Specjalistycznym Centrum
+Zdrowia w Pruszkowie czy Klinice Psychiatrii, Stresu Bojowego i Psychotraumatologii.
 
 ## Sposób pracy
 
