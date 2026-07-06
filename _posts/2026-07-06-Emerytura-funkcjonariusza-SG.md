@@ -3,7 +3,7 @@ title: "Podwyższenie emerytury należnej funkcjonariuszowi Straży Granicznej w
 date: 2026-07-06
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/07/06/border-guard-officer-pension-increase-combating-terrorism/
 summary: "Kolejny prawomocny wyrok Sądu dający podstawę do podwyższenia emerytury klientowi kancelarii"
 ---
 
