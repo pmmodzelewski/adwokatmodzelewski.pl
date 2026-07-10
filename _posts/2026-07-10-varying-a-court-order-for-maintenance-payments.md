@@ -1,6 +1,6 @@
 ---
 title: "Varying a Court Order for Maintenance Payments"
-date: 2026-06-11
+date: 2026-07-10
 lang: en
 tag: prawo-rodzinne
 summary: "An overview of the circumstances in which seeking a variation of a court-ordered maintenance amount may be successful"
