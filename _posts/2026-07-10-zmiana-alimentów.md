@@ -1,6 +1,6 @@
 ---
 title: "Zmiana rozstrzygnięcia w zakresie alimentów"
-date: 2026-06-11
+date: 2026-07-10
 lang: pl
 tag: prawo-rodzinne
 summary: "Omówienie sytuacji, w których domaganie się zmiany wysokości zasądzonych alimentów może być skuteczne"
