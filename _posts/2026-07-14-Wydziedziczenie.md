@@ -3,7 +3,7 @@ title: "Wydziedziczenie"
 date: 2026-07-14
 lang: pl
 tag: prawo-spadkowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/07/14/disinheritance-legal-meaning-explained/
 summary: "Czy 'wydziedziczyć kogoś' oznacza to samo co 'pozbawić go dziedziczenia'?"
 ---
 
