@@ -4,7 +4,7 @@ date: 2026-07-10
 lang: pl
 tag: prawo-rodzinne
 summary: "Omówienie sytuacji, w których domaganie się zmiany wysokości zasądzonych alimentów może być skuteczne"
-lang_alt: /en/aktualnosci/2026/07/10/varying-a-court-order-for-maintenance/
+lang_alt: /en/aktualnosci/2026/06/11/variation-of-a-maintenance-order/
 ---
 
 **Aby skutecznie domagać się modyfikacji wysokości alimentów przyznanych w wyroku sądowym,**
