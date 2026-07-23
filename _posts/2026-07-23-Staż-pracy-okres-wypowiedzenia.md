@@ -4,7 +4,7 @@ date: 2026-07-23
 lang: pl
 tag: prawo-pracy
 summary: "Informacje na temat orkesów zatrudnienia uwzględnianych na potrzeby art. 36 Kodeksu pracy"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/07/23/calculating-length-of-service-employment-notice-period/
 ---
 
 **Długość okresu wypowiedzenia jest, zgodnie z art. 36 § 1 Kodeksu pracy,**
