@@ -1,6 +1,6 @@
 ---
 title: "The Distinctive Features of Commercial Proceedings"
-date: 2026-06-17
+date: 2026-07-29
 lang: en
 tag: prawo-cywilne
 summary: "An overview of the significant restrictions to which the parties are subject in commercial proceedings."
