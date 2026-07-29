@@ -1,6 +1,6 @@
 ---
 title: "Specyfika postępowania w sprawach gospodarczych"
-date: 2026-06-17
+date: 2026-07-29
 lang: pl
 tag: prawo-cywilne
 summary: "Omówienie istotnych ograniczeń, jakim podlegają Strony w postępowaniu gospodarczym"
