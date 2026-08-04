@@ -4,7 +4,7 @@ date: 2026-07-29
 lang: pl
 tag: prawo-cywilne
 summary: "Omówienie istotnych ograniczeń, jakim podlegają Strony w postępowaniu gospodarczym"
-lang_alt: /en/aktualnosci/2026/06/17/distinctive-features-of-commercial-proceedings/
+lang_alt: /en/aktualnosci/2026/07/29/distinctive-features-of-commercial-court-proceedings/
 ---
 
 **Kodeks postępowania cywilnego przewiduje szereg postępowań odrębnych.**
