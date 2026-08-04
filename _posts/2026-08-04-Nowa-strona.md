@@ -1,5 +1,5 @@
 ---
-title: "Star poradnika prawnego dla żołnierzy i funkcjonariuszy - prawomundurowych.pl"
+title: "Start poradnika prawnego dla żołnierzy i funkcjonariuszy - prawomundurowych.pl"
 date: 2026-08-04
 lang: pl
 tag: sluzby-mundurowe
