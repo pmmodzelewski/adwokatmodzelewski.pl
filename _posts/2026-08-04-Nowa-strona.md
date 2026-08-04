@@ -27,9 +27,9 @@ swojej sytuacji jest kluczowe dla zabezpieczenia swoich interesów - uniknięcia
 a jednocześnie pełnego korzystania z uzasadnionych przywilejów, jakimi Państwo odwdzięcza się
 za codzienne poświęcenia.
 
-## prawomundurowych.pl
+## <a href="https://prawomundurowych.pl/">prawomundurowych.pl</a>
 
-Właśnie w tym celu powstał portal <a href="https://prawomundurowych.pl/">prawomundurowych.pl</a>
+Właśnie w tym celu powstał portal <a href="https://prawomundurowych.pl/">prawomundurowych.pl</a>.
 To kompleksowy poradnik zawierający odpowiedzi na wszystkie pytania, które mogą pojawić się
 w trakcie i w związku ze służbą. Oczywiście ma on charakter generalny - w razie konkretnych
 sytuacji, pomoc prawnika, który indywidualnie przeanalizuje daną sytuację jest nie do
