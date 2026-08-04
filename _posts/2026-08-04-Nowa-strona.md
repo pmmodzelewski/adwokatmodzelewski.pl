@@ -3,7 +3,7 @@ title: "Star poradnika prawnego dla żołnierzy i funkcjonariuszy - prawomunduro
 date: 2026-08-04
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/08/04/launch-legal-guide-soldiers-officers-prawomundurowych/
 summary: "Strona prawomundurowych.pl już działa!"
 ---
 
