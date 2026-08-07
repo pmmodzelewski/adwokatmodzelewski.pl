@@ -3,7 +3,7 @@ title: "Publiczny charakter zniesławienia dokonanego przy użyciu mediów społ
 date: 2026-08-07
 lang: pl
 tag: prawo-karne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/08/07/public-nature-of-defamation-via-social-media/
 summary: "Co determinuje, czy zniesławienie w rozumieniu art. 212 Kodeksu karnego ma charakter publiczny?"
 ---
 
