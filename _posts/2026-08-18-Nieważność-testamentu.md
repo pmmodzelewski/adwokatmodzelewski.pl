@@ -3,7 +3,7 @@ title: "Nieważność testsamentu"
 date: 2026-08-18
 lang: pl
 tag: prawo-spadkowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/08/18/invalidity-of-a-will/
 summary: "Testament, nawet jeśli sporządzono go prawidłowo pod kątem formalnym, może nie być ważny"
 ---
 
