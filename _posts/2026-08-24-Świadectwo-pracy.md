@@ -4,7 +4,7 @@ date: 2026-08-24
 lang: pl
 tag: prawo-pracy
 summary: "Podsumowanie informacji dot. świadectwa pracy"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/08/24/certificate-of-employment/
 ---
 
 **Świadectwo pracy to podstawowy dokument podsumowujący okres zatrudnienia u**
