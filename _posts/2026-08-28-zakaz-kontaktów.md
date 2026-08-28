@@ -4,7 +4,7 @@ date: 2026-08-28
 lang: pl
 tag: prawo-rodzinne
 summary: "Zakaz kontaktów z małoletnim dzieckiem jako najdalej idąca ingerencja Sądu"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/08/28/prohibition-of-contact-with-a-minor-child/
 ---
 
 **Kontakty z dzieckiem są zarówno prawem jak i obowiązkiem rodzica. Co istotne, pozostają**
