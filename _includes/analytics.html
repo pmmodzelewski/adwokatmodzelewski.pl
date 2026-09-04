@@ -1,10 +1,12 @@
 {%- comment -%}
   Umami — samodzielnie hostowana analityka (bez cookies, bez bannera zgody).
-  Instancja: https://umami.antkiewicz.pl (Unraid + Zoraxy reverse proxy).
-  Panel: https://umami.antkiewicz.pl
+  Instancja: Unraid + Zoraxy reverse proxy.
+  Tracker serwowany z t.vitech.tech (neutralna subdomena, trudniej blokowana
+  przez uBlock Origin niz domyslne sciezki 'script.js' czy '/umami').
+  Panel administracyjny: https://umami.antkiewicz.pl
 
   Aby wykluczyc wlasne wizyty: w konsoli przegladarki wykonaj raz
   localStorage.setItem('umami.disabled', '1'), potem juz nigdy nie
   rejestrujesz wlasnych wejsc.
 {%- endcomment -%}
-<script defer src="https://umami.antkiewicz.pl/t" data-website-id="7a54aea0-dd44-4b5c-a475-922d220c3cd1"></script>
+<script defer src="https://t.vitech.tech/t" data-website-id="7a54aea0-dd44-4b5c-a475-922d220c3cd1"></script>
