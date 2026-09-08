@@ -3,7 +3,7 @@ title: "Uprawnienia żołnierzy zawodowych w związku z rodzicielstwem - urlop w
 date: 2026-09-08
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/09/08/professional-soldiers-rights-parenthood-parental-leave/
 summary: "Pierwszy z serii artykułów dotyczących uprawnień żołnierzy - rodziców"
 ---
 
