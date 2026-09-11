@@ -3,7 +3,7 @@ title: "Czyny przepołowione"
 date: 2026-09-11
 lang: pl
 tag: prawo-karne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/09/11/bisected-offences-crime-and-petty-offence/
 summary: "Analiza sytuacji, w których dane zachowanie może stanowić zarówno przestępstwo jak i wykroczenie"
 ---
 
