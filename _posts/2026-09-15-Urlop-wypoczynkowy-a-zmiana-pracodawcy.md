@@ -4,7 +4,7 @@ date: 2026-09-15
 lang: pl
 tag: prawo-pracy
 summary: "Analiza sytuacji pracownika zmieniającego pracę pod kątem urlopu"
-lang_alt: /en/aktualnosci/2026/08/24/certificate-of-employment/
+lang_alt:
 ---
 
 **Co do zasady, pracownik (poza pierwszym zatrudnieniem), nabywa prawo do urlopu na cały rok**
