@@ -3,7 +3,7 @@ title: "Inne formy testamentu"
 date: 2026-09-18
 lang: pl
 tag: prawo-spadkowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/09/18/other-forms-of-will/
 summary: "Omówienie mniej typowych rodzajów testamentów"
 ---
 
