@@ -70,7 +70,10 @@ jobs:
               | tr '\0' '\n' > "${{ runner.temp }}/files.txt"
             echo "Mode: pelny skan (workflow_dispatch lub pierwszy push)."
           else
-            git diff --name-only -z --diff-filter=AM "$before" "$after" -- '_posts/*.md' \
+            # AMR: Added, Modified, Renamed. Rename dopuszczamy, bo poprawka
+            # bledu w nazwie pliku (np. kropki -> myslniki, zeby Jekyll uznal
+            # plik za post) trafia tu jako rename i tez wymaga tlumaczenia.
+            git diff --name-only -z --diff-filter=AMR "$before" "$after" -- '_posts/*.md' \
               | tr '\0' '\n' > "${{ runner.temp }}/files.txt"
             echo "Mode: diff $before..$after na _posts/*.md"
           fi
