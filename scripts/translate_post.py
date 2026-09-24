@@ -69,13 +69,22 @@ Rules:
   statute references — keep them as-is.
 - The English slug must be lowercase ASCII, words separated by single hyphens,
   derived from the translated title, no trailing/leading hyphens, max ~8 words.
-
-Return ONLY a JSON object, no prose, with exactly these keys:
-  "title_en"   - translated title (string, no surrounding quotes)
-  "summary_en" - translated summary (string)
-  "slug_en"    - the English slug (string)
-  "body_en"    - the full translated Markdown body (string)
 """
+
+# JSON Schema wymuszany przez API (output_config.format.type=json_schema).
+# Gwarantuje, ze `response.content[0].text` jest validnym JSON-em z dokladnie
+# tymi polami — eliminuje klase bledow "model zwrocil prawie-JSON".
+TRANSLATION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "title_en":   {"type": "string"},
+        "summary_en": {"type": "string"},
+        "slug_en":    {"type": "string"},
+        "body_en":    {"type": "string"},
+    },
+    "required": ["title_en", "summary_en", "slug_en", "body_en"],
+    "additionalProperties": False,
+}
 
 
 def parse_post(path):
@@ -166,18 +175,23 @@ def translate(client, fm, body):
         f"Summary (PL): {fm.get('summary','')}\n\n"
         f"Body (PL Markdown):\n{body}"
     )
+    # max_tokens 16000 — dluzsze wpisy prawnicze + escaping JSON'a lubia przekroczyc
+    # 4K. output_config.format wymusza validny JSON zgodny ze schema, wiec parsowanie
+    # `json.loads` juz nie wybucha na nieprzeeskepowanym cudzyslowie w bodzie.
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=4096,
+        max_tokens=16000,
         system=[{
             "type": "text",
             "text": SYSTEM_PROMPT,
             "cache_control": {"type": "ephemeral"},
         }],
         messages=[{"role": "user", "content": user_msg}],
+        output_config={
+            "format": {"type": "json_schema", "schema": TRANSLATION_SCHEMA},
+        },
     )
     text = "".join(block.text for block in resp.content if block.type == "text").strip()
-    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
     return json.loads(text)
 
 
