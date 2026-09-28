@@ -3,7 +3,7 @@ title: "Wydziedziczenie"
 date: 2026-09-01
 lang: pl
 tag: prawo-cywilne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/09/01/incapacitation-under-polish-civil-law/
 summary: "Jakie są przyczyny i skutki ubezwłasnowolnienia w polskim prawie cywilnym?"
 ---
 

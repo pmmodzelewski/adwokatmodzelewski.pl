@@ -4,7 +4,7 @@ date: 2026-09-24
 lang: pl
 tag: prawo-rodzinne
 summary: "Analiza przepisów i orzecznictwa dot. miejsca zamieszkania małoletniego"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/09/24/place-of-residence-of-a-minor/
 ---
 
 **Nasze miejsce zamieszkania jest kwestią niezwykle istotną, nie tylko z perspektywy**
