@@ -3,7 +3,7 @@ title: "Odwołania od orzeczeń RWKL"
 date: 2026-09-28
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: /en/aktualnosci/2026/09/28/appeals-against-rwkl-rulings/
+lang_alt: /en/aktualnosci/2026/09/28/appeals-against-regional-military-medical-commission-decisions/
 summary: "Czy odwoływanie się od orzeczeń Rejonowych Wojskowych Komisji Lekarskich ma sens?"
 ---
 
