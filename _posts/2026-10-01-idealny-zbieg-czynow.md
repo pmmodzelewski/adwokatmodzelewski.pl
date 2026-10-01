@@ -3,7 +3,7 @@ title: "Idealny zbieg czynów"
 date: 2026-10-01
 lang: pl
 tag: prawo-karne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/01/ideal-concurrence-of-offences/
 summary: "Sytuacja, w której jedno zachowanie sprawcy stanowi równocześnie przestępstwo i wykroczenie"
 ---
 
