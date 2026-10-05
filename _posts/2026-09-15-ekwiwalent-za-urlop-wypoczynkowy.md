@@ -4,7 +4,7 @@ date: 2026-10-05
 lang: pl
 tag: prawo-pracy
 summary: "Artykuł dotyczy sposobu liczenia oraz zastosowań ekwiwalentu za urlop wypoczynkowy"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/05/holiday-pay-in-lieu-what-is-it/
 ---
 
 **W razie zakończenia zatrudnienia pracownika przed wykorzystaniem całości przysługującego mu**
