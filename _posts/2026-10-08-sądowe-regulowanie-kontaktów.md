@@ -4,7 +4,7 @@ date: 2026-10-08
 lang: pl
 tag: prawo-rodzinne
 summary: "Wpis dotyczy reguł, którymi kieruje się Sąd rozstrzygając w sprawie kontaktów"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/08/court-ordered-parent-child-contact-arrangements/
 ---
 
 **Kontakty między rodzicami a dziećmi są jednym z fundamentalnych praw (i, jednocześnie**
