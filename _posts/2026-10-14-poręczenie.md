@@ -3,7 +3,7 @@ title: "Poręczenie"
 date: 2026-10-14
 lang: pl
 tag: prawo-cywilne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/14/suretyship/
 summary: "Czym jest poręczenie? Kim jest poręczyciel?"
 ---
 
