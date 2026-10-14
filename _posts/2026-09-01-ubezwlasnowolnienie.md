@@ -1,5 +1,5 @@
 ---
-title: "Wydziedziczenie"
+title: "Ubezwłasnowolnienie"
 date: 2026-09-01
 lang: pl
 tag: prawo-cywilne
