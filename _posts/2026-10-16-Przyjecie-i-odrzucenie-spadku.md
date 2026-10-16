@@ -3,7 +3,7 @@ title: "Przyjęcie i odrzucenie spadku"
 date: 2026-10-16
 lang: pl
 tag: prawo-spadkowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/16/acceptance-and-renunciation-of-inheritance/
 summary: "Co może i powinien zrobić spadkodawca gdy dowiaduje się o dziedziczeniu?"
 ---
 
