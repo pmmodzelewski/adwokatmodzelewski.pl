@@ -3,7 +3,7 @@ title: "Wygrana w sprawie karnej przed Sądami Wojskowymi"
 date: 2026-10-20
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/20/acquittal-criminal-proceedings-military-courts/
 summary: "Skutecznie prowadzona obrona w postępowaniu karnym może mieć diametralny wpływ na sytuację procesową"
 ---
 
