@@ -3,7 +3,7 @@ title: "Nadzwyczajne złagodzenie kary"
 date: 2026-10-28
 lang: pl
 tag: prawo-karne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/28/extraordinary-mitigation-of-sentence/
 summary: "Pogłębiona analiza instytucji opisanej w art. 60 Kodeksu karnego"
 ---
 
