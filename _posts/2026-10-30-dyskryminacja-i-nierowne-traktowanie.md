@@ -4,7 +4,7 @@ date: 2026-10-30
 lang: pl
 tag: prawo-pracy
 summary: "Kodeksowy zakaz dyskryminacji - jakich sytuacji dotyczy?"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/10/30/prohibition-of-discrimination-in-employment/
 ---
 
 **Kluczową (i powszechnie znaną) zasadą Kodeksu pracy jest zakaz dyskryminacji.**
