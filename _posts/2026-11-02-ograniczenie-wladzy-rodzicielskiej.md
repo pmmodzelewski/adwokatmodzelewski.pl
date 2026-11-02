@@ -4,7 +4,7 @@ date: 2026-11-02
 lang: pl
 tag: prawo-rodzinne
 summary: "Analiza sytuacji, w których Sąd decyduje się ograniczyć władzę rodzicielską rodzica"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/02/restriction-of-parental-responsibility/
 ---
 
 **Władza rodzicielska i piecza stanowią fundament prawny relacji między rodzicem**
