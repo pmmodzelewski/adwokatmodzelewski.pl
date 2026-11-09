@@ -3,7 +3,7 @@ title: "Dziedziczenie ustawowe"
 date: 2026-11-10
 lang: pl
 tag: prawo-spadkowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/10/intestate-succession/
 summary: "Krótkie podsumowanie zasad dziedziczenia, gdy spadkodawca nie pozostawił testamentu"
 ---
 
