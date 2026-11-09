@@ -3,7 +3,7 @@ title: "Wady oświadczenia woli"
 date: 2026-11-06
 lang: pl
 tag: prawo-cywilne
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/06/defects-in-a-declaration-of-intent/
 summary: "Artykuł przybliża kluczowe zagadnienia dotyczące wad oświadczenia woli"
 ---
 
