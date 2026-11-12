@@ -3,7 +3,7 @@ title: "Świadczenie za długoletnią służbę wojskową a emerytura"
 date: 2026-11-12
 lang: pl
 tag: sluzby-mundurowe
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/12/long-service-military-benefit-and-military-pension/
 summary: "Wyrok Sądu Okręgowego w Warszawie reguluje wpływ świadczenia za długoletnią służbę wojskową na wysokość emerytury"
 ---
 
