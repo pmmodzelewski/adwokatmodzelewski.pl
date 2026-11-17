@@ -3,7 +3,7 @@ title: "Poddanie sprawcy próbie cz. 1 - warunkowe umorzenie postępowania"
 date: 2026-11-17
 lang: pl
 tag: prawo-karne
-lang_alt: /en/aktualnosci/2026/11/17/probation-part-1-conditional-discontinuance-of-proceedings/
+lang_alt: /en/aktualnosci/2026/11/17/offender-on-probation-part-1-conditional-discontinuance/
 summary: "Pierwsza część cyklu wpisów o instytucjach polegających na poddaniu sprawcy próbie"
 ---
 
