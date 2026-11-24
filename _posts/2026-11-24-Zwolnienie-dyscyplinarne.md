@@ -4,7 +4,7 @@ date: 2026-11-24
 lang: pl
 tag: prawo-pracy
 summary: "Przesłanki rozwiązania umowy o pracę bez wypowiedzenia z winy pracownika"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/24/summary-dismissal-grounds-employee-fault/
 ---
 
 **Kodeks pracy przewiduje trzy sposoby rozwiązania umowy o pracę - za porozumieniem stron,**
