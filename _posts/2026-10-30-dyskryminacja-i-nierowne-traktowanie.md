@@ -1,5 +1,5 @@
 ---
-title: "Ekwiwalent za urlop wypoczynkowy - czym jest?"
+title: "Dyskryminacja w Kodeksie pracy"
 date: 2026-10-30
 lang: pl
 tag: prawo-pracy
