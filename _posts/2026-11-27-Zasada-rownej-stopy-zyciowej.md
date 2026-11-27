@@ -4,7 +4,7 @@ date: 2026-11-27
 lang: pl
 tag: prawo-rodzinne
 summary: "Omówienie jednego z głównych kryteriów ustalania wysokości alimentów"
-lang_alt: 
+lang_alt: /en/aktualnosci/2026/11/27/equal-standard-of-living-principle-maintenance/
 ---
 
 **Przepisy Kodeksu rodzinnego i opiekuńczego regulują kwestię wysokości alimentów**
